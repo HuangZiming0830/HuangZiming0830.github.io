@@ -127,6 +127,12 @@
         <content type="html"><![CDATA[<h2 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h2><h3 id="数据缺失"><a href="#数据缺失" class="headerlink" title="数据缺失"></a>数据缺失</h3><ol><li>最大值-最小值替换  </li><li>平均值替换  </li><li>零值替换  </li><li>利用已知预测缺失值，信息冗余  <h3 id="处理流程"><a href="#处理流程" class="headerlink" title="处理流程"></a>处理流程</h3></li><li>元数据统计分析  </li><li>数据初表加工(<em>离散</em> <em>克隆</em> <em>平衡</em>)  </li><li>权重优化  </li><li>数据终表  <strong>(模型选择精准度/可解释性的权衡)</strong><h2 id="异常点分析"><a href="#异常点分析" class="headerlink" title="异常点分析"></a>异常点分析</h2></li></ol><ul><li>逻辑判断  </li><li>基于距离、密度、COF判别  <h2 id="数据平衡"><a href="#数据平衡" class="headerlink" title="数据平衡"></a>数据平衡</h2></li></ul><ul><li>筛选比例高的类别  </li><li>修改分类判定阈值  </li><li>将分类任务转变为概率问题  <h3 id="特征规约"><a href="#特征规约" class="headerlink" title="特征规约"></a>特征规约</h3></li><li>主成分分析法  <ul><li><strong>难以描述变量具体含义</strong>  </li><li><strong>未必容易实施</strong></li></ul></li><li>特征选择(<strong>时效性、准确性、可实施性</strong>)  <ul><li>向前选择+反向淘汰  <h3 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h3><h4 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h4></li></ul></li></ul><ol><li>优点<ul><li>分类性能好  </li><li>稳定性好  </li><li>算法更新较快  </li><li>良好泛化能力</li></ul></li><li>限制  <ul><li>对大规模训练样本难以实施  </li><li>解决多分类问题存在困难  </li></ul></li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> BLOG </category>
+          
+      </categories>
+      
       
         <tags>
             
