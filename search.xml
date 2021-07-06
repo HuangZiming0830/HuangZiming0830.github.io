@@ -28,6 +28,141 @@
     </entry>
     
     
+    
+    <entry>
+      <title>06/27</title>
+      <link href="/2021/06/27/06-27/"/>
+      <url>/2021/06/27/06-27/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Dynamic-programming"><a href="#Dynamic-programming" class="headerlink" title="Dynamic programming"></a>Dynamic programming</h2><p>思想： 优化递归问题，求解子问题得出原问题解</p><h1 id="CPU-控制单元-算法逻辑单元"><a href="#CPU-控制单元-算法逻辑单元" class="headerlink" title="CPU(控制单元+算法逻辑单元)"></a>CPU(控制单元+算法逻辑单元)</h1><ul><li>从程序或应用程序中获取指令并执行计算(RAM(<em>主存</em>)取指，解码实际内容，最后由相关部分执行)</li><li><em>RAM</em> 与CPU直接交换数据的内部存储器，随时读写，速度很快，可作为操作系统或正在运行的程序的临时数据存储介质<h2 id="内部结构"><a href="#内部结构" class="headerlink" title="内部结构"></a>内部结构</h2></li></ul><ul><li>高级语言程序 | 编译后机器语言EXE文件 | 运行时在内存中生成EXE副本 | CPU解释并执行程序</li></ul><ul><li>寄存器 | 控制器 | 运算器 | 时钟  </li></ul><h1 id="统计年鉴及统计公报查询"><a href="#统计年鉴及统计公报查询" class="headerlink" title="统计年鉴及统计公报查询"></a>统计年鉴及统计公报查询</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><ul><li>gov.cn</li><li>tjj <strong>地级市及以上</strong></li><li>中国统计信息网、县料资情网等相关统计网站  <h2 id="检索"><a href="#检索" class="headerlink" title="检索"></a>检索</h2></li></ul><ul><li>站内检索  </li><li>公开信息中统计信息检索(一般在地级市网站检索)<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2></li></ul><ul><li>县级市往往存在改名现象/由县转为县级市/县区拆分合并情况等情况</li><li>尽量保证同一目录下获取url<h2 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h2>爬虫脚本()</li></ul><p>公告公示、统计信息、微信公众号、新浪微博(xx发布、xx统计)</p><ul><li>以地级市为最小单元搭建网站</li><li>只做计划无公报：关于临颍县2019年国民经济和社会发展计划执行情况与2020年国民经济和社会发展计划的报告</li></ul><ul><li>小想法</li></ul><ul><li>维护和更新：<ul><li>定时测试超链接是否有效</li><li>定时从主要来源网站查找最新文件</li></ul></li></ul><h1 id="河北省统计公报情况"><a href="#河北省统计公报情况" class="headerlink" title="河北省统计公报情况"></a>河北省统计公报情况</h1><p>市(信息完整 7/11, 信息不全 4/11, 完全无信息 0/11)<br>区(信息完整 7/49, 信息不全 4/49, 完全无信息 0/49)<br>县级市(信息完整 7/21, 信息不全 4/21, 完全无信息 0/21)<br>县(1/91信息完整 7/91, 信息不全 4/91, 完全无信息 0/91)<br>自治县(1/6信息完整 7/6, 信息不全 4/6, 完全无信息 0/6)</p><p>目前工作安排</p><ul><li>收集省市地区的统计公报</li><li>wiki词条更新</li><li>文件制作<br>工作流程</li></ul><ol><li>查找网站</li><li>url | document</li><li>文件夹 | wiki词条 </li></ol><h1 id="本周工作小节"><a href="#本周工作小节" class="headerlink" title="本周工作小节"></a>本周工作小节</h1><ol><li><p>工作内容</p><ul><li>河北省河南省的统计公报收集工作</li><li>34-46国标小类的关键词抽取整理工作</li><li>总结统计公报收集方法和存在的一些问题，暂时确定后续工作的大致流程</li><li>搭建wiki词条、整理文件</li></ul></li><li><p>后续工作</p><ul><li>其他省份统计公报收集</li><li>统计公报信息的动态可视化的展示</li></ul></li><li><p>一些思考</p><ul><li>数据的更新和维护（地级市以上的地区统计公报比较集中）</li></ul></li></ol><pre><code>企业/科创/资本活力研发热度/地区发展</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06/22</title>
+      <link href="/2021/06/22/06-22/"/>
+      <url>/2021/06/22/06-22/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Summer-Plan"><a href="#Summer-Plan" class="headerlink" title="Summer Plan"></a>Summer Plan</h2><ul><li>租房问题(水电费、地铁站远近、大型超市、通风、光线、预付押金、租期、合租情况、网络电缆、空调卫生间)</li><li>实习问题(大致确定世环的时间、寻找成都、上海类似工作)</li><li>竞赛问题(kaggle比赛学习<em>熟悉竞赛流程、寻找合适比赛、队友</em> 、tianci竞赛、 建模竞赛、英语竞赛)</li><li>论文问题(仿写小论文、 实验室老师相关论文<strong>确定以后大致方向</strong>、关注领域论文动态，大致复原五篇左右文献)</li><li>旅游问题(重庆、太原、绵阳、老家贷款问题)</li></ul><h2 id="Star-Sensor-Based-Satellite-Attitude-Attitude-Rate-Estimator-1985"><a href="#Star-Sensor-Based-Satellite-Attitude-Attitude-Rate-Estimator-1985" class="headerlink" title="Star-Sensor-Based Satellite Attitude/Attitude Rate Estimator  1985"></a>Star-Sensor-Based Satellite Attitude/Attitude Rate Estimator  1985</h2><p>###Introduction<br>on-orbit attitude rate determination’s problems </p><ul><li>sensitivity limitations</li><li>bandwidth limitations</li></ul><ul><li>gyroscope(attitude and attitude rate determination)</li><li>stellar inertial systems</li></ul><p>CCD/CID  contribute to on-orbit attitude determination and control systems based solely on star sensor measurements</p><ul><li><p>low attitude dynamics <em>gyroloss attitude determination</em> | <em>control systems</em><br>Applications &gt; meteorology | Earth resources | communications</p></li><li><p>high-accuracy mission <strong>three-axis-stablized zero-momentum-bias designs</strong>  </p><ol><li>the principal axes’ independent control to supplyment the system’s inherent neutral stability  </li><li>gyroscopic stiffness is sacrificed to permit high bandwidth control about all three spacecraft axes  </li><li>0.5Hz bandwidth attitude rate information to provide adequete stability</li></ol></li></ul><h2 id="Filter-Derivation"><a href="#Filter-Derivation" class="headerlink" title="Filter Derivation"></a>Filter Derivation</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06/15</title>
+      <link href="/2021/06/15/06-15/"/>
+      <url>/2021/06/15/06-15/</url>
+      
+        <content type="html"><![CDATA[<h2 id="水平扩展"><a href="#水平扩展" class="headerlink" title="水平扩展"></a>水平扩展</h2><ul><li>数据分割 + 代码分发到存储数据的节点上</li></ul><ul><li>映射  </li><li>归约  <h2 id="向上扩展"><a href="#向上扩展" class="headerlink" title="向上扩展"></a>向上扩展</h2></li><li>保持数据原样+性能足够强的计算机  </li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06/07</title>
+      <link href="/2021/06/07/06-07/"/>
+      <url>/2021/06/07/06-07/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h1><pre><code>对数据进行整理归纳和提炼从而寻找出数据内在规律获得所需要的信息 </code></pre><h2 id="数据分析方法"><a href="#数据分析方法" class="headerlink" title="数据分析方法"></a>数据分析方法</h2><ul><li>统计分析方法  对收集到的数据进行整理归类并解释<ul><li>描述统计  以描述和归纳数据特征和变量之间的关系为目的<br>  <em>数据集中趋势、离散程度、相关程度</em><br>  <strong>平均值、标准差、相关系数</strong>  </li><li>推断统计  用样本数据来推出总体特征<br>  <em>参数估计、假设检验</em><br>  <strong>Z检验、T检验、卡方检验</strong>  </li></ul></li><li>运筹学分析方法  对对象进行组织管理发挥最大效益  <ul><li>数学规划分析  <ul><li>线性规划、非线性规划、整数规划、动态规划  </li></ul></li><li>运筹学理论  <ul><li>图论、决策论、库存论</li></ul></li></ul></li><li>财务分析方法  以财务数据及相关数据来系统分析和评估企业过去和现在的经营成果、财务情况以及变动情况，达到辅助企业经营和决策的目的<ul><li>比较分析法、趋势分析法、比率分析法</li></ul></li><li>图表分析方法<br>  -柱状图、条形图、饼图、折线图<h2 id="数据处理方法"><a href="#数据处理方法" class="headerlink" title="数据处理方法"></a>数据处理方法</h2></li></ul><ul><li><p>高级筛选  </p></li><li><p>分类汇总  </p></li><li><p>合并计算  </p><ul><li>同一属性数据一列记录</li></ul></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> EXCEL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06/06</title>
+      <link href="/2021/06/06/06-06/"/>
+      <url>/2021/06/06/06-06/</url>
+      
+        <content type="html"><![CDATA[<h1 id="模型评价指标"><a href="#模型评价指标" class="headerlink" title="模型评价指标"></a>模型评价指标</h1><ol><li>判定系数R^2<br> 可解释离差平方和/总离差平方和  </li><li>考虑自由度的判定系数R^2<br> 引入惩罚机制，考虑样本量<em>n</em>和自变量<em>k</em>  </li><li>F1_score  </li><li>ROC、AUC曲线<br> <strong>不敏感数据集正负样本数据分布差异较大</strong></li><li>KS征信指标<br> <code>KS=Max(TPR-FPR)</code>  </li></ol><h1 id="决策树算法"><a href="#决策树算法" class="headerlink" title="决策树算法"></a>决策树算法</h1><ol><li><p>ID3算法<br> 使用信息增益最大的特征对数据集进行划分，最大程度上减少数据集的不确定性  </p></li><li><p>C4.5算法<br> <em>ID3算法没有考虑到连续特征和缺失值的情况，信息增益算法偏向选择取值较多的特征</em>  </p><p> 引入信息增益率避免信息增益算法偏取值较多的特征。  </p><ul><li>对连续特征离散化选择最终的离散分离点  </li><li>设定权重解决缺失值问题  </li></ul></li><li><p>CART算法<br> 使用基尼系数代替信息增益率选择特征，效率更高<br> 可以处理分类问题和回归问题  </p><ul><li>使用最小均方差选择特征  </li><li>采用叶子节点的平均值预测输出结果  </li></ul></li></ol><h2 id="剪枝处理-避免过拟合"><a href="#剪枝处理-避免过拟合" class="headerlink" title="剪枝处理  避免过拟合"></a>剪枝处理  <em><strong>避免过拟合</strong></em></h2><h3 id="预剪枝"><a href="#预剪枝" class="headerlink" title="预剪枝"></a>预剪枝</h3><pre><code>判断建立子树能否带来模型泛化能力的提升决定是否终止子树  </code></pre><h3 id="后剪枝"><a href="#后剪枝" class="headerlink" title="后剪枝"></a>后剪枝</h3><pre><code>从底层向上计算决定是否剪枝  </code></pre><h1 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h1><ol><li>曼哈顿距离(城市街区距离)  </li><li>切比雪夫距离(坐标系差值最大值)  </li><li>海明距离(分类变量之间的距离)  </li><li>闵可夫斯基距离(欧氏距离的一般形式)  </li></ol><ul><li>交叉验证选择合适K值  </li><li>KD树优化，减少大规模训练样本复杂度  </li></ul><h1 id="SVM-寻求特征空间间隔最大化的线性分类器"><a href="#SVM-寻求特征空间间隔最大化的线性分类器" class="headerlink" title="SVM  寻求特征空间间隔最大化的线性分类器"></a>SVM  <strong>寻求特征空间间隔最大化的线性分类器</strong></h1><ul><li>增加松弛变量以软间隔最大化处理线性不可分的情况</li><li>将低维数据映射到高维空间寻找线性可分核函数<ul><li>多项式核函数 <em>样本数很多/特征数较少</em>  </li><li>高斯核函数(径向基核函数) <em>样本数一般/特征数较少</em>  </li></ul></li></ul><h1 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h1><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><ol><li>sigmoid  <ul><li>指数运算计算量大  </li><li>0/1输出返校更新慢  </li></ul></li><li>ReLU  <ul><li>网络稀疏，参数依赖性降低  </li><li>可能导致神经元失活  </li></ul></li><li>Softmax  </li><li>Tanh<h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2></li><li>平均绝对误差损失函数  </li><li>均方差损失函数  </li><li>交叉熵损失函数  </li></ol><h1 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h1><h2 id="随机森林-Bagging思想-减少方差"><a href="#随机森林-Bagging思想-减少方差" class="headerlink" title="随机森林  Bagging思想(减少方差)"></a>随机森林  Bagging思想(减少方差)</h2><ul><li>投票分类 | 平均回归  <ul><li>泛化能力强  </li><li>对数据集适应能力强  </li><li>使用袋外数据OOB作为验证集  </li><li>有放回采样<h2 id="GBDT-减少偏差"><a href="#GBDT-减少偏差" class="headerlink" title="GBDT(减少偏差)"></a>GBDT(减少偏差)</h2></li></ul></li><li>CART回归树模型</li><li>无放回采样  </li><li>分类：对数似然 | 指数  回归： 均方差 | 绝对损失 | Huber损失 | 分位数损失  </li></ul><h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><ul><li>GBDT的优化(损失函数采用二阶泰勒展开 | 目标函数加入正则项防止过拟合 | 支持并行和缺失值自动处理 | 对稀疏数据的处理 | 交叉验证和提前停止策略)  </li></ul><p> <code>xgb_params = &#123; &#39;n_estimators&#39; : [100,150], &#39;max_depth&#39; : [1,2], &#39;scale_pos_weight&#39; : [&#123;0:1, 1:10&#125;,&#123;0:1, 1:100&#125;]&#125;</code><br> <code>xgb_grid = GridSearchCV(clf4, xgb_params, scoring = &#39;roc_auc&#39;, cv = 3)</code><br> <code>xgb_grid.fit(x_train[s_iv_name].astype(&#39;float&#39;), y_train)</code><br> <code>print(&#39;最佳参数&#39;, xgb_grid.best_params_)</code></p><p> <code>n_estimators = xgb_grid.best_params_[&#39;n_estimators&#39;]</code><br> <code>max_depth = xgb_grid.best_params_[&#39;max_depth&#39;]</code><br> <code>scale_pos_weight = xgb_grid.best_params_[&#39; scale_pos_weight &#39;]</code></p><p> <code>xgb_model = xgb.XGBClassifier(booster = &#39;gbtree&#39;, objective = &#39;binary:logistic&#39;, learning_rate = 0.1, random_state = 1, n_estimators = n_estimators, max_depth = max_depth, subsample = 1, eval_metric = &#39;auc&#39;, colsample_bytree = 1, seed = 123, scale_pos_weight = scale_pos_weight, n_jobs = 1)</code><br> <code>xgb_model.fit(x_train[s_iv_name].astype(&#39;float&#39;), y_train)</code><br> <code>print(xgb_model)</code><br> <code>xgb_pre = xgb_model.predict_proba(x_test[s_iv_name].astype(&#39;float&#39;))</code><br> <code>xgb_auc = roc_auc_score(y_test, xgb_pre[:,1])</code></p><h2 id="Stacking-提升预测效果的堆叠模型-降低泛化误差"><a href="#Stacking-提升预测效果的堆叠模型-降低泛化误差" class="headerlink" title="Stacking(提升预测效果的堆叠模型,降低泛化误差)"></a>Stacking(提升预测效果的堆叠模型,降低泛化误差)</h2><ul><li><p>异质集成 (利用次级分类器拟合基本分类器预测结果 | 需要交叉验证避免过拟合)<br>  `def get_Stacking(clf, x_train, y_train, x_test, n_folds= 5):</p><pre><code>  train_num, test_num = x_train.shape[0], x_test.shaoe[0]  second_level_train_set = np.zeros((train_num, ))  second_level_test_set = np.zeros((test_num, ))  kf = KFold(n_splits = n_folds)`  `for i, (train_index, test_index) in enumerate(kf.split(x_train)):      x_tra, y_tra = x_train[train_index], y_train[train_index]      x_tst, y_tst = x_test[test_index], y_test[test_index]      clf.fit(x_tra, y_tra)      second_level_train_set[test_index] = clf.predict_proba(x_tst)[:,1]      test_nfolds_sets[:,i] = clf.predict_proba(x_test)[:,1]  second_level_test_set[:] = test_nfolds_sets.mean(axis = 1)  return second_level_train_set, second_level_test_set`  </code></pre><p>  `train_sets = []<br>  test_sets = []<br>  for clf in [lr, decision_tree, knn, svm, rf]:</p><pre><code>  train_set, test_set = get_Stacking(clf, x_train_arr, y_train_arr, x_test_arr)  train_sets.append(train_set)  test_sets.append(test_set)</code></pre><p>  meta_train = np.concatenate([result_set.reshape(-1,1) for result_set in  train_sets], axis = 1)<br>  meta_test = np.concatenate([y_test_set.reshape(-1,1) for y_test_set in test_sets], axis = 1)<br>  meta_model = LogisticRegression(random_state = 1)<br>  meta_model.fit(meta_train, meta_test)<br>  prediction = meta_model.predict_proba(meta_test)</p><pre><code>  `</code></pre></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06-05-2</title>
+      <link href="/2021/06/05/06-05-2/"/>
+      <url>/2021/06/05/06-05-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="算法交易"><a href="#算法交易" class="headerlink" title="算法交易"></a>算法交易</h1><ol><li>被动型(成交量<em>VWMP</em>、时间<em>TWMP</em>)  </li><li>主动型  根据市场状况实时决策 </li></ol><h1 id="时间序列影响因素"><a href="#时间序列影响因素" class="headerlink" title="时间序列影响因素"></a>时间序列影响因素</h1><ul><li>长期趋势  </li><li>循环变动  </li><li>季节性变动  </li><li>不规则变化  </li></ul><h2 id="平稳性"><a href="#平稳性" class="headerlink" title="平稳性"></a>平稳性</h2><h3 id="弱平稳"><a href="#弱平稳" class="headerlink" title="弱平稳"></a>弱平稳</h3><ol><li>均值、方差与时间<em>t</em>无关  </li><li>协方差只与时间间隔<em>k</em>有关  </li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Finance Time Series Analysis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>06/05/1</title>
+      <link href="/2021/06/05/06-05/"/>
+      <url>/2021/06/05/06-05/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h2><h3 id="数据缺失"><a href="#数据缺失" class="headerlink" title="数据缺失"></a>数据缺失</h3><ol><li>最大值-最小值替换  </li><li>平均值替换  </li><li>零值替换  </li><li>利用已知预测缺失值，信息冗余  <h3 id="处理流程"><a href="#处理流程" class="headerlink" title="处理流程"></a>处理流程</h3></li><li>元数据统计分析  </li><li>数据初表加工(<em>离散</em> <em>克隆</em> <em>平衡</em>)  </li><li>权重优化  </li><li>数据终表  <strong>(模型选择精准度/可解释性的权衡)</strong><h2 id="异常点分析"><a href="#异常点分析" class="headerlink" title="异常点分析"></a>异常点分析</h2></li></ol><ul><li>逻辑判断  </li><li>基于距离、密度、COF判别  <h2 id="数据平衡"><a href="#数据平衡" class="headerlink" title="数据平衡"></a>数据平衡</h2></li></ul><ul><li>筛选比例高的类别  </li><li>修改分类判定阈值  </li><li>将分类任务转变为概率问题  <h3 id="特征规约"><a href="#特征规约" class="headerlink" title="特征规约"></a>特征规约</h3></li><li>主成分分析法  <ul><li><strong>难以描述变量具体含义</strong>  </li><li><strong>未必容易实施</strong></li></ul></li><li>特征选择(<strong>时效性、准确性、可实施性</strong>)  <ul><li>向前选择+反向淘汰  <h3 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h3><h4 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h4></li></ul></li></ul><ol><li>优点<ul><li>分类性能好  </li><li>稳定性好  </li><li>算法更新较快  </li><li>良好泛化能力</li></ul></li><li>限制  <ul><li>对大规模训练样本难以实施  </li><li>解决多分类问题存在困难  </li></ul></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> data_mining </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My First Post</title>
+      <link href="/2021/06/04/My-First-Post/"/>
+      <url>/2021/06/04/My-First-Post/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Entertainment"><a href="#Entertainment" class="headerlink" title="Entertainment"></a>Entertainment</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Test</title>
+      <link href="/2021/06/03/Test/"/>
+      <url>/2021/06/03/Test/</url>
+      
+        <content type="html"><![CDATA[<p>This is a test article!</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
   
   
 </search>

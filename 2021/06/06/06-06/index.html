@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="705, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
+    <meta name="keywords" content="06/06, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
     <meta name="description" content="北京航空航天大学 | 测控技术与仪器 | 数据分析">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>705 | Adam&#39;s Blog</title>
+    <title>06/06 | Adam&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">705</h1>
+                    <h1 class="description center-align post-title">06/06</h1>
                 </div>
             </div>
         </div>
@@ -325,104 +325,10 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -443,28 +349,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-05
+                    2021-06-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-05
+                    2021-06-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -484,7 +390,115 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="模型评价指标"><a href="#模型评价指标" class="headerlink" title="模型评价指标"></a>模型评价指标</h1><ol>
+<li>判定系数R^2<br> 可解释离差平方和/总离差平方和  </li>
+<li>考虑自由度的判定系数R^2<br> 引入惩罚机制，考虑样本量<em>n</em>和自变量<em>k</em>  </li>
+<li>F1_score  </li>
+<li>ROC、AUC曲线<br> <strong>不敏感数据集正负样本数据分布差异较大</strong></li>
+<li>KS征信指标<br> <code>KS=Max(TPR-FPR)</code>  </li>
+</ol>
+<h1 id="决策树算法"><a href="#决策树算法" class="headerlink" title="决策树算法"></a>决策树算法</h1><ol>
+<li><p>ID3算法<br> 使用信息增益最大的特征对数据集进行划分，最大程度上减少数据集的不确定性  </p>
+</li>
+<li><p>C4.5算法<br> <em>ID3算法没有考虑到连续特征和缺失值的情况，信息增益算法偏向选择取值较多的特征</em>  </p>
+<p> 引入信息增益率避免信息增益算法偏取值较多的特征。  </p>
+<ul>
+<li>对连续特征离散化选择最终的离散分离点  </li>
+<li>设定权重解决缺失值问题  </li>
+</ul>
+</li>
+<li><p>CART算法<br> 使用基尼系数代替信息增益率选择特征，效率更高<br> 可以处理分类问题和回归问题  </p>
+<ul>
+<li>使用最小均方差选择特征  </li>
+<li>采用叶子节点的平均值预测输出结果  </li>
+</ul>
+</li>
+</ol>
+<h2 id="剪枝处理-避免过拟合"><a href="#剪枝处理-避免过拟合" class="headerlink" title="剪枝处理  避免过拟合"></a>剪枝处理  <em><strong>避免过拟合</strong></em></h2><h3 id="预剪枝"><a href="#预剪枝" class="headerlink" title="预剪枝"></a>预剪枝</h3><pre><code>判断建立子树能否带来模型泛化能力的提升决定是否终止子树  
+</code></pre>
+<h3 id="后剪枝"><a href="#后剪枝" class="headerlink" title="后剪枝"></a>后剪枝</h3><pre><code>从底层向上计算决定是否剪枝  
+</code></pre>
+<h1 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h1><ol>
+<li>曼哈顿距离(城市街区距离)  </li>
+<li>切比雪夫距离(坐标系差值最大值)  </li>
+<li>海明距离(分类变量之间的距离)  </li>
+<li>闵可夫斯基距离(欧氏距离的一般形式)  </li>
+</ol>
+<ul>
+<li>交叉验证选择合适K值  </li>
+<li>KD树优化，减少大规模训练样本复杂度  </li>
+</ul>
+<h1 id="SVM-寻求特征空间间隔最大化的线性分类器"><a href="#SVM-寻求特征空间间隔最大化的线性分类器" class="headerlink" title="SVM  寻求特征空间间隔最大化的线性分类器"></a>SVM  <strong>寻求特征空间间隔最大化的线性分类器</strong></h1><ul>
+<li>增加松弛变量以软间隔最大化处理线性不可分的情况</li>
+<li>将低维数据映射到高维空间寻找线性可分核函数<ul>
+<li>多项式核函数 <em>样本数很多/特征数较少</em>  </li>
+<li>高斯核函数(径向基核函数) <em>样本数一般/特征数较少</em>  </li>
+</ul>
+</li>
+</ul>
+<h1 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h1><h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><ol>
+<li>sigmoid  <ul>
+<li>指数运算计算量大  </li>
+<li>0/1输出返校更新慢  </li>
+</ul>
+</li>
+<li>ReLU  <ul>
+<li>网络稀疏，参数依赖性降低  </li>
+<li>可能导致神经元失活  </li>
+</ul>
+</li>
+<li>Softmax  </li>
+<li>Tanh<h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2></li>
+<li>平均绝对误差损失函数  </li>
+<li>均方差损失函数  </li>
+<li>交叉熵损失函数  </li>
+</ol>
+<h1 id="集成学习"><a href="#集成学习" class="headerlink" title="集成学习"></a>集成学习</h1><h2 id="随机森林-Bagging思想-减少方差"><a href="#随机森林-Bagging思想-减少方差" class="headerlink" title="随机森林  Bagging思想(减少方差)"></a>随机森林  Bagging思想(减少方差)</h2><ul>
+<li>投票分类 | 平均回归  <ul>
+<li>泛化能力强  </li>
+<li>对数据集适应能力强  </li>
+<li>使用袋外数据OOB作为验证集  </li>
+<li>有放回采样<h2 id="GBDT-减少偏差"><a href="#GBDT-减少偏差" class="headerlink" title="GBDT(减少偏差)"></a>GBDT(减少偏差)</h2></li>
+</ul>
+</li>
+<li>CART回归树模型</li>
+<li>无放回采样  </li>
+<li>分类：对数似然 | 指数  回归： 均方差 | 绝对损失 | Huber损失 | 分位数损失  </li>
+</ul>
+<h2 id="XGBoost"><a href="#XGBoost" class="headerlink" title="XGBoost"></a>XGBoost</h2><ul>
+<li>GBDT的优化(损失函数采用二阶泰勒展开 | 目标函数加入正则项防止过拟合 | 支持并行和缺失值自动处理 | 对稀疏数据的处理 | 交叉验证和提前停止策略)  </li>
+</ul>
+<p> <code>xgb_params = &#123; &#39;n_estimators&#39; : [100,150], &#39;max_depth&#39; : [1,2], &#39;scale_pos_weight&#39; : [&#123;0:1, 1:10&#125;,&#123;0:1, 1:100&#125;]&#125;</code><br> <code>xgb_grid = GridSearchCV(clf4, xgb_params, scoring = &#39;roc_auc&#39;, cv = 3)</code><br> <code>xgb_grid.fit(x_train[s_iv_name].astype(&#39;float&#39;), y_train)</code><br> <code>print(&#39;最佳参数&#39;, xgb_grid.best_params_)</code></p>
+<p> <code>n_estimators = xgb_grid.best_params_[&#39;n_estimators&#39;]</code><br> <code>max_depth = xgb_grid.best_params_[&#39;max_depth&#39;]</code><br> <code>scale_pos_weight = xgb_grid.best_params_[&#39; scale_pos_weight &#39;]</code></p>
+<p> <code>xgb_model = xgb.XGBClassifier(booster = &#39;gbtree&#39;, objective = &#39;binary:logistic&#39;, learning_rate = 0.1, random_state = 1, n_estimators = n_estimators, max_depth = max_depth, subsample = 1, eval_metric = &#39;auc&#39;, colsample_bytree = 1, seed = 123, scale_pos_weight = scale_pos_weight, n_jobs = 1)</code><br> <code>xgb_model.fit(x_train[s_iv_name].astype(&#39;float&#39;), y_train)</code><br> <code>print(xgb_model)</code><br> <code>xgb_pre = xgb_model.predict_proba(x_test[s_iv_name].astype(&#39;float&#39;))</code><br> <code>xgb_auc = roc_auc_score(y_test, xgb_pre[:,1])</code></p>
+<h2 id="Stacking-提升预测效果的堆叠模型-降低泛化误差"><a href="#Stacking-提升预测效果的堆叠模型-降低泛化误差" class="headerlink" title="Stacking(提升预测效果的堆叠模型,降低泛化误差)"></a>Stacking(提升预测效果的堆叠模型,降低泛化误差)</h2><ul>
+<li><p>异质集成 (利用次级分类器拟合基本分类器预测结果 | 需要交叉验证避免过拟合)<br>  `def get_Stacking(clf, x_train, y_train, x_test, n_folds= 5):</p>
+<pre><code>  train_num, test_num = x_train.shape[0], x_test.shaoe[0]
+  second_level_train_set = np.zeros((train_num, ))
+  second_level_test_set = np.zeros((test_num, ))
+  kf = KFold(n_splits = n_folds)`
+
+  `for i, (train_index, test_index) in enumerate(kf.split(x_train)):
+      x_tra, y_tra = x_train[train_index], y_train[train_index]
+      x_tst, y_tst = x_test[test_index], y_test[test_index]
+      clf.fit(x_tra, y_tra)
+      second_level_train_set[test_index] = clf.predict_proba(x_tst)[:,1]
+      test_nfolds_sets[:,i] = clf.predict_proba(x_test)[:,1]
+
+  second_level_test_set[:] = test_nfolds_sets.mean(axis = 1)
+  return second_level_train_set, second_level_test_set`  
+</code></pre>
+<p>  `train_sets = []<br>  test_sets = []<br>  for clf in [lr, decision_tree, knn, svm, rf]:</p>
+<pre><code>  train_set, test_set = get_Stacking(clf, x_train_arr, y_train_arr, x_test_arr)
+  train_sets.append(train_set)
+  test_sets.append(test_set)
+</code></pre>
+<p>  meta_train = np.concatenate([result_set.reshape(-1,1) for result_set in  train_sets], axis = 1)<br>  meta_test = np.concatenate([y_test_set.reshape(-1,1) for y_test_set in test_sets], axis = 1)<br>  meta_model = LogisticRegression(random_state = 1)<br>  meta_model.fit(meta_train, meta_test)<br>  prediction = meta_model.predict_proba(meta_test)</p>
+<pre><code>  `
+</code></pre>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -510,7 +524,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://huangziming0830.github.io/2021/07/05/0705/">https://huangziming0830.github.io/2021/07/05/0705/</a>
+                    <a href="https://huangziming0830.github.io/2021/06/06/06-06/">https://huangziming0830.github.io/2021/06/06/06-06/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -716,7 +730,7 @@
         repo: 'HuangZiming0830.github.io',
         owner: 'HuangZiming0830',
         admin: "HuangZiming0830",
-        id: '2021-07-05T19-28-53',
+        id: '2021-06-06T14-37-46',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -742,18 +756,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/05/0705/">
+                <a href="/2021/06/07/06-07/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="705">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="06/07">
                         
-                        <span class="card-title">705</span>
+                        <span class="card-title">06/07</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -763,9 +776,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-07
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -774,7 +787,14 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/EXCEL/">
+                        <span class="chip bg-color">EXCEL</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -785,13 +805,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/05/hello-world/">
+                <a href="/2021/06/05/06-05-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="06-05-2">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">06-05-2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -802,7 +822,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-05
                             </span>
                         <span class="publish-author">
                             
@@ -811,6 +831,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Finance-Time-Series-Analysis/">
+                        <span class="chip bg-color">Finance Time Series Analysis</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -877,100 +905,6 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h1, h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h1, h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
 
     
 
