@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CPU, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
+    <meta name="keywords" content="MYSQL-INDEX, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
     <meta name="description" content="北京航空航天大学 | 测控技术与仪器 | 数据分析">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CPU | Adam&#39;s Blog</title>
+    <title>MYSQL-INDEX | Adam&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CPU</h1>
+                    <h1 class="description center-align post-title">MYSQL-INDEX</h1>
                 </div>
             </div>
         </div>
@@ -325,10 +325,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -349,8 +443,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/CPU/" class="post-category">
-                                CPU
+                            <a href="/categories/MYSQL/" class="post-category">
+                                MYSQL
                             </a>
                         
                     </div>
@@ -362,28 +456,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-27
+                    2021-07-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-06
+                    2021-07-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    717
+                    458
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -403,83 +497,57 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Dynamic-programming"><a href="#Dynamic-programming" class="headerlink" title="Dynamic programming"></a>Dynamic programming</h2><p>思想： 优化递归问题，求解子问题得出原问题解</p>
-<h1 id="CPU-控制单元-算法逻辑单元"><a href="#CPU-控制单元-算法逻辑单元" class="headerlink" title="CPU(控制单元+算法逻辑单元)"></a>CPU(控制单元+算法逻辑单元)</h1><ul>
-<li>从程序或应用程序中获取指令并执行计算(RAM(<em>主存</em>)取指，解码实际内容，最后由相关部分执行)</li>
-<li><em>RAM</em> 与CPU直接交换数据的内部存储器，随时读写，速度很快，可作为操作系统或正在运行的程序的临时数据存储介质<h2 id="内部结构"><a href="#内部结构" class="headerlink" title="内部结构"></a>内部结构</h2></li>
-</ul>
-<ul>
-<li>高级语言程序 | 编译后机器语言EXE文件 | 运行时在内存中生成EXE副本 | CPU解释并执行程序</li>
-</ul>
-<ul>
-<li>寄存器 | 控制器 | 运算器 | 时钟  </li>
-</ul>
-<h1 id="统计年鉴及统计公报查询"><a href="#统计年鉴及统计公报查询" class="headerlink" title="统计年鉴及统计公报查询"></a>统计年鉴及统计公报查询</h1><h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><ul>
-<li>gov.cn</li>
-<li>tjj <strong>地级市及以上</strong></li>
-<li>中国统计信息网、县料资情网等相关统计网站  <h2 id="检索"><a href="#检索" class="headerlink" title="检索"></a>检索</h2></li>
-</ul>
-<ul>
-<li>站内检索  </li>
-<li>公开信息中统计信息检索(一般在地级市网站检索)<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2></li>
-</ul>
-<ul>
-<li>县级市往往存在改名现象/由县转为县级市/县区拆分合并情况等情况</li>
-<li>尽量保证同一目录下获取url<h2 id="一点想法"><a href="#一点想法" class="headerlink" title="一点想法"></a>一点想法</h2>爬虫脚本()</li>
-</ul>
-<p>公告公示、统计信息、微信公众号、新浪微博(xx发布、xx统计)</p>
-<ul>
-<li>以地级市为最小单元搭建网站</li>
-<li>只做计划无公报：关于临颍县2019年国民经济和社会发展计划执行情况与2020年国民经济和社会发展计划的报告</li>
-</ul>
-<ul>
-<li>小想法</li>
-</ul>
-<ul>
-<li>维护和更新：<ul>
-<li>定时测试超链接是否有效</li>
-<li>定时从主要来源网站查找最新文件</li>
-</ul>
-</li>
-</ul>
-<h1 id="河北省统计公报情况"><a href="#河北省统计公报情况" class="headerlink" title="河北省统计公报情况"></a>河北省统计公报情况</h1><p>市(信息完整 7/11, 信息不全 4/11, 完全无信息 0/11)<br>区(信息完整 7/49, 信息不全 4/49, 完全无信息 0/49)<br>县级市(信息完整 7/21, 信息不全 4/21, 完全无信息 0/21)<br>县(1/91信息完整 7/91, 信息不全 4/91, 完全无信息 0/91)<br>自治县(1/6信息完整 7/6, 信息不全 4/6, 完全无信息 0/6)</p>
-<p>目前工作安排</p>
-<ul>
-<li>收集省市地区的统计公报</li>
-<li>wiki词条更新</li>
-<li>文件制作<br>工作流程</li>
-</ul>
-<ol>
-<li>查找网站</li>
-<li>url | document</li>
-<li>文件夹 | wiki词条 </li>
-</ol>
-<h1 id="本周工作小节"><a href="#本周工作小节" class="headerlink" title="本周工作小节"></a>本周工作小节</h1><ol>
-<li><p>工作内容</p>
-<ul>
-<li>河北省河南省的统计公报收集工作</li>
-<li>34-46国标小类的关键词抽取整理工作</li>
-<li>总结统计公报收集方法和存在的一些问题，暂时确定后续工作的大致流程</li>
-<li>搭建wiki词条、整理文件</li>
-</ul>
-</li>
-<li><p>后续工作</p>
-<ul>
-<li>其他省份统计公报收集</li>
-<li>统计公报信息的动态可视化的展示</li>
-</ul>
-</li>
-<li><p>一些思考</p>
-<ul>
-<li>数据的更新和维护（地级市以上的地区统计公报比较集中）</li>
+                <h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="二叉树建立索引"><a href="#二叉树建立索引" class="headerlink" title="二叉树建立索引"></a>二叉树建立索引</h2><ol>
+<li>根节点、子节点<ul>
+<li>优点: 降低数据排序成本，降低CPU功耗 </li>
+<li>缺点: 索引也是一张表，占用磁盘；降低更新表的速度  </li>
 </ul>
 </li>
 </ol>
-<pre><code>企业/科创/资本活力
-
-研发热度/地区发展
+<h2 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h2><p><strong>BTREE | HASH | R-tree | Full-text</strong>  </p>
+<ol start="2">
+<li><p>BTREE(m叉)  </p>
+<ul>
+<li>每个节点最多m个子节点  </li>
+<li>除根节点和叶子节点外，至少有<code>ceil(m/2)</code>个子节点  </li>
+<li>所有叶子节点都在同一层  </li>
+<li>每个非叶子节点由<em>n</em>个<em>key</em>和<em>n+1</em>个指针组成，<code>ceil(m/2)+1&lt;= n &lt;= m-1</code><ul>
+<li>查询效率更高，搜索速度更快  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>B+TREE(m叉)  </p>
+<ul>
+<li>最多<em>n</em>个<em>key</em></li>
+<li>叶子节点保存所有<em>key</em>，依<em>key</em>大小排列  </li>
+<li>所有非叶子节点都可以看做<em>key</em>的索引  <ul>
+<li>查询效率更加稳定  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>MYSQL(B+)  </p>
+<ul>
+<li>增加指向相邻叶子节点的链表指针<ul>
+<li>提高区间访问的性能  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h2><p><strong>单值索引: 一个索引对应一列</strong><br><strong>唯一索引: 索引值必须唯一，但允许NULL值</strong><br><strong>复合索引: 一个索引对应多列</strong>  </p>
+<h2 id="索引基本语法"><a href="#索引基本语法" class="headerlink" title="索引基本语法"></a>索引基本语法</h2><p><code>create [unique|fulltext|spatial] index index_name [using index_type] on tbl_name(index_col_name,...)</code><br><strong>主键自带索引</strong>  </p>
+<p><code>show index from tbl_name </code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">	drop index index_name on tbl_name</span><br><span class="line">```  </span><br><span class="line">#### 主键索引|唯一索引|普通索引|全文索引</span><br></pre></td></tr></table></figure>
+<pre><code>alter table tbl_name add primary key(index_col_name)|unique index_name(index_col_anme)|index index_name(index_col_name)|fulltext index_name(index_col_name)
 </code></pre>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 索引建立原则  </span><br><span class="line">1. 查询频次高、数据量大  </span><br><span class="line">2. 从where子句条件中提取  </span><br><span class="line">3. 使用唯一索引，区分度越高，索引使用效率越高  </span><br><span class="line">4. 适量  </span><br><span class="line">5. 短索引,提高I/O访问效率</span><br><span class="line">6. 组合索引  </span><br></pre></td></tr></table></figure>
+<pre><code>    create index idx_name_email_status on tb_seller(name, email, status)
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 视图  </span><br><span class="line">1. 类似单表操作  </span><br><span class="line">2. 安全： 用户只能操作给定权限的表中字段</span><br><span class="line">3. 数据独立  </span><br></pre></td></tr></table></figure>
+create [on repalce] [algorithm = &#123;undefined|merge|template&#125;] view view_name[(col_list)] as select_statement [with [cascaded|local] check option]
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">	drop view if exists view_name</span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -505,7 +573,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://huangziming0830.github.io/2021/06/27/06-27/">https://huangziming0830.github.io/2021/06/27/06-27/</a>
+                    <a href="https://huangziming0830.github.io/2021/07/06/MYSQL-INDEX/">https://huangziming0830.github.io/2021/07/06/MYSQL-INDEX/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,7 +657,7 @@
         repo: 'HuangZiming0830.github.io',
         owner: 'HuangZiming0830',
         admin: "HuangZiming0830",
-        id: '2021-06-27T16-18-37',
+        id: '2021-07-06T19-21-20',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -613,7 +681,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Sun Jun 27 2021 16:18:37 GMT+0800',
+    id: 'Tue Jul 06 2021 19:21:20 GMT+0800',
     owner: 'HuangZiming0830',
     repo: 'HuangZiming0830.github.io',
     oauth: {
@@ -642,17 +710,18 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/05/hello-world/">
+                <a href="/2021/07/06/MYSQL-INDEX/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MYSQL-INDEX">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">MYSQL-INDEX</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -662,16 +731,29 @@ gitment.render('gitment-content');
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-06
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Adam
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/MYSQL/" class="post-category">
+                                    MYSQL
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/blog/">
+                        <span class="chip bg-color">blog</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -683,13 +765,13 @@ gitment.render('gitment-content');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/22/06-22/">
+                <a href="/2021/07/05/0705/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Summer_Plan">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="MYSQL">
                         
-                        <span class="card-title">Summer_Plan</span>
+                        <span class="card-title">MYSQL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -700,16 +782,12 @@ gitment.render('gitment-content');
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/routine/" class="post-category">
-                                    routine
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Adam
                             
                         </span>
                     </div>
@@ -787,6 +865,100 @@ gitment.render('gitment-content');
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 

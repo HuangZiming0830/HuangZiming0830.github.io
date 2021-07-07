@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MYSQL-INDEX</title>
+      <link href="/2021/07/06/MYSQL-INDEX/"/>
+      <url>/2021/07/06/MYSQL-INDEX/</url>
+      
+        <content type="html"><![CDATA[<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="二叉树建立索引"><a href="#二叉树建立索引" class="headerlink" title="二叉树建立索引"></a>二叉树建立索引</h2><ol><li>根节点、子节点<ul><li>优点: 降低数据排序成本，降低CPU功耗 </li><li>缺点: 索引也是一张表，占用磁盘；降低更新表的速度  </li></ul></li></ol><h2 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h2><p><strong>BTREE | HASH | R-tree | Full-text</strong>  </p><ol start="2"><li><p>BTREE(m叉)  </p><ul><li>每个节点最多m个子节点  </li><li>除根节点和叶子节点外，至少有<code>ceil(m/2)</code>个子节点  </li><li>所有叶子节点都在同一层  </li><li>每个非叶子节点由<em>n</em>个<em>key</em>和<em>n+1</em>个指针组成，<code>ceil(m/2)+1&lt;= n &lt;= m-1</code><ul><li>查询效率更高，搜索速度更快  </li></ul></li></ul></li><li><p>B+TREE(m叉)  </p><ul><li>最多<em>n</em>个<em>key</em></li><li>叶子节点保存所有<em>key</em>，依<em>key</em>大小排列  </li><li>所有非叶子节点都可以看做<em>key</em>的索引  <ul><li>查询效率更加稳定  </li></ul></li></ul></li><li><p>MYSQL(B+)  </p><ul><li>增加指向相邻叶子节点的链表指针<ul><li>提高区间访问的性能  </li></ul></li></ul></li></ol><h2 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h2><p><strong>单值索引: 一个索引对应一列</strong><br><strong>唯一索引: 索引值必须唯一，但允许NULL值</strong><br><strong>复合索引: 一个索引对应多列</strong>  </p><h2 id="索引基本语法"><a href="#索引基本语法" class="headerlink" title="索引基本语法"></a>索引基本语法</h2><p><code>create [unique|fulltext|spatial] index index_name [using index_type] on tbl_name(index_col_name,...)</code><br><strong>主键自带索引</strong>  </p><p><code>show index from tbl_name </code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">drop index index_name on tbl_name</span><br><span class="line">```  </span><br><span class="line">#### 主键索引|唯一索引|普通索引|全文索引</span><br></pre></td></tr></table></figure><pre><code>alter table tbl_name add primary key(index_col_name)|unique index_name(index_col_anme)|index index_name(index_col_name)|fulltext index_name(index_col_name)</code></pre><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 索引建立原则  </span><br><span class="line">1. 查询频次高、数据量大  </span><br><span class="line">2. 从where子句条件中提取  </span><br><span class="line">3. 使用唯一索引，区分度越高，索引使用效率越高  </span><br><span class="line">4. 适量  </span><br><span class="line">5. 短索引,提高I/O访问效率</span><br><span class="line">6. 组合索引  </span><br></pre></td></tr></table></figure><pre><code>    create index idx_name_email_status on tb_seller(name, email, status)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 视图  </span><br><span class="line">1. 类似单表操作  </span><br><span class="line">2. 安全： 用户只能操作给定权限的表中字段</span><br><span class="line">3. 数据独立  </span><br></pre></td></tr></table></figure>create [on repalce] [algorithm = &#123;undefined|merge|template&#125;] view view_name[(col_list)] as select_statement [with [cascaded|local] check option]</code></pre><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">drop view if exists view_name</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> MYSQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MYSQL</title>
       <link href="/2021/07/05/0705/"/>
       <url>/2021/07/05/0705/</url>
