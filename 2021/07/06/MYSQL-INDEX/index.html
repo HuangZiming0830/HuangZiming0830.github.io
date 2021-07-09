@@ -463,14 +463,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-07
+                    2021-07-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    458
+                    449
                 </div>
                 
 
@@ -497,8 +497,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><hr>
-<h2 id="二叉树建立索引"><a href="#二叉树建立索引" class="headerlink" title="二叉树建立索引"></a>二叉树建立索引</h2><ol>
+                <h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="二叉树建立索引"><a href="#二叉树建立索引" class="headerlink" title="二叉树建立索引"></a>二叉树建立索引</h2><ol>
 <li>根节点、子节点<ul>
 <li>优点: 降低数据排序成本，降低CPU功耗 </li>
 <li>缺点: 索引也是一张表，占用磁盘；降低更新表的速度  </li>
@@ -538,17 +537,24 @@
 </li>
 </ol>
 <h2 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h2><p><strong>单值索引: 一个索引对应一列</strong><br><strong>唯一索引: 索引值必须唯一，但允许NULL值</strong><br><strong>复合索引: 一个索引对应多列</strong>  </p>
-<h2 id="索引基本语法"><a href="#索引基本语法" class="headerlink" title="索引基本语法"></a>索引基本语法</h2><p><code>create [unique|fulltext|spatial] index index_name [using index_type] on tbl_name(index_col_name,...)</code><br><strong>主键自带索引</strong>  </p>
-<p><code>show index from tbl_name </code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">	drop index index_name on tbl_name</span><br><span class="line">```  </span><br><span class="line">#### 主键索引|唯一索引|普通索引|全文索引</span><br></pre></td></tr></table></figure>
-<pre><code>alter table tbl_name add primary key(index_col_name)|unique index_name(index_col_anme)|index index_name(index_col_name)|fulltext index_name(index_col_name)
+<h2 id="索引基本语法"><a href="#索引基本语法" class="headerlink" title="索引基本语法"></a>索引基本语法</h2><pre><code>`create [unique|fulltext|spatial] index index_name [using index_type] on tbl_name(index_col_name,...)`  
 </code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 索引建立原则  </span><br><span class="line">1. 查询频次高、数据量大  </span><br><span class="line">2. 从where子句条件中提取  </span><br><span class="line">3. 使用唯一索引，区分度越高，索引使用效率越高  </span><br><span class="line">4. 适量  </span><br><span class="line">5. 短索引,提高I/O访问效率</span><br><span class="line">6. 组合索引  </span><br></pre></td></tr></table></figure>
-<pre><code>    create index idx_name_email_status on tb_seller(name, email, status)
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 视图  </span><br><span class="line">1. 类似单表操作  </span><br><span class="line">2. 安全： 用户只能操作给定权限的表中字段</span><br><span class="line">3. 数据独立  </span><br></pre></td></tr></table></figure>
-create [on repalce] [algorithm = &#123;undefined|merge|template&#125;] view view_name[(col_list)] as select_statement [with [cascaded|local] check option]
+<p><strong>主键自带索引</strong>  </p>
+<pre><code>`show index from tbl_name `
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop index index_name on tbl_name</span><br></pre></td></tr></table></figure>
 </code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">	drop view if exists view_name</span><br></pre></td></tr></table></figure>
+<h4 id="主键索引-唯一索引-普通索引-全文索引"><a href="#主键索引-唯一索引-普通索引-全文索引" class="headerlink" title="主键索引|唯一索引|普通索引|全文索引"></a>主键索引|唯一索引|普通索引|全文索引</h4><pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter table tbl_name add primary key(index_col_name)|unique index_name(index_col_anme)|index index_name(index_col_name)|fulltext index_name(index_col_name)</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="索引建立原则"><a href="#索引建立原则" class="headerlink" title="索引建立原则"></a>索引建立原则</h2><ol>
+<li>查询频次高、数据量大  </li>
+<li>从where子句条件中提取  </li>
+<li>使用唯一索引，区分度越高，索引使用效率越高  </li>
+<li>适量  </li>
+<li>短索引,提高I/O访问效率</li>
+<li>组合索引 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">		create index idx_name_email_status on tb_seller(name, email, status)</span><br><span class="line">	```  </span><br><span class="line"></span><br><span class="line"># 视图  </span><br><span class="line">1. 类似单表操作  </span><br><span class="line">2. 安全： 用户只能操作给定权限的表中字段</span><br><span class="line">3. 数据独立</span><br></pre></td></tr></table></figure>
+ create [on repalce] [algorithm = {undefined|merge|template}] view view_name[(col_list)] as select_statement [with [cascaded|local] check option]<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">	drop view if exists view_name</span><br></pre></td></tr></table></figure></li>
+</ol>
+
                 
             </div>
             <hr/>
@@ -709,11 +715,23 @@ create [on repalce] [algorithm = &#123;undefined|merge|template&#125;] view view
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Adam
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/MYSQL/" class="post-category">
+                                    MYSQL
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/blog/">
+                        <span class="chip bg-color">blog</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -996,7 +1014,7 @@ create [on repalce] [algorithm = &#123;undefined|merge|template&#125;] view view
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.5k</span>&nbsp;字
+                class="white-color">3.6k</span>&nbsp;字
             
             
             

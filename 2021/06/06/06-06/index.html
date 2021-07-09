@@ -369,7 +369,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-06
+                    2021-07-09
                 </div>
                 
 
@@ -427,10 +427,8 @@
 </ul>
 </li>
 </ol>
-<h2 id="剪枝处理-避免过拟合"><a href="#剪枝处理-避免过拟合" class="headerlink" title="剪枝处理  避免过拟合"></a>剪枝处理  <em><strong>避免过拟合</strong></em></h2><h3 id="预剪枝"><a href="#预剪枝" class="headerlink" title="预剪枝"></a>预剪枝</h3><pre><code>判断建立子树能否带来模型泛化能力的提升决定是否终止子树  
-</code></pre>
-<h3 id="后剪枝"><a href="#后剪枝" class="headerlink" title="后剪枝"></a>后剪枝</h3><pre><code>从底层向上计算决定是否剪枝  
-</code></pre>
+<h2 id="剪枝处理-避免过拟合"><a href="#剪枝处理-避免过拟合" class="headerlink" title="剪枝处理  避免过拟合"></a>剪枝处理  <em><strong>避免过拟合</strong></em></h2><h3 id="预剪枝"><a href="#预剪枝" class="headerlink" title="预剪枝"></a>预剪枝</h3><p>判断建立子树能否带来模型泛化能力的提升决定是否终止子树  </p>
+<h3 id="后剪枝"><a href="#后剪枝" class="headerlink" title="后剪枝"></a>后剪枝</h3><p>从底层向上计算决定是否剪枝  </p>
 <h1 id="KNN"><a href="#KNN" class="headerlink" title="KNN"></a>KNN</h1><ol>
 <li>曼哈顿距离(城市街区距离)  </li>
 <li>切比雪夫距离(坐标系差值最大值)  </li>
@@ -499,7 +497,7 @@
       test_nfolds_sets[:,i] = clf.predict_proba(x_test)[:,1]
 
   second_level_test_set[:] = test_nfolds_sets.mean(axis = 1)
-  return second_level_train_set, second_level_test_set`  
+  return second_level_train_set, second_level_test_set`
 </code></pre>
 <p>  `train_sets = []<br>  test_sets = []<br>  for clf in [lr, decision_tree, knn, svm, rf]:</p>
 <pre><code>  train_set, test_set = get_Stacking(clf, x_train_arr, y_train_arr, x_test_arr)
@@ -881,7 +879,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.5k</span>&nbsp;字
+                class="white-color">3.6k</span>&nbsp;字
             
             
             

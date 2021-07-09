@@ -429,12 +429,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/blog/">
+                                <span class="chip bg-color">blog</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/MYSQL/" class="post-category">
+                                MYSQL
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -450,14 +463,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-08
+                    2021-07-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    171
+                    160
                 </div>
                 
 
@@ -488,59 +501,27 @@
 <li><p>减少应用程序和内存的交互，提高数据处理效率  </p>
 </li>
 <li><p>创建存储函数  </p>
-<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create procedure precedure_name ([proc_parameter[...]])</span><br><span class="line">begin</span><br><span class="line">	--- SQL Sequence</span><br><span class="line">end;</span><br></pre></td></tr></table></figure>
+<pre><code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">create procedure precedure_name ([proc_parameter[...]])</span><br><span class="line">begin</span><br><span class="line">	 SQL Sequence</span><br><span class="line">end;</span><br></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>分隔符声明  </p>
   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delimiter symbol</span><br></pre></td></tr></table></figure></li>
 <li><p>调用存储过程  </p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">		call procedure_name()</span><br><span class="line">	```  </span><br><span class="line">- 查看存储过程  </span><br></pre></td></tr></table></figure>
-<pre><code>  select name from mysql.proc where db = &#39;db_name&#39;;
-
-  show procedure status;
-
-  show create procedure test.pro_test1 \G ; 
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 删除存储过程  </span><br></pre></td></tr></table></figure>
-<pre><code>  drop procedure prodecure_name
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"># 变量  </span><br><span class="line"></span><br><span class="line">- declear </span><br></pre></td></tr></table></figure>
-<pre><code>  declear var_name[,...] type default default_value;
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- set  </span><br></pre></td></tr></table></figure>
-<pre><code>  set var_name = &#39;var_name&#39;;
-  select var_name;
-
-  select count(*) into var_name from table;
-  select var_name;
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- if</span><br></pre></td></tr></table></figure>
-<pre><code>  if search_condition then statement_list  
-  [elseif search_condition then statement]
-
-  end if;
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 传递函数  </span><br></pre></td></tr></table></figure>
-<pre><code>  create procedure procedure_name([in/out/inout])
-
-  call precedure_name(value, @variable_name)
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">- case  </span><br></pre></td></tr></table></figure>
-<pre><code>  case case_value
-      when when_value then statement_list
-  end case;
-
-  case
-      when search_condition then statement_list
-  end case;
-</code></pre>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- while  </span><br></pre></td></tr></table></figure>
-<pre><code>  while search_condiiton do 
-      statement_list
-  end while;
-</code></pre>
-<p>  ```</p>
-</li>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">call procedure_name()</span><br></pre></td></tr></table></figure></li>
+<li><p>查看存储过程  </p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select name from mysql.proc where db = &#x27;db_name&#x27;;</span><br><span class="line"></span><br><span class="line">show procedure status;</span><br><span class="line"></span><br><span class="line">show create procedure test.pro_test1 \G ; </span><br></pre></td></tr></table></figure></li>
+<li><p>删除存储过程  </p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop procedure prodecure_name</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><ul>
+<li>declear   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">declear var_name[,...] type default default_value;</span><br></pre></td></tr></table></figure></li>
+<li>set    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set var_name = &#x27;var_name&#x27;;</span><br><span class="line">select var_name;</span><br><span class="line"></span><br><span class="line">select count(*) into var_name from table;</span><br><span class="line">select var_name;</span><br></pre></td></tr></table></figure></li>
+<li>if  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if search_condition then statement_list  </span><br><span class="line">[elseif search_condition then statement]</span><br><span class="line"></span><br><span class="line">end if;</span><br></pre></td></tr></table></figure></li>
+<li>传递函数    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create procedure procedure_name([in/out/inout])</span><br><span class="line"></span><br><span class="line">call precedure_name(value, @variable_name)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li>case    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">case case_value</span><br><span class="line">	when when_value then statement_list</span><br><span class="line">end case;</span><br><span class="line"></span><br><span class="line">case</span><br><span class="line">	when search_condition then statement_list</span><br><span class="line">end case;</span><br></pre></td></tr></table></figure></li>
+<li>while    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while search_condiiton do </span><br><span class="line">	statement_list</span><br><span class="line">end while;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
                 
@@ -605,7 +586,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/blog/">
+                                    <span class="chip bg-color">blog</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -674,18 +659,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/07/Procedure/">
+                <a href="/2021/07/09/MYSQL-CONDITION/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Procedure">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MYSQL_CONDITION">
                         
-                        <span class="card-title">Procedure</span>
+                        <span class="card-title">MYSQL_CONDITION</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -695,18 +679,29 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-09
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Adam
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/MYSQL/" class="post-category">
+                                    MYSQL
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/blog/">
+                        <span class="chip bg-color">blog</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -992,7 +987,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.5k</span>&nbsp;字
+                class="white-color">3.6k</span>&nbsp;字
             
             
             
