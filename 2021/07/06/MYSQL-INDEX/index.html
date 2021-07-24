@@ -463,21 +463,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-09
+                    2021-07-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    449
+                    705
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -554,6 +554,33 @@
 <li>组合索引 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">		create index idx_name_email_status on tb_seller(name, email, status)</span><br><span class="line">	```  </span><br><span class="line"></span><br><span class="line"># 视图  </span><br><span class="line">1. 类似单表操作  </span><br><span class="line">2. 安全： 用户只能操作给定权限的表中字段</span><br><span class="line">3. 数据独立</span><br></pre></td></tr></table></figure>
  create [on repalce] [algorithm = {undefined|merge|template}] view view_name[(col_list)] as select_statement [with [cascaded|local] check option]<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">	drop view if exists view_name</span><br></pre></td></tr></table></figure></li>
 </ol>
+<h2 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h2><h3 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h3><ol>
+<li>数字分析法: 数字位数较长 | 存在一定规律 | 指导数字分布情况</li>
+<li>平房取中法: 事先不知道数据 | 数据长度较小</li>
+<li>直接定制法</li>
+<li>折叠法: 分割数字取其和作为地址</li>
+<li>除留余数法<h3 id="考虑因素"><a href="#考虑因素" class="headerlink" title="考虑因素"></a>考虑因素</h3></li>
+</ol>
+<ul>
+<li>计算散列地址所需时间 | 关键字长度 | 表长 | 关键字是否有规律可循 | 减少冲突</li>
+</ul>
+<h3 id="哈希冲突解决方案"><a href="#哈希冲突解决方案" class="headerlink" title="哈希冲突解决方案"></a>哈希冲突解决方案</h3><ol>
+<li>开放定制法: 线性探测再散列 | 平方探测再散列 | 随机探测再散列</li>
+</ol>
+<ul>
+<li>增量完备性: 产生的地址不同 | 能覆盖hash表所有地址</li>
+</ul>
+<ol start="2">
+<li>链地址法: 产生冲突后在存储数据后加指针指向后面冲突数据</li>
+<li>公共溢出区法: 处理数据和冲突较少</li>
+<li>再散列法</li>
+</ol>
+<h3 id="哈希表构建"><a href="#哈希表构建" class="headerlink" title="哈希表构建"></a>哈希表构建</h3><ul>
+<li>选择解决冲突办法 | 装载因子取值范围 | 表长取值范围 | 合适hash函数</li>
+</ul>
+<ul>
+<li>删除时使用不存在数据替代原值(-1)</li>
+</ul>
 
                 
             </div>
@@ -1014,7 +1041,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.3k</span>&nbsp;字
+                class="white-color">4.9k</span>&nbsp;字
             
             
             
@@ -1236,6 +1263,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-gf"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
 </html>
