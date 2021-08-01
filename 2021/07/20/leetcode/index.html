@@ -463,14 +463,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-07-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    10
+                    68
                 </div>
                 
 
@@ -502,7 +502,11 @@
 </ol>
 <p><em>链表</em></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dim = ListNode()</span><br><span class="line">cur.next = ListNode(value)</span><br></pre></td></tr></table></figure>
-<p>3. </p>
+<ol start="3">
+<li>lengthoflongestsubString</li>
+</ol>
+<p><em>滑动窗口</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">from collections import defaultdict</span><br><span class="line">lookup = defaultdict(int)</span><br><span class="line">start = 0</span><br><span class="line">end = 0</span><br><span class="line">max_len = 0</span><br><span class="line">counter = 0</span><br><span class="line">while end &lt; len(s):</span><br><span class="line">	if lookup[s[end]] &gt; 0:</span><br><span class="line">		counter += 1</span><br><span class="line">	lookup[s[end]] += 1</span><br><span class="line">	end += 1</span><br><span class="line">	while counter &gt; 0:</span><br><span class="line">		if lookup[s[start]] &gt; 1:</span><br><span class="line">			counter -= 1</span><br><span class="line">		lookup[s[start]] -= 1</span><br><span class="line">		start += 1</span><br><span class="line">	max_len = max(max_len, end - start)</span><br><span class="line">return max_len</span><br></pre></td></tr></table></figure>
 
                 
             </div>
@@ -951,7 +955,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.9k</span>&nbsp;字
+                class="white-color">6.4k</span>&nbsp;字
             
             
             

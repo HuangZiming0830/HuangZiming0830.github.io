@@ -40,7 +40,7 @@
       <link href="/2021/07/20/leetcode/"/>
       <url>/2021/07/20/leetcode/</url>
       
-        <content type="html"><![CDATA[<ol start="2"><li>addtwonumbers</li></ol><p><em>链表</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dim = ListNode()</span><br><span class="line">cur.next = ListNode(value)</span><br></pre></td></tr></table></figure><p>3. </p>]]></content>
+        <content type="html"><![CDATA[<ol start="2"><li>addtwonumbers</li></ol><p><em>链表</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dim = ListNode()</span><br><span class="line">cur.next = ListNode(value)</span><br></pre></td></tr></table></figure><ol start="3"><li>lengthoflongestsubString</li></ol><p><em>滑动窗口</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">from collections import defaultdict</span><br><span class="line">lookup = defaultdict(int)</span><br><span class="line">start = 0</span><br><span class="line">end = 0</span><br><span class="line">max_len = 0</span><br><span class="line">counter = 0</span><br><span class="line">while end &lt; len(s):</span><br><span class="line">if lookup[s[end]] &gt; 0:</span><br><span class="line">counter += 1</span><br><span class="line">lookup[s[end]] += 1</span><br><span class="line">end += 1</span><br><span class="line">while counter &gt; 0:</span><br><span class="line">if lookup[s[start]] &gt; 1:</span><br><span class="line">counter -= 1</span><br><span class="line">lookup[s[start]] -= 1</span><br><span class="line">start += 1</span><br><span class="line">max_len = max(max_len, end - start)</span><br><span class="line">return max_len</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -65,7 +65,7 @@
       <link href="/2021/07/20/nlp-day1/"/>
       <url>/2021/07/20/nlp-day1/</url>
       
-        <content type="html"><![CDATA[<h1 id="Neural-Language-Processing"><a href="#Neural-Language-Processing" class="headerlink" title="Neural Language Processing"></a>Neural Language Processing</h1><h2 id="Scale"><a href="#Scale" class="headerlink" title="Scale"></a>Scale</h2><ul><li>语义文本相似度分析 | 信息检索 | 信息抽取 | 文本分类 | 文本挖掘(文本收集、文本分析、特征修剪 | 文档聚类 | 文档分类 | 摘要抽取) | textual affective analysis | question answering | machine translation | automatic summerization | speech recognition</li></ul><h2 id="Keypoints"><a href="#Keypoints" class="headerlink" title="Keypoints"></a>Keypoints</h2><ul><li>corpus </li><li>chinese word egmentation*(字符串匹配 | 理解 | 统计)* | jieba/StandfordNLP/HanLP/SnowNLP/THULAC/NLPIR</li><li>part-of-speech tagging</li><li>parsing : 规则 | 统计</li><li>stemming</li><li>lemmatization</li><li>stopwords</li><li>word vector</li><li>Named entity disambiguation</li><li>Named entity recognition</li></ul><h2 id="Feature-Process"><a href="#Feature-Process" class="headerlink" title="Feature Process"></a>Feature Process</h2><ol><li>Feature extraction</li><li>Feature selection</li><li>Dimension reduction</li></ol><h2 id="Model-Selection"><a href="#Model-Selection" class="headerlink" title="Model Selection"></a>Model Selection</h2><ul><li>Markov : 考虑此前语言符号的影响</li><li>CRF</li><li>Bayes</li><li>Maximum entropy</li></ul><h2 id="NLP-Models"><a href="#NLP-Models" class="headerlink" title="NLP Models"></a>NLP Models</h2><ol><li>one-hot representation</li><li>bags of words</li><li>bi-gram | n-gram</li><li>distributed representation</li><li>cocurrence matrix</li><li>NNLM</li><li>word2vec: CBOW | skip-gram</li></ol><h2 id="基于字符串匹配的分词方法"><a href="#基于字符串匹配的分词方法" class="headerlink" title="基于字符串匹配的分词方法"></a>基于字符串匹配的分词方法</h2><ul><li><strong>匹配词典和文字片段</strong></li></ul><ol><li>歧义切分 | 未登录词识别 | 命名实体未识别</li><li>正向/逆向最大匹配 | 最少分词结果 | 全切分后选择路径 | 特征扫描/标志切分</li></ol><h2 id="统计模型的序列标注切分"><a href="#统计模型的序列标注切分" class="headerlink" title="统计模型的序列标注切分"></a>统计模型的序列标注切分</h2><ol><li>HMM <em>根据观测值序列找到真正的隐藏状态值序列</em></li><li>CRF <em>对于给定的输入观测序列和输出序列，定义条件概率来描述模型</em></li></ol><h2 id="深度学习作用"><a href="#深度学习作用" class="headerlink" title="深度学习作用"></a>深度学习作用</h2><ol><li>word2vec: 将词表示为词向量</li><li>seq2seq: 同时考虑上一层输出和上一时刻隐藏层的输出</li></ol><ul><li>归一化逐点互信息(NPMI): 衡量事件紧密程度</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Neural-Language-Processing"><a href="#Neural-Language-Processing" class="headerlink" title="Neural Language Processing"></a>Neural Language Processing</h1><h2 id="Scale"><a href="#Scale" class="headerlink" title="Scale"></a>Scale</h2><ul><li>语义文本相似度分析 | 信息检索 | 信息抽取 | 文本分类 | 文本挖掘(文本收集、文本分析、特征修剪 | 文档聚类 | 文档分类 | 摘要抽取) | textual affective analysis | question answering | machine translation | automatic summerization | speech recognition</li></ul><h2 id="Keypoints"><a href="#Keypoints" class="headerlink" title="Keypoints"></a>Keypoints</h2><ul><li>corpus </li><li>chinese word egmentation*(字符串匹配 | 理解 | 统计)* | jieba/StandfordNLP/HanLP/SnowNLP/THULAC/NLPIR</li><li>part-of-speech tagging</li><li>parsing : 规则 | 统计</li><li>stemming</li><li>lemmatization</li><li>stopwords</li><li>word vector</li><li>Named entity disambiguation</li><li>Named entity recognition</li></ul><h2 id="Feature-Process"><a href="#Feature-Process" class="headerlink" title="Feature Process"></a>Feature Process</h2><ol><li>Feature extraction</li><li>Feature selection</li><li>Dimension reduction</li></ol><h2 id="Model-Selection"><a href="#Model-Selection" class="headerlink" title="Model Selection"></a>Model Selection</h2><ul><li>Markov : 考虑此前语言符号的影响</li><li>CRF</li><li>Bayes</li><li>Maximum entropy</li></ul><h2 id="NLP-Models"><a href="#NLP-Models" class="headerlink" title="NLP Models"></a>NLP Models</h2><ol><li>one-hot representation</li><li>bags of words</li><li>bi-gram | n-gram</li><li>distributed representation</li><li>cocurrence matrix</li><li>NNLM</li><li>word2vec: CBOW | skip-gram</li></ol><h2 id="基于字符串匹配的分词方法"><a href="#基于字符串匹配的分词方法" class="headerlink" title="基于字符串匹配的分词方法"></a>基于字符串匹配的分词方法</h2><ul><li><strong>匹配词典和文字片段</strong></li></ul><ol><li>歧义切分 | 未登录词识别 | 命名实体未识别</li><li>正向/逆向最大匹配 | 最少分词结果 | 全切分后选择路径 | 特征扫描/标志切分</li></ol><h2 id="统计模型的序列标注切分"><a href="#统计模型的序列标注切分" class="headerlink" title="统计模型的序列标注切分"></a>统计模型的序列标注切分</h2><ol><li>HMM <em>根据观测值序列找到真正的隐藏状态值序列</em></li><li>CRF <em>对于给定的输入观测序列和输出序列，定义条件概率来描述模型</em></li></ol><h2 id="深度学习作用"><a href="#深度学习作用" class="headerlink" title="深度学习作用"></a>深度学习作用</h2><ol><li>word2vec: 将词表示为词向量</li><li>seq2seq: 同时考虑上一层输出和上一时刻隐藏层的输出</li></ol><h2 id="Word-Embedding"><a href="#Word-Embedding" class="headerlink" title="Word Embedding"></a>Word Embedding</h2><ul><li>One-hot vectors<h3 id="基于计数的方法"><a href="#基于计数的方法" class="headerlink" title="基于计数的方法"></a>基于计数的方法</h3></li><li>共现计数</li><li>PPMI(正逐点互信息)</li><li>LSA(潜在语义分析)<h3 id="Word2Vec"><a href="#Word2Vec" class="headerlink" title="Word2Vec"></a>Word2Vec</h3></li><li>获取文本语料库 | 滑动窗口单次移动单个字符 | 计算上下文词的概率 | 调整向量以增加概率(负对数似然、softmax、梯度下降)</li><li>负采样加快更新时间和训练速度<h3 id="Skip-Gram-根据中心词预测上下文词"><a href="#Skip-Gram-根据中心词预测上下文词" class="headerlink" title="Skip-Gram(根据中心词预测上下文词)"></a>Skip-Gram(根据中心词预测上下文词)</h3><h3 id="CBOW-从上下文向量的总和预测中心词"><a href="#CBOW-从上下文向量的总和预测中心词" class="headerlink" title="CBOW(从上下文向量的总和预测中心词)"></a>CBOW(从上下文向量的总和预测中心词)</h3></li></ul><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://arxiv.org/pdf/1411.2738.pdf">Word2Vec Parameter Learning Explained</a><br><a href="https://lena-voita.github.io/nlp_course/word_embeddings.html">nlp_course</a></p>]]></content>
       
       
       <categories>
@@ -74,6 +74,31 @@
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>leetcode-python</title>
+      <link href="/2021/07/20/java_data_structure/"/>
+      <url>/2021/07/20/java_data_structure/</url>
+      
+        <content type="html"><![CDATA[<p>#Java 数据结构</p><h2 id="软件工程原则"><a href="#软件工程原则" class="headerlink" title="软件工程原则"></a>软件工程原则</h2><ol><li>小规模编程 ： 准确性、灵活性</li><li>结构化编程 ： 自顶向下编程</li><li>大规模编程 ： 考虑寿命较长的大型软件系统组织原则以及建造系统所需的大规模人力的组织方法</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
       
     </entry>
     
@@ -243,6 +268,31 @@
     
     
     <entry>
+      <title>java</title>
+      <link href="/2021/07/07/java/"/>
+      <url>/2021/07/07/java/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Chapter-1-基础"><a href="#Chapter-1-基础" class="headerlink" title="Chapter 1 基础"></a>Chapter 1 基础</h1><ul><li>软驱： A\B盘<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2></li></ul><p><img src="/img/1.png"></p><h3 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h3><p>/**\ */ 可被javadoc解析</p><h3 id="API-application-programming-interface"><a href="#API-application-programming-interface" class="headerlink" title="API(application programming interface)"></a>API(application programming interface)</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>print 只输出 | println 输出换行<br><code>system.out.println(&quot; &quot; + name)</code></p><ul><li>JDK = JDE + java开发工具 = JVM + java核心类库 + java开发工具</li><li>public class filename</li><li>Math.random()</li><li>应用程序 = 算法 + 数据结构</li><li>string .equals()</li><li>Arrays.toString() | Arrays.fill()</li></ul><h3 id="java语言特点"><a href="#java语言特点" class="headerlink" title="java语言特点"></a>java语言特点</h3><ul><li>两个要素(类、对象)</li><li>三个特征(封装、继承、多态)</li><li>跨平台性、健壮性</li></ul><h1 id="Chapter-2-语法"><a href="#Chapter-2-语法" class="headerlink" title="Chapter 2 语法"></a>Chapter 2 语法</h1><ul><li>reserved word: goto, const<h2 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h2></li><li>包名:小写 | 类名、接口名: 首字母大写 |  变量名、方法名: 第二个单词开始首字母大写 | 常量名: 所有字母大写，下划线连接单词</li></ul><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul><li>先声明后使用</li><li>作用域为{}内</li><li>基本数据类型: 整数类型: byte, short, int, long | 浮点类型: float. double | 布尔型: booleaan</li><li>引用数据类型: 类: class | 接口: interface | 数组: []</li><li>成员变量: 方法体外类体内声明(实例变量: 不以static修饰 | 类变量: 以static修饰)</li><li>局部变量: 方法体内声明(形参: 方法、构造器中定义的变量 | 方法局部变量 | 代码块局部变量) <strong>除形参外均需显式初始化</strong></li><li>JAVA默认int、double类型</li><li>不能使用0或者非0整数替代false/true, 且无null    </li><li>char只能定义一个字符</li><li>自动类型转换至少用int类型接受</li><li>强制类型转换: 可能损失精度</li></ul><h2 id="运算符-不改变变量类型"><a href="#运算符-不改变变量类型" class="headerlink" title="运算符(不改变变量类型)"></a>运算符(不改变变量类型)</h2><ul><li>算法 <em>++自增前|自增后(赋值与运算的优先级判断)</em></li><li>赋值 | 比较 | 关系 </li><li>逻辑(布尔值) 短路与或非: <strong>&amp;&amp; | ||</strong> 通过左侧可判断运算结果时不执行右侧</li><li>位 | 三元 运算符</li></ul><h2 id="程序流程控制"><a href="#程序流程控制" class="headerlink" title="程序流程控制"></a>程序流程控制</h2><ul><li>case子句中必须是常量</li><li>switch case break default</li><li>for(int i=1; i&lt;= 100; i++){}</li><li>break label 指定跳出标签循环</li></ul><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul><li>声明: type var[] | type[] var  声明时不能指定长度，但可以直接赋值初始化  type[] var = new type[length] | type[]{var1,var2}<br>  初始化分配空间后每个元素按照成员变量隐式初始化</li><li>排序: 内部排序(内存中完成) | 外部排序(借助于外部存储器)</li><li>冒泡排序: 比较相邻元素并交换符合条件</li><li>快速排序: <em>交换排序的一种，采用分治法的思想， 时间复杂度O(nlog(n))</em> 分区+递归排序</li><li>do while 至少执行一次</li><li>有序排列、长度不可修改、数组名占用首地址</li><li>角标从0到-1</li><li>一维数组元素默认隐式初始化(引用数据类型默认初始化为null)</li><li>二维数组动态初始化 <code>type[][] var | [] var[] =  new type[len1][len2] | type[][] var = new type[len][]</code><br>静态初始化 <code>type[][] var = new type[][]&#123;&#123;&#125;,&#123;&#125;,&#123;&#125;&#125;;</code></li><li>数组赋值只是地址变化，修改元素值时所有数组均改变</li></ul><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><ol><li>类： 对一类事物的描述。抽象概念</li><li>对象： 实在的事物个体</li></ol><ul><li><p>设计类的成员方法</p><ul><li>属性、方法</li></ul></li><li><p>创建类， 设计类的成员</p></li><li><p>创建类的对象</p></li><li><p>通过对象.属性或对象.方法调用</p></li><li><p>每个对象独立拥有一套类的属性（非static)</p></li><li><p>局部变量： 声明在构造器形参、构造器内部、代码块、方法形参、方法内的变量 | 没有初始化值 形参可以调用时赋值</p></li></ul><ul><li>属性：权限修饰符 private, public, protected, 缺省</li></ul><ul><li>方法没有返回值要用return只能return；</li><li>匿名对象</li><li>方法重载： 同类同方法 | 参数个数、类型、位置不同</li><li>可变形参： (… type) | 与相同格式数组形参不构成重载 | 必须定义在形参末尾且只能有一个</li><li>参数是基本数据类型，传递的是实际数据值 | 引用数据类型，传递的是地址    （字符传递的还是值）</li><li>递归： 方法体内自我调用 | 朝已知方向递归（含变量的数据类型）</li><li>赋值： 受数据类型和存储范围的制约 | 私有化后应该设置修改和调用方法</li><li>高内聚低耦合</li><li>封装性： 单例模式（将构造器私有化）| 不对外暴露私有的方法 | 设置缺省类避免包外调用 | private set get</li><li>构造器： 构造对象 | 没有显式的定义类的构造器 系统默认提供空参构造器</li><li>Javabean: 类是公共的 | 一个无参的公共的构造器 |  属性及对应的set get 方法</li><li>同名就近原则 | this调用属性、构造器和方法  处理同名 | 调用构造器时this()必须在首行</li><li>package 声明类或者接口使用的包，声明在源文件的首行</li><li>Model View Control</li><li>import xxx.* 导入包下所有结构（不包括子包） | 全类名的方法导入不同包下的同名类</li></ul><ul><li>堆： 存放对象实例 | 栈： （虚拟机栈） 存储局部变量 | 方法区： 已被虚拟机加载的类信息、常量、静态变量即时编译器编译后的代码</li></ul><p><img src="/img/2.png" alt="排序"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MYSQL-INDEX</title>
       <link href="/2021/07/06/MYSQL-INDEX/"/>
       <url>/2021/07/06/MYSQL-INDEX/</url>
@@ -392,25 +442,6 @@
         <tags>
             
             <tag> blog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>java</title>
-      <link href="/2021/06/07/java/"/>
-      <url>/2021/06/07/java/</url>
-      
-        <content type="html"><![CDATA[<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><ul><li>软驱： A\B盘<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2></li></ul><p><img src="/img/1.png"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> java </tag>
             
         </tags>
       
