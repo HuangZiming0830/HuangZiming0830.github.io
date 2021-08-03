@@ -369,21 +369,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-01
+                    2021-08-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -503,6 +503,19 @@
 <li>package 声明类或者接口使用的包，声明在源文件的首行</li>
 <li>Model View Control</li>
 <li>import xxx.* 导入包下所有结构（不包括子包） | 全类名的方法导入不同包下的同名类</li>
+</ul>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><ul>
+<li>class A extends B 子类 父类 | 一个子类只能有一个父类（单继承）</li>
+<li>减少冗余 提高复用性 | 便于功能拓展 </li>
+<li>重写： 子类覆盖父类同名同参数列表的方法 | 子类权限修饰符不低于父类权限修饰符 | 子类不能重写父类private权限方法 | 子类重写的方法的返回值只能是父类被重写方法的返回值类型或器子类 | 子类重写的方法抛出的异常类型不大于父类抛出的异常类型 | static不能重写 | 属性不会被覆盖</li>
+<li>super关键字调用父类功能 | 调用父类中指定的构造器 super(形参列表) | super（形参列表） this(形参列表) 构造器中只能用一个 | 构造器首行没有声明默认调用父类的空参构造器super()</li>
+</ul>
+<h2 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h2><ul>
+<li>父类的引用指向子类的对象</li>
+<li>虚拟方法调用：调用子父类同名同参数的方法时，实际执行的是子类重写的方法 </li>
+<li>编译期只能调用父类声明的方法，执行期实际执行子类重写的方法</li>
+<li>对象的多态性只适用于方法，不适用于属性</li>
+<li>重写： 动态绑定 | 重载： 静态绑定</li>
 </ul>
 <ul>
 <li>堆： 存放对象实例 | 栈： （虚拟机栈） 存储局部变量 | 方法区： 已被虚拟机加载的类信息、常量、静态变量即时编译器编译后的代码</li>
@@ -879,7 +892,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.4k</span>&nbsp;字
+                class="white-color">6.7k</span>&nbsp;字
             
             
             
@@ -1101,6 +1114,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-gf"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
 </html>
