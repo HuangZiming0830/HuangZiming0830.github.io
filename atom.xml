@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Adam&#39;s Blog</title>
+  
+  <subtitle>Summer_Log</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="Https://Adam.com/"/>
+  <updated>2022-08-05T12:09:17.370Z</updated>
+  <id>Https://Adam.com/</id>
+  
+  <author>
+    <name>Adam</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>daily</title>
+    <link href="Https://Adam.com/2022/08/05/0805/"/>
+    <id>Https://Adam.com/2022/08/05/0805/</id>
+    <published>2022-08-05T08:48:56.000Z</published>
+    <updated>2022-08-05T12:09:17.370Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pytorch&quot;&gt;&lt;a href=&quot;#Pytorch&quot; class=&quot;headerlink&quot; title=&quot;Pytorch&quot;&gt;&lt;/a&gt;Pytorch&lt;/h1&gt;&lt;h2 id=&quot;Model&quot;&gt;&lt;a href=&quot;#Model&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>daily</title>
+    <link href="Https://Adam.com/2022/07/26/0730/"/>
+    <id>Https://Adam.com/2022/07/26/0730/</id>
+    <published>2022-07-26T08:48:56.000Z</published>
+    <updated>2022-07-30T09:25:36.704Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h1&gt;&lt;h2 id=&quot;Tips&quot;&gt;&lt;a href=&quot;#Tips&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>daily</title>
+    <link href="Https://Adam.com/2022/07/20/0401/"/>
+    <id>Https://Adam.com/2022/07/20/0401/</id>
+    <published>2022-07-20T08:48:56.000Z</published>
+    <updated>2022-07-25T09:01:19.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>space_titanic</title>
+    <link href="Https://Adam.com/2022/06/30/space-titanic/"/>
+    <id>Https://Adam.com/2022/06/30/space-titanic/</id>
+    <published>2022-06-30T08:48:56.000Z</published>
+    <updated>2022-06-30T08:48:56.070Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Pose_estimation_log</title>
+    <link href="Https://Adam.com/2022/05/29/pose-estimation-log/"/>
+    <id>Https://Adam.com/2022/05/29/pose-estimation-log/</id>
+    <published>2022-05-29T07:17:15.000Z</published>
+    <updated>2022-07-08T09:08:27.414Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Daily-Log-for-Pose-Estimation&quot;&gt;&lt;a href=&quot;#Daily-Log-for-Pose-Estimation&quot; class=&quot;headerlink&quot; title=&quot;Daily Log for Pose
+        
+      
+    
+    </summary>
+    
+      <category term="Log" scheme="Https://Adam.com/categories/Log/"/>
+    
+    
+      <category term="Pose_estimation" scheme="Https://Adam.com/tags/Pose-estimation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Article_Exposure</title>
+    <link href="Https://Adam.com/2022/05/27/article-exposure/"/>
+    <id>Https://Adam.com/2022/05/27/article-exposure/</id>
+    <published>2022-05-27T00:54:07.000Z</published>
+    <updated>2022-05-27T00:54:07.841Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pytorch_base</title>
+    <link href="Https://Adam.com/2022/05/26/pytorch-base/"/>
+    <id>Https://Adam.com/2022/05/26/pytorch-base/</id>
+    <published>2022-05-26T06:17:53.000Z</published>
+    <updated>2022-07-29T08:56:03.511Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;natural-languare-processing&quot;&gt;&lt;a href=&quot;#natural-languare-processing&quot; class=&quot;headerlink&quot; title=&quot;natural languare
+        
+      
+    
+    </summary>
+    
+      <category term="pytorch" scheme="Https://Adam.com/categories/pytorch/"/>
+    
+    
+      <category term="NLP" scheme="Https://Adam.com/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="Https://Adam.com/2022/05/20/rethinking-of-pe/"/>
+    <id>Https://Adam.com/2022/05/20/rethinking-of-pe/</id>
+    <published>2022-05-20T07:35:51.765Z</published>
+    <updated>2022-05-29T07:15:37.280Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;synthetic image – proposals – bbox – &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;image_features&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;patches with content(especially edges) have higher
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="Https://Adam.com/2022/04/01/articles/"/>
+    <id>Https://Adam.com/2022/04/01/articles/</id>
+    <published>2022-04-01T06:43:36.538Z</published>
+    <updated>2022-04-01T06:43:36.538Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="Https://Adam.com/2022/04/01/gan-articles/"/>
+    <id>Https://Adam.com/2022/04/01/gan-articles/</id>
+    <published>2022-04-01T02:26:40.146Z</published>
+    <updated>2022-05-29T07:15:29.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GAN</title>
+    <link href="Https://Adam.com/2022/03/19/gan/"/>
+    <id>Https://Adam.com/2022/03/19/gan/</id>
+    <published>2022-03-19T11:25:05.000Z</published>
+    <updated>2022-03-19T11:25:05.388Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5W2H | 关于写博客的七点反思</title>
+    <link href="Https://Adam.com/2020/01/14/5w2h-godweiyang/"/>
+    <id>Https://Adam.com/2020/01/14/5w2h-godweiyang/</id>
+    <published>2020-01-14T07:27:31.000Z</published>
+    <updated>2021-06-03T07:33:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;When？什么时候开始写的？&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="Https://Adam.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="博客" scheme="Https://Adam.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
