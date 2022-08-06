@@ -47,7 +47,7 @@
       <link href="/2022/06/30/space-titanic/"/>
       <url>/2022/06/30/space-titanic/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="重新学习特征提取"><a href="#重新学习特征提取" class="headerlink" title="重新学习特征提取"></a>重新学习特征提取</h3><h4 id="Kaggle-Spaceship-Titanic"><a href="#Kaggle-Spaceship-Titanic" class="headerlink" title="Kaggle-Spaceship Titanic"></a>Kaggle-Spaceship Titanic</h4><ol><li><p>Data Statistics</p><ul><li>passengerId: unique ID. Format gggg_pp. gggg indicates passengers travel with same group</li><li>HomePlanet: discrete noun. can be replaced by digits.</li><li>CryoSleep: bool value. seems relevent to final result.</li><li>Cabin: deck/num/side. seems relevent to final result. need further discussion</li><li>Destination: like HomePlanet.</li><li>Age: discrete digits. can be assembled as bins.</li><li>VIP: bool value.</li><li>RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: bill amount. process as Age.</li><li>Name: no use.</li><li>Transported: final results.</li></ul></li><li><p>Data Preprocess</p><ul><li>null value | error value :<br>mean, zero, etc depends on circumstance</li></ul></li><li><p>Model Training Strategy</p><ul><li>Decision Tree | RandomForest | KNN Classifier</li><li>K-Folder crossover</li></ul></li></ol>]]></content>
       
       
       
