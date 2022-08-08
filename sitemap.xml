@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>Https://Adam.com/2022/07/26/python-skills-plus/</loc>
+    
+    <lastmod>2022-08-08T11:40:23.488Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://Adam.com/2022/08/05/dl-model-training/</loc>
+    
+    <lastmod>2022-08-08T11:38:41.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://Adam.com/2022/04/01/python-skills/</loc>
+    
+    <lastmod>2022-08-08T08:15:23.194Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>Https://Adam.com/2022/08/06/tutorial-for-online-training/</loc>
     
     <lastmod>2022-08-06T06:57:35.019Z</lastmod>
@@ -37,30 +58,9 @@
   </url>
   
   <url>
-    <loc>Https://Adam.com/2022/08/05/0805/</loc>
-    
-    <lastmod>2022-08-05T12:09:17.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://Adam.com/2022/07/26/0730/</loc>
-    
-    <lastmod>2022-07-30T09:25:36.704Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>Https://Adam.com/2022/05/26/pytorch-base/</loc>
     
     <lastmod>2022-07-29T08:56:03.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://Adam.com/2022/07/20/0401/</loc>
-    
-    <lastmod>2022-07-25T09:01:19.831Z</lastmod>
     
   </url>
   
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>Https://Adam.com/categories/index.html</loc>
+    <loc>Https://Adam.com/archives/index.html</loc>
     
     <lastmod>2021-06-03T07:33:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>Https://Adam.com/archives/index.html</loc>
+    <loc>Https://Adam.com/categories/index.html</loc>
     
     <lastmod>2021-06-03T07:33:16.000Z</lastmod>
     

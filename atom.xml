@@ -31,11 +31,11 @@
   </entry>
   
   <entry>
-    <title>daily</title>
-    <link href="Https://Adam.com/2022/08/05/0805/"/>
-    <id>Https://Adam.com/2022/08/05/0805/</id>
+    <title>DL_Model_Training</title>
+    <link href="Https://Adam.com/2022/08/05/dl-model-training/"/>
+    <id>Https://Adam.com/2022/08/05/dl-model-training/</id>
     <published>2022-08-05T08:48:56.000Z</published>
-    <updated>2022-08-05T12:09:17.370Z</updated>
+    <updated>2022-08-08T11:38:41.357Z</updated>
     
     <summary type="html">
     
@@ -49,15 +49,19 @@
     
     </summary>
     
+      <category term="DL" scheme="Https://Adam.com/categories/DL/"/>
+    
+    
+      <category term="Model Training" scheme="Https://Adam.com/tags/Model-Training/"/>
     
   </entry>
   
   <entry>
-    <title>daily</title>
-    <link href="Https://Adam.com/2022/07/26/0730/"/>
-    <id>Https://Adam.com/2022/07/26/0730/</id>
+    <title>Python_Skills_Plus</title>
+    <link href="Https://Adam.com/2022/07/26/python-skills-plus/"/>
+    <id>Https://Adam.com/2022/07/26/python-skills-plus/</id>
     <published>2022-07-26T08:48:56.000Z</published>
-    <updated>2022-07-30T09:25:36.704Z</updated>
+    <updated>2022-08-08T11:40:23.488Z</updated>
     
     <summary type="html">
     
@@ -71,28 +75,10 @@
     
     </summary>
     
+      <category term="Python" scheme="Https://Adam.com/categories/Python/"/>
     
-  </entry>
-  
-  <entry>
-    <title>daily</title>
-    <link href="Https://Adam.com/2022/07/20/0401/"/>
-    <id>Https://Adam.com/2022/07/20/0401/</id>
-    <published>2022-07-20T08:48:56.000Z</published>
-    <updated>2022-07-25T09:01:19.831Z</updated>
     
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
+      <category term="Functions" scheme="Https://Adam.com/tags/Functions/"/>
     
   </entry>
   
@@ -207,6 +193,32 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>Python_Skills</title>
+    <link href="Https://Adam.com/2022/04/01/python-skills/"/>
+    <id>Https://Adam.com/2022/04/01/python-skills/</id>
+    <published>2022-04-01T06:57:35.000Z</published>
+    <updated>2022-08-08T08:15:23.194Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="Https://Adam.com/categories/Python/"/>
+    
+    
+      <category term="Functions" scheme="Https://Adam.com/tags/Functions/"/>
     
   </entry>
   
