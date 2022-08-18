@@ -60,9 +60,21 @@
       <link href="/2022/08/06/tutorial-for-online-training/"/>
       <url>/2022/08/06/tutorial-for-online-training/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="GPU-Online-Training-Tutorial"><a href="#GPU-Online-Training-Tutorial" class="headerlink" title="GPU Online Training Tutorial"></a>GPU Online Training Tutorial</h1><h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><ol><li>upload dataset and scripts by oss<pre class="line-numbers language-python"><code class="language-python"> oss login cp G<span class="token punctuation">:</span><span class="token operator">//</span>Datasets<span class="token operator">/</span>speedplus<span class="token punctuation">.</span>zip oss<span class="token punctuation">:</span><span class="token operator">//</span>datasets<span class="token operator">/</span> cp G<span class="token punctuation">:</span><span class="token operator">//</span>CodeSpace<span class="token operator">/</span>KE<span class="token punctuation">.</span>zip oss<span class="token punctuation">:</span><span class="token operator">//</span>datasets<span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li>upzip datasets &amp; project<pre class="line-numbers language-python"><code class="language-python"> oss cp oss<span class="token punctuation">:</span><span class="token operator">//</span>datasets<span class="token operator">/</span><span class="token punctuation">.</span><span class="token operator">*</span>zip <span class="token operator">/</span>hy<span class="token operator">-</span>tmp<span class="token operator">/</span> ls <span class="token operator">/</span>hy<span class="token operator">-</span>tmp<span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li>install necessary dependancies <pre class="line-numbers language-python"><code class="language-python"> pip install <span class="token operator">-</span>r requirements<span class="token punctuation">.</span>txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="Training"><a href="#Training" class="headerlink" title="Training"></a>Training</h2><pre class="line-numbers language-python"><code class="language-python"> bash trainf1<span class="token punctuation">.</span>sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> DL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GPU Training </tag>
+            
+        </tags>
       
     </entry>
     
