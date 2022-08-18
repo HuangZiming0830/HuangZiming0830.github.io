@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://Adam.com/"/>
-  <updated>2022-08-06T06:57:35.019Z</updated>
+  <updated>2022-08-18T03:03:54.764Z</updated>
   <id>Https://Adam.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pose_Estimation</title>
+    <link href="Https://Adam.com/2022/08/18/pose-estimation/"/>
+    <id>Https://Adam.com/2022/08/18/pose-estimation/</id>
+    <published>2022-08-18T01:17:46.000Z</published>
+    <updated>2022-08-18T03:03:54.764Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;0818&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;strengthen the difference between keypoints&lt;br&gt; The problem why sometimes the model’s output
+        
+      
+    
+    </summary>
+    
+      <category term="Study" scheme="Https://Adam.com/categories/Study/"/>
+    
+    
+      <category term="Pose_Estimation" scheme="Https://Adam.com/tags/Pose-Estimation/"/>
+    
+  </entry>
   
   <entry>
     <title>Tutorial for online training</title>
