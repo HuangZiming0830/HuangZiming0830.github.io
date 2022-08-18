@@ -8,7 +8,7 @@
       <link href="/2022/08/18/pose-estimation/"/>
       <url>/2022/08/18/pose-estimation/</url>
       
-        <content type="html"><![CDATA[<p><strong>0818</strong></p><ol><li><p>strengthen the difference between keypoints<br> The problem why sometimes the model’s output mismatched is due to the weak feature learned for each keypoints.</p><p> And it comes to the dillima. We seem to enhance the feature difference by adding the texture which is indeed the thing we try to avoid by style transfer</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<p><strong>0818</strong></p><ol><li><p>strengthen the difference between keypoints<br> The problem why sometimes the model’s output mismatched is due to the weak feature learned for each keypoints.</p><p> And it comes to the dillima. We seem to enhance the feature difference by adding the texture which is indeed the thing we try to avoid by style transfer</p></li><li><p>strange observation<br> The Grammar correction in chrome limit the utterance comment to be one character input:D</p></li></ol>]]></content>
       
       
       <categories>
