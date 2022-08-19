@@ -2,51 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>Https://huangziming0830.github.io/2022/06/30/space-titanic/</loc>
+    
+    <lastmod>2022-08-19T11:32:56.231Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/</loc>
     
-    <lastmod>2022-08-18T11:22:08.377Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/08/18/selenium/</loc>
-    
-    <lastmod>2022-08-18T09:03:23.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</loc>
-    
-    <lastmod>2022-08-18T03:58:53.604Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</loc>
-    
-    <lastmod>2022-08-08T11:40:23.488Z</lastmod>
+    <lastmod>2022-08-19T11:31:43.427Z</lastmod>
     
   </url>
   
   <url>
     <loc>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</loc>
     
-    <lastmod>2022-08-08T11:38:41.357Z</lastmod>
+    <lastmod>2022-08-19T11:31:06.868Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/08/18/selenium/</loc>
+    
+    <lastmod>2022-08-19T11:30:28.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/05/26/pytorch-base/</loc>
+    
+    <lastmod>2022-08-19T11:29:07.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/08/18/gan-articles/</loc>
+    
+    <lastmod>2022-08-19T11:27:51.571Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</loc>
+    
+    <lastmod>2022-08-19T11:26:52.045Z</lastmod>
     
   </url>
   
   <url>
     <loc>Https://huangziming0830.github.io/2022/04/01/python-skills/</loc>
     
-    <lastmod>2022-08-08T08:15:23.194Z</lastmod>
+    <lastmod>2022-08-19T11:25:52.006Z</lastmod>
     
   </url>
   
   <url>
-    <loc>Https://huangziming0830.github.io/2022/06/30/space-titanic/</loc>
+    <loc>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</loc>
     
-    <lastmod>2022-08-06T02:23:17.744Z</lastmod>
+    <lastmod>2022-08-19T11:17:44.724Z</lastmod>
     
   </url>
   
@@ -68,55 +82,6 @@
     <loc>Https://huangziming0830.github.io/about/index.html</loc>
     
     <lastmod>2022-08-06T02:17:26.719Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/05/26/pytorch-base/</loc>
-    
-    <lastmod>2022-07-29T08:56:03.511Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/05/29/pose-estimation-log/</loc>
-    
-    <lastmod>2022-07-08T09:08:27.414Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/05/20/rethinking-of-pe/</loc>
-    
-    <lastmod>2022-05-29T07:15:37.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/04/01/gan-articles/</loc>
-    
-    <lastmod>2022-05-29T07:15:29.171Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/05/27/article-exposure/</loc>
-    
-    <lastmod>2022-05-27T00:54:07.841Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/04/01/articles/</loc>
-    
-    <lastmod>2022-04-01T06:43:36.538Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/03/19/gan/</loc>
-    
-    <lastmod>2022-03-19T11:25:05.388Z</lastmod>
     
   </url>
   

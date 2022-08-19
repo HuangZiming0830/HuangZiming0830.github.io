@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-08-18T09:03:23.226Z</updated>
+  <updated>2022-08-19T11:30:28.731Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/18/selenium/"/>
     <id>Https://huangziming0830.github.io/2022/08/18/selenium/</id>
     <published>2022-08-18T08:14:24.000Z</published>
-    <updated>2022-08-18T09:03:23.226Z</updated>
+    <updated>2022-08-19T11:30:28.731Z</updated>
     
     <summary type="html">
     
@@ -38,9 +38,35 @@
       <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
     
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
+    
       <category term="Scrapy" scheme="Https://huangziming0830.github.io/tags/Scrapy/"/>
     
-      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
+  </entry>
+  
+  <entry>
+    <title>GAN_articles</title>
+    <link href="Https://huangziming0830.github.io/2022/08/18/gan-articles/"/>
+    <id>Https://huangziming0830.github.io/2022/08/18/gan-articles/</id>
+    <published>2022-08-18T01:17:46.000Z</published>
+    <updated>2022-08-19T11:27:51.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
+    
+    
+      <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
     
   </entry>
   
@@ -49,7 +75,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/18/pose-estimation/"/>
     <id>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</id>
     <published>2022-08-18T01:17:46.000Z</published>
-    <updated>2022-08-18T03:58:53.604Z</updated>
+    <updated>2022-08-19T11:26:52.045Z</updated>
     
     <summary type="html">
     
@@ -77,7 +103,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/"/>
     <id>Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/</id>
     <published>2022-08-06T06:57:35.000Z</published>
-    <updated>2022-08-18T11:22:08.377Z</updated>
+    <updated>2022-08-19T11:31:43.427Z</updated>
     
     <summary type="html">
     
@@ -91,10 +117,12 @@
     
     </summary>
     
-      <category term="DL" scheme="Https://huangziming0830.github.io/categories/DL/"/>
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
     
       <category term="GPU Training" scheme="Https://huangziming0830.github.io/tags/GPU-Training/"/>
+    
+      <category term="DL" scheme="Https://huangziming0830.github.io/tags/DL/"/>
     
   </entry>
   
@@ -103,7 +131,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/05/dl-model-training/"/>
     <id>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</id>
     <published>2022-08-05T08:48:56.000Z</published>
-    <updated>2022-08-08T11:38:41.357Z</updated>
+    <updated>2022-08-19T11:31:06.868Z</updated>
     
     <summary type="html">
     
@@ -117,10 +145,12 @@
     
     </summary>
     
-      <category term="DL" scheme="Https://huangziming0830.github.io/categories/DL/"/>
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
     
       <category term="Model Training" scheme="Https://huangziming0830.github.io/tags/Model-Training/"/>
+    
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
   </entry>
   
@@ -129,7 +159,7 @@
     <link href="Https://huangziming0830.github.io/2022/07/26/python-skills-plus/"/>
     <id>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</id>
     <published>2022-07-26T08:48:56.000Z</published>
-    <updated>2022-08-08T11:40:23.488Z</updated>
+    <updated>2022-08-19T11:17:44.724Z</updated>
     
     <summary type="html">
     
@@ -143,8 +173,10 @@
     
     </summary>
     
-      <category term="Python" scheme="Https://huangziming0830.github.io/categories/Python/"/>
+      <category term="Techonology" scheme="Https://huangziming0830.github.io/categories/Techonology/"/>
     
+    
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
       <category term="Functions" scheme="Https://huangziming0830.github.io/tags/Functions/"/>
     
@@ -155,7 +187,7 @@
     <link href="Https://huangziming0830.github.io/2022/06/30/space-titanic/"/>
     <id>Https://huangziming0830.github.io/2022/06/30/space-titanic/</id>
     <published>2022-06-30T08:48:56.000Z</published>
-    <updated>2022-08-06T02:23:17.744Z</updated>
+    <updated>2022-08-19T11:32:56.231Z</updated>
     
     <summary type="html">
     
@@ -163,52 +195,19 @@
       
         
         
-          &lt;h3 id=&quot;重新学习特征提取&quot;&gt;&lt;a href=&quot;#重新学习特征提取&quot; class=&quot;headerlink&quot; title=&quot;重新学习特征提取&quot;&gt;&lt;/a&gt;重新学习特征提取&lt;/h3&gt;&lt;h4 id=&quot;Kaggle-Spaceship-Titanic&quot;&gt;&lt;a
+          &lt;hr&gt;
+&lt;h3 id=&quot;Feature-extraction&quot;&gt;&lt;a href=&quot;#Feature-extraction&quot; class=&quot;headerlink&quot; title=&quot;Feature extraction&quot;&gt;&lt;/a&gt;Feature extraction&lt;/h3&gt;&lt;h4
         
       
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Pose_estimation_log</title>
-    <link href="Https://huangziming0830.github.io/2022/05/29/pose-estimation-log/"/>
-    <id>Https://huangziming0830.github.io/2022/05/29/pose-estimation-log/</id>
-    <published>2022-05-29T07:17:15.000Z</published>
-    <updated>2022-07-08T09:08:27.414Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Daily-Log-for-Pose-Estimation&quot;&gt;&lt;a href=&quot;#Daily-Log-for-Pose-Estimation&quot; class=&quot;headerlink&quot; title=&quot;Daily Log for Pose
-        
-      
-    
-    </summary>
-    
-      <category term="Log" scheme="Https://huangziming0830.github.io/categories/Log/"/>
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
     
-      <category term="Pose_estimation" scheme="Https://huangziming0830.github.io/tags/Pose-estimation/"/>
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Article_Exposure</title>
-    <link href="Https://huangziming0830.github.io/2022/05/27/article-exposure/"/>
-    <id>Https://huangziming0830.github.io/2022/05/27/article-exposure/</id>
-    <published>2022-05-27T00:54:07.000Z</published>
-    <updated>2022-05-27T00:54:07.841Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="Feature Extraction" scheme="Https://huangziming0830.github.io/tags/Feature-Extraction/"/>
     
   </entry>
   
@@ -217,7 +216,7 @@
     <link href="Https://huangziming0830.github.io/2022/05/26/pytorch-base/"/>
     <id>Https://huangziming0830.github.io/2022/05/26/pytorch-base/</id>
     <published>2022-05-26T06:17:53.000Z</published>
-    <updated>2022-07-29T08:56:03.511Z</updated>
+    <updated>2022-08-19T11:29:07.989Z</updated>
     
     <summary type="html">
     
@@ -231,36 +230,12 @@
     
     </summary>
     
-      <category term="pytorch" scheme="Https://huangziming0830.github.io/categories/pytorch/"/>
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
     
       <category term="NLP" scheme="Https://huangziming0830.github.io/tags/NLP/"/>
     
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="Https://huangziming0830.github.io/2022/05/20/rethinking-of-pe/"/>
-    <id>Https://huangziming0830.github.io/2022/05/20/rethinking-of-pe/</id>
-    <published>2022-05-20T07:35:51.765Z</published>
-    <updated>2022-05-29T07:15:37.280Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;synthetic image – proposals – bbox – &lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;image_features&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;patches with content(especially edges) have higher
-        
-      
-    
-    </summary>
-    
+      <category term="Pytorch" scheme="Https://huangziming0830.github.io/tags/Pytorch/"/>
     
   </entry>
   
@@ -269,7 +244,7 @@
     <link href="Https://huangziming0830.github.io/2022/04/01/python-skills/"/>
     <id>Https://huangziming0830.github.io/2022/04/01/python-skills/</id>
     <published>2022-04-01T06:57:35.000Z</published>
-    <updated>2022-08-08T08:15:23.194Z</updated>
+    <updated>2022-08-19T11:25:52.006Z</updated>
     
     <summary type="html">
     
@@ -277,66 +252,18 @@
       
         
         
-          &lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h1&gt;&lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot;
         
       
     
     </summary>
     
-      <category term="Python" scheme="Https://huangziming0830.github.io/categories/Python/"/>
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
     
+    
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
       <category term="Functions" scheme="Https://huangziming0830.github.io/tags/Functions/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="Https://huangziming0830.github.io/2022/04/01/articles/"/>
-    <id>Https://huangziming0830.github.io/2022/04/01/articles/</id>
-    <published>2022-04-01T06:43:36.538Z</published>
-    <updated>2022-04-01T06:43:36.538Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="Https://huangziming0830.github.io/2022/04/01/gan-articles/"/>
-    <id>Https://huangziming0830.github.io/2022/04/01/gan-articles/</id>
-    <published>2022-04-01T02:26:40.146Z</published>
-    <updated>2022-05-29T07:15:29.171Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>GAN</title>
-    <link href="Https://huangziming0830.github.io/2022/03/19/gan/"/>
-    <id>Https://huangziming0830.github.io/2022/03/19/gan/</id>
-    <published>2022-03-19T11:25:05.000Z</published>
-    <updated>2022-03-19T11:25:05.388Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
