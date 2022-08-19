@@ -28,9 +28,9 @@
 }
 
 body {
-    background-color: #244a61;
-    background: url('/Users/17374/Pictures/preview.jpg');
-    background-attachment: fixed;
+    background-color: #642674;
+    /* background: url('/Users/17374/Pictures/preview.jpg'); */
+    /* background-attachment: fixed; */
     margin: 0;
     color: #34495e;
 }
