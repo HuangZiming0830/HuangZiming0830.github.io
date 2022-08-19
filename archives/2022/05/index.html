@@ -845,9 +845,20 @@ $(function () {
         
 
         <!--天气-->
-        <script type="text/javascript"> WIDGET = {FID: '1tFpFZ5Mtj'}</script> 
-        <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-        
+        <div id="he-plugin-standard"></div>
+        <script>
+        WIDGET = {
+          "CONFIG": {
+            "layout": "1",
+            "width": "450",
+            "height": "150",
+            "background": "1",
+            "dataColor": "FFFFFF",
+            "key": "9803692bde1548149049f48da83c5b0c"
+          }
+        }
+        </script>
+        <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script> 
                                                                
         <!--音乐-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
