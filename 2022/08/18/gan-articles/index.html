@@ -92,80 +92,131 @@ regret minim">
 <ul class="right">
     
     <li class="hide-on-med-and-down">
+        
         <a href="/" class="waves-effect waves-light">
             
-            <i class="fa fa-home"></i>
+            <i class="fa fas fa-home" style="zoom: 0.6;"></i>
             
             <span>首页</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/tags" class="waves-effect waves-light">
             
-            <i class="fa fa-tags"></i>
+            <i class="fa fas fa-tags" style="zoom: 0.6;"></i>
             
             <span>标签</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/categories" class="waves-effect waves-light">
             
-            <i class="fa fa-bookmark"></i>
+            <i class="fa fas fa-bookmark" style="zoom: 0.6;"></i>
             
             <span>分类</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/archives" class="waves-effect waves-light">
             
-            <i class="fa fa-archive"></i>
+            <i class="fa fas fa-archive" style="zoom: 0.6;"></i>
             
             <span>归档</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/about" class="waves-effect waves-light">
             
-            <i class="fa fa-user-circle-o"></i>
+            <i class="fa fas fa-user-circle-o" style="zoom: 0.6;"></i>
             
             <span>关于</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/friends" class="waves-effect waves-light">
             
-            <i class="fa fa-address-book"></i>
+            <i class="fa fas fa-address-book" style="zoom: 0.6;"></i>
             
             <span>友情链接</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/contact" class="waves-effect waves-light">
             
-            <i class="fa fa-comments"></i>
+            <i class="fa fas fa-comments" style="zoom: 0.6;"></i>
             
             <span>留言板</span>
         </a>
+        
+
     </li>
     
     <li class="hide-on-med-and-down">
+        
         <a href="/#" class="waves-effect waves-light">
             
-            <i class="fa fa-list"></i>
+            <i class="fas fa-list" style="zoom: 0.6;"></i>
             
-            <span>媒体</span>
+            <span>Media</span>
+            <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
         </a>
+        <ul class="sub-nav menus_item_child ">
+            
+            <li>
+            <a href="/movies">
+                
+                <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+                
+                <span>Movies</span>
+            </a>
+            </li>
+            
+            <li>
+            <a href="/books">
+                
+                <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+                
+                <span>Books</span>
+            </a>
+            </li>
+            
+        </ul>
+        
+
     </li>
     
     <li>
         <a href="#searchModal" class="modal-trigger waves-effect waves-light">
             <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+          <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
         </a>
     </li>
 </ul>
@@ -186,78 +237,119 @@ regret minim">
 
     
 
+
     <ul class="menu-list mobile-menu-list">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
-                
-                <i class="fa fa-home fa-fw"></i>
-                
-                首页
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-home"></i>
+            
+            Index
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
-                
-                <i class="fa fa-tags fa-fw"></i>
-                
-                标签
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/tags" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-tags"></i>
+            
+            Tags
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/categories" class="waves-effect waves-light">
-                
-                <i class="fa fa-bookmark fa-fw"></i>
-                
-                分类
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/categories" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-bookmark"></i>
+            
+            Categories
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
-                
-                <i class="fa fa-archive fa-fw"></i>
-                
-                归档
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/archives" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-archive"></i>
+            
+            Archives
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-user-circle-o fa-fw"></i>
-                
-                关于
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/about" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-user-circle-o"></i>
+            
+            About
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/friends" class="waves-effect waves-light">
-                
-                <i class="fa fa-address-book fa-fw"></i>
-                
-                友情链接
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/friends" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-address-book"></i>
+            
+            Friends
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/contact" class="waves-effect waves-light">
-                
-                <i class="fa fa-comments fa-fw"></i>
-                
-                留言板
-            </a>
+        <li class="m-nav-item">
+        
+        <a href="/contact" class="waves-effect waves-light">
+            
+                <i class="fa-fw fas fa-comments"></i>
+            
+            Contact
+        </a>
+            
         </li>
         
-        <li>
-            <a href="/#" class="waves-effect waves-light">
+        <li class="m-nav-item">
+        
+        <a href="javascript:;">
+            
+                <i class="fa-fw fas fa-list"></i>
+            
+            Media
+            <span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+        </a>
+            <ul  >
                 
-                <i class="fa fa-link fa-fw"></i>
+                <li>
+
+                    <a href="/movies " style="margin-left:75px">
+                    
+                    <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+                    
+                    <span>Movies</span>
+                    </a>
+                </li>
                 
-                媒体
-            </a>
+                <li>
+
+                    <a href="/books " style="margin-left:75px">
+                    
+                    <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+                    
+                    <span>Books</span>
+                    </a>
+                </li>
+                
+            </ul>
+            
         </li>
         
         
@@ -402,7 +494,7 @@ regret minim">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/28.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -594,11 +686,64 @@ regret minim">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2022/08/18/selenium/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="selenium">
+                        
+                        <span class="card-title">selenium</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            selenium tutorial for browser simulation operations
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Technology/" class="post-category" target="_blank">
+                                    Technology
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/" target="_blank">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                    <a href="/tags/Scrapy/" target="_blank">
+                        <span class="chip bg-color">Scrapy</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2022/08/18/pose-estimation/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Pose_Estimation">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Pose_Estimation">
                         
                         <span class="card-title">Pose_Estimation</span>
                     </div>
@@ -610,9 +755,9 @@ regret minim">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -630,61 +775,6 @@ regret minim">
                     
                     <a href="/tags/Pose-Estimation/" target="_blank">
                         <span class="chip bg-color">Pose_Estimation</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/08/06/tutorial-for-online-training/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Tutorial for online training">
-                        
-                        <span class="card-title">Tutorial for online training</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            GPU Online Training TutorialPreparation
-upload dataset and scripts by oss oss login
- cp G://Datasets/speedplus.zip oss:/
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Technology/" class="post-category" target="_blank">
-                                    Technology
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/GPU-Training/" target="_blank">
-                        <span class="chip bg-color">GPU Training</span>
-                    </a>
-                    
-                    <a href="/tags/DL/" target="_blank">
-                        <span class="chip bg-color">DL</span>
                     </a>
                     
                 </div>
