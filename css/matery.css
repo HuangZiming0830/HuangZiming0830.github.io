@@ -2186,7 +2186,7 @@ footer .copy-right {
     transition: all .3s;
 }
 
-.menus_item_child {
+.menus_item_child:hover {
     background-color: rgba(255, 255, 255, .8);
     width: fit-content;
     border-radius: 10px;
@@ -2202,12 +2202,13 @@ footer .copy-right {
     animation: sub_menus .3s .1s ease both;
 }
 
-.menus_item_child:before {
+.menus_item_child:hover:before {
     content: "";
     position: absolute;
     top: -20px;
     left: 50%;
     margin-left: -10px;
+    display: none;
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent rgba(255, 255, 255, .8)
