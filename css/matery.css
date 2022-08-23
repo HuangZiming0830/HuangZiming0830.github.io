@@ -2143,12 +2143,16 @@ footer .copy-right {
 .nav-menu {
 }
 
-.nav-menu li .sub-nav {
+.nav-menu li .sub-nav:before {
     position: absolute;
     top: 66px;
     list-style: none;
     margin-left: -20px;
     display: none;
+}
+
+.nav-menu li .sub-nav:hover {
+    display: block;
 }
 
 .nav-menu li .sub-nav li {
