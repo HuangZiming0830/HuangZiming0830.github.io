@@ -2213,7 +2213,7 @@ footer .copy-right {
 }
 
 .m-nav-item ul {
-    display: none;
+    display: block;
 }
 
 .m-nav-item ul li {
