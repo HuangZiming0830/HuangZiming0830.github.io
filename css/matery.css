@@ -2215,9 +2215,6 @@ footer .copy-right {
 .m-nav-item ul {
     display: none;
 }
-.m-nav-item ul:hover {
-    display: block;
-}
 
 .m-nav-item ul li {
     width: 255px;
