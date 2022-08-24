@@ -31,7 +31,7 @@ body {
     background-color: #642674;
     background: url("/medias/preview.jpg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     margin: 0;
     color: #34495e;
 }
@@ -2183,7 +2183,7 @@ footer .copy-right {
     transition: all .3s;
 }
 
-.menus_item_child:hover {
+.menus_item_child {
     background-color: rgba(255, 255, 255, .8);
     width: fit-content;
     border-radius: 10px;
@@ -2199,7 +2199,7 @@ footer .copy-right {
     animation: sub_menus .3s .1s ease both;
 }
 
-.menus_item_child:hover:before {
+.menus_item_child:before {
     content: "";
     position: absolute;
     top: -20px;
