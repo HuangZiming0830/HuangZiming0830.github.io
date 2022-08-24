@@ -2189,7 +2189,7 @@ footer .copy-right {
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 20px -4px rgba(0, 0, 0, .5);
     box-shadow: 0 5px 20px -4px rgba(0, 0, 0, .5);
-    display: block;
+    display: none;
     opacity: 0.98;
     -ms-filter: none;
     filter: none;
@@ -2197,6 +2197,10 @@ footer .copy-right {
     -moz-animation: sub_menus .3s .1s ease both;
     -o-animation: sub_menus .3s .1s ease both;
     animation: sub_menus .3s .1s ease both;
+}
+
+.menus_item_child:hover {
+    display: inline;
 }
 
 .menus_item_child:before {
@@ -2227,11 +2231,11 @@ footer .copy-right {
 }
 
 .m-nav-show .m-icon {
-    -webkit-transform: rotate(90deg) !important;
-    -moz-transform: rotate(90deg) !important;
-    -o-transform: rotate(90deg) !important;
-    -ms-transform: rotate(90deg) !important;
-    transform: rotate(90deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
