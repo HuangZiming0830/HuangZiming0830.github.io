@@ -8,9 +8,23 @@
       <link href="/2022/08/23/css-basic/"/>
       <url>/2022/08/23/css-basic/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="Selector"><a href="#Selector" class="headerlink" title="Selector"></a>Selector</h2><table><thead><tr><th align="left">selector</th><th align="left">example</th><th align="left">description</th></tr></thead><tbody><tr><td align="left">class</td><td align="left">.into</td><td align="left">select all class=”intro”</td></tr></tbody></table><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><pre class="line-numbers language-HTML"><code class="language-HTML">    <!--back to top-->    <a href="#"></a>    <!--refresh page-->    <a href=""></a><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> Technology </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> Front_End </tag>
+            
+        </tags>
       
     </entry>
     
@@ -192,7 +206,7 @@
       <link href="/2022/06/30/space-titanic/"/>
       <url>/2022/06/30/space-titanic/</url>
       
-        <content type="html"><![CDATA[<hr><h3 id="Feature-extraction"><a href="#Feature-extraction" class="headerlink" title="Feature extraction"></a>Feature extraction</h3><h4 id="Kaggle-Spaceship-Titanic"><a href="#Kaggle-Spaceship-Titanic" class="headerlink" title="Kaggle-Spaceship Titanic"></a>Kaggle-Spaceship Titanic</h4><ol><li><p>Data Statistics</p><ul><li>passengerId: unique ID. Format gggg_pp. gggg indicates passengers travel with same group</li><li>HomePlanet: discrete noun. can be replaced by digits.</li><li>CryoSleep: bool value. seems relevent to final result.</li><li>Cabin: deck/num/side. seems relevent to final result. need further discussion</li><li>Destination: like HomePlanet.</li><li>Age: discrete digits. can be assembled as bins.</li><li>VIP: bool value.</li><li>RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: bill amount. process as Age.</li><li>Name: no use.</li><li>Transported: final results.</li></ul></li><li><p>Data Preprocess</p><ul><li>null value | error value :<br>mean, zero, etc depends on circumstance</li></ul></li><li><p>Model Training Strategy</p><ul><li>Decision Tree | RandomForest | KNN Classifier</li><li>K-Folder crossover</li></ul></li></ol>]]></content>
+        <content type="html"><![CDATA[<hr><h1 id="Feature-extraction"><a href="#Feature-extraction" class="headerlink" title="Feature extraction"></a>Feature extraction</h1><h2 id="Kaggle-Spaceship-Titanic"><a href="#Kaggle-Spaceship-Titanic" class="headerlink" title="Kaggle-Spaceship Titanic"></a>Kaggle-Spaceship Titanic</h2><ol><li><p>Data Statistics</p><ul><li>passengerId: unique ID. Format gggg_pp. gggg indicates passengers travel with same group</li><li>HomePlanet: discrete noun. can be replaced by digits.</li><li>CryoSleep: bool value. seems relevent to final result.</li><li>Cabin: deck/num/side. seems relevent to final result. need further discussion</li><li>Destination: like HomePlanet.</li><li>Age: discrete digits. can be assembled as bins.</li><li>VIP: bool value.</li><li>RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: bill amount. process as Age.</li><li>Name: no use.</li><li>Transported: final results.</li></ul></li><li><p>Data Preprocess</p><ul><li>null value | error value :<br>mean, zero, etc depends on circumstance</li></ul></li><li><p>Model Training Strategy</p><ul><li>Decision Tree | RandomForest | KNN Classifier</li><li>K-Folder crossover</li></ul></li></ol><h2 id="Notifications"><a href="#Notifications" class="headerlink" title="Notifications"></a>Notifications</h2><ol><li>NaN</li></ol><ul><li>Generally speaking, we need to process the NaN value first in the purpose of avoiding the influence for the sequence operations.<br>Nan +/ -/ /* / sth equals Nan</li><li>the <em>NaN</em> value filled should be returned to origin position or just add the <strong>inplace=True</strong> so as to maintain the changes.</li></ul>]]></content>
       
       
       <categories>

@@ -31,7 +31,7 @@ body {
     background-color: #642674;
     background: url("/medias/preview.jpg");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     margin: 0;
     color: #34495e;
 }
@@ -2143,7 +2143,7 @@ footer .copy-right {
 .nav-menu {
 }
 
-.nav-menu li .sub-nav:before {
+.nav-menu li .sub-nav {
     position: absolute;
     top: 66px;
     list-style: none;
@@ -2151,9 +2151,6 @@ footer .copy-right {
     display: none;
 }
 
-.nav-menu li .sub-nav:hover {
-    display: block;
-}
 
 .nav-menu li .sub-nav li {
     text-align: center;
