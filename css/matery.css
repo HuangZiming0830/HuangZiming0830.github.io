@@ -2199,10 +2199,6 @@ footer .copy-right {
     animation: sub_menus .3s .1s ease both;
 }
 
-.menus_item_child:hover {
-    display: inline;
-}
-
 .menus_item_child:before {
     content: "";
     position: absolute;
@@ -2215,12 +2211,16 @@ footer .copy-right {
     border-color: transparent transparent rgba(255, 255, 255, .8)
 }
 
+.menus_item_child:hover ul {
+    display: inline;
+}
+
 .m-nav-item {
     position: relative;
 }
 
 .m-nav-item ul {
-    display: block;
+    display: none;
 }
 
 .m-nav-item ul li {
@@ -2231,11 +2231,11 @@ footer .copy-right {
 }
 
 .m-nav-show .m-icon {
-    -webkit-transform: rotate(180deg) !important;
-    -moz-transform: rotate(180deg) !important;
-    -o-transform: rotate(180deg) !important;
-    -ms-transform: rotate(180deg) !important;
-    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(90deg) !important; 
+    -moz-transform: rotate(90deg) !important;
+    -o-transform: rotate(90deg) !important;
+    -ms-transform: rotate(90deg) !important;
+    transform: rotate(90deg) !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -2246,6 +2246,10 @@ footer .copy-right {
 .m-nav-item > a:hover {
     color: #FFF;
     background: rgba(255, 255, 255, .8);
+}
+
+.m-nav-item:hover ul {
+    display: inline;
 }
 
 .m-nav-show > a:before,
