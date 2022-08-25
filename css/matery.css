@@ -2211,7 +2211,7 @@ footer .copy-right {
     border-color: transparent transparent rgba(255, 255, 255, .8)
 }
 
-.menus_item_child:hover ul {
+.nav-item:hover ul {
     display: inline;
 }
 

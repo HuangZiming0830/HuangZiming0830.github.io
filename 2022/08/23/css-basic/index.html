@@ -17,16 +17,14 @@ description
 
 
 
-class
+.class
 .into
-select all class=”intro”
+select all class=”intro” elements
 
 
-HTML    
-    
-    
-    
-">
+#id
+#firstname
+select all">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -520,7 +518,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -679,7 +677,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    11
+                    223
                 </div>
                 
 
@@ -711,15 +709,141 @@ $(document).ready(function(){
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">class</td>
+<td align="left">.class</td>
 <td align="left">.into</td>
-<td align="left">select all class=”intro”</td>
+<td align="left">select all class=”intro” elements</td>
+</tr>
+<tr>
+<td align="left">#id</td>
+<td align="left">#firstname</td>
+<td align="left">select all id=”firstname” elements</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">*</td>
+<td align="left">select all elements</td>
+</tr>
+<tr>
+<td align="left">element, element</td>
+<td align="left">div, p</td>
+<td align="left">select all div &amp; p elements</td>
+</tr>
+<tr>
+<td align="left">element element</td>
+<td align="left">div p</td>
+<td align="left">select all p within div</td>
+</tr>
+<tr>
+<td align="left">element&gt;element</td>
+<td align="left">div&gt;p</td>
+<td align="left">select p whose parent level is div</td>
+</tr>
+<tr>
+<td align="left">element+element</td>
+<td align="left">div+p</td>
+<td align="left">select first p after div</td>
+</tr>
+<tr>
+<td align="left">[attribute]</td>
+<td align="left">[target]</td>
+<td align="left">select elements with target attribute</td>
+</tr>
+<tr>
+<td align="left">[attribute=value]</td>
+<td align="left">[target=-blank]</td>
+<td align="left">select elements with target=”-blank”</td>
+</tr>
+<tr>
+<td align="left">[attribute~=value]</td>
+<td align="left">[title~=flower]</td>
+<td align="left">select elements whose title attribute contains “flower”</td>
+</tr>
+<tr>
+<td align="left">[attribute</td>
+<td align="left">=language]</td>
+<td align="left">[lang</td>
+</tr>
+<tr>
+<td align="left">:link</td>
+<td align="left">a:link</td>
+<td align="left">select link unvisited</td>
+</tr>
+<tr>
+<td align="left">:visited</td>
+<td align="left">a:visited</td>
+<td align="left">select link visited</td>
+</tr>
+<tr>
+<td align="left">:active</td>
+<td align="left">a:active</td>
+<td align="left">select active link</td>
+</tr>
+<tr>
+<td align="left">:hover</td>
+<td align="left">a:hover</td>
+<td align="left">select when mouse hover link</td>
+</tr>
+<tr>
+<td align="left">:focus</td>
+<td align="left">input:focus</td>
+<td align="left">select input element with focus</td>
+</tr>
+<tr>
+<td align="left">:before</td>
+<td align="left">p:before</td>
+<td align="left">insert before p element</td>
+</tr>
+<tr>
+<td align="left">:after</td>
+<td align="left">p:after</td>
+<td align="left">insert after p element</td>
+</tr>
+<tr>
+<td align="left">element1~element2</td>
+<td align="left">p~ul</td>
+<td align="left">select all ul element after p</td>
+</tr>
+<tr>
+<td align="left">[attribute^=value]</td>
+<td align="left">a[src^=”https”]</td>
+<td align="left">select element whose src attribute starts with “https”</td>
+</tr>
+<tr>
+<td align="left">[attribute$=value]</td>
+<td align="left">a[src$=”.pdf”]</td>
+<td align="left">select element whose src attribute ends with “.pdf”</td>
+</tr>
+<tr>
+<td align="left">[attribute*=value]</td>
+<td align="left">a[src*=”runoob”]</td>
+<td align="left">select element whose src attribute contains “runoob”</td>
+</tr>
+<tr>
+<td align="left">:root</td>
+<td align="left">:root</td>
+<td align="left">select root element of document</td>
+</tr>
+<tr>
+<td align="left">:empty</td>
+<td align="left">p:empty</td>
+<td align="left">select p element without siblings</td>
 </tr>
 </tbody></table>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><pre class="line-numbers language-HTML"><code class="language-HTML">    <!--back to top-->
     <a href="#"></a>
     <!--refresh page-->
     <a href=""></a><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h2><ul>
+<li>切换元素的类<pre class="line-numbers language-HTML"><code class="language-HTML">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $(".nav-item").hover(function(){
+      $(this).toggleClass("m-nav-show");
+      });
+  });
+  </script><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 
             </div>
             <hr />
@@ -819,7 +943,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CSS_basic">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CSS_basic">
                         
                         <span class="card-title">CSS_basic</span>
                     </div>
@@ -836,16 +960,14 @@ description
 
 
 
-class
+.class
 .into
-select all class=”intro”
+select all class=”intro” elements
 
 
-HTML    
-    
-    
-    
-
+#id
+#firstname
+select all
                         
                     </div>
                     <div class="publish-info">
@@ -891,7 +1013,7 @@ HTML
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="scientific work">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="scientific work">
                         
                         <span class="card-title">scientific work</span>
                     </div>
@@ -899,7 +1021,7 @@ HTML
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Daily scientific work log
                         
                     </div>
                     <div class="publish-info">
@@ -908,8 +1030,27 @@ HTML
                             </span>
                         <span class="publish-author">
                             
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Study/" class="post-category" target="_blank">
+                                    Study
+                                </a>
+                            
+                            
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Log/" target="_blank">
+                        <span class="chip bg-color">Log</span>
+                    </a>
+                    
+                    <a href="/tags/Graduate-work/" target="_blank">
+                        <span class="chip bg-color">Graduate_work</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1093,7 +1234,7 @@ HTML
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">3.4k</span>
+            <span class="white-color">3.7k</span>
             
 
             <br>
