@@ -2243,6 +2243,13 @@ footer .copy-right {
     transition: all .3s;
 }
 
+.nav-show,
+.nav-show > a:before,
+.nav-show > i {
+    transform: rotate(360deg) !important;
+    transition: all .3s;
+}
+
 .m-nav-show,
 .m-nav-item > a:hover {
     color: #FFF;
