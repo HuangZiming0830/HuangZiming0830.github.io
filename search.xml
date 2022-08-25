@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>C++_Basic</title>
+      <link href="/2022/08/25/c-basic/"/>
+      <url>/2022/08/25/c-basic/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS_basic</title>
       <link href="/2022/08/23/css-basic/"/>
       <url>/2022/08/23/css-basic/</url>
@@ -85,31 +98,6 @@
     
     
     <entry>
-      <title>GAN_articles</title>
-      <link href="/2022/08/18/gan-articles/"/>
-      <url>/2022/08/18/gan-articles/</url>
-      
-        <content type="html"><![CDATA[<h2 id="GAN-Articles"><a href="#GAN-Articles" class="headerlink" title="GAN_Articles"></a>GAN_Articles</h2><h3 id="ON-Convergence-and-stability-of-GANs-2017"><a href="#ON-Convergence-and-stability-of-GANs-2017" class="headerlink" title="ON Convergence and stability of GANs(2017)"></a>ON Convergence and stability of GANs(2017)</h3><p><strong><em>Deep Regret Analytic Generative Adversarial Networks</em></strong></p><ol><li>regret minimization is the more appropriate way to think about GAN training dynamics</li><li>previous view off mode collapse and instability is that it results from <strong>attempting to minimize a strong divergence</strong> during training, authors argued to be not ture</li><li>mode collapse situations are often accompanied by sharp gradients of the discriminator function around some real data points</li><li>view alternating gradient updates procedures as regret minimization</li><li>prove the asymptotic convergence of GAN training in the non-parametric limit without requirements of discriminator to be optimal at each step</li><li>AGD can converge to a potentially bad local equilibrium in non-convex games and hypothesize this to be responsible for mode collapse</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Study </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> technology books </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Pose_Estimation</title>
       <link href="/2022/08/18/pose-estimation/"/>
       <url>/2022/08/18/pose-estimation/</url>
@@ -127,6 +115,31 @@
         <tags>
             
             <tag> Pose_Estimation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GAN_articles</title>
+      <link href="/2022/08/18/gan-articles/"/>
+      <url>/2022/08/18/gan-articles/</url>
+      
+        <content type="html"><![CDATA[<h2 id="GAN-Articles"><a href="#GAN-Articles" class="headerlink" title="GAN_Articles"></a>GAN_Articles</h2><h3 id="ON-Convergence-and-stability-of-GANs-2017"><a href="#ON-Convergence-and-stability-of-GANs-2017" class="headerlink" title="ON Convergence and stability of GANs(2017)"></a>ON Convergence and stability of GANs(2017)</h3><p><strong><em>Deep Regret Analytic Generative Adversarial Networks</em></strong></p><ol><li>regret minimization is the more appropriate way to think about GAN training dynamics</li><li>previous view off mode collapse and instability is that it results from <strong>attempting to minimize a strong divergence</strong> during training, authors argued to be not ture</li><li>mode collapse situations are often accompanied by sharp gradients of the discriminator function around some real data points</li><li>view alternating gradient updates procedures as regret minimization</li><li>prove the asymptotic convergence of GAN training in the non-parametric limit without requirements of discriminator to be optimal at each step</li><li>AGD can converge to a potentially bad local equilibrium in non-convex games and hypothesize this to be responsible for mode collapse</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> technology books </tag>
             
         </tags>
       

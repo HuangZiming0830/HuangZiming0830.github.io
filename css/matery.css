@@ -2212,7 +2212,8 @@ footer .copy-right {
 }
 
 .nav-item:hover ul {
-    display: inline;
+    display: flex;
+    flex-direction: column;
 }
 
 .m-nav-item {
