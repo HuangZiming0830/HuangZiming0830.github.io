@@ -2176,7 +2176,7 @@ footer .copy-right {
     -moz-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
     -ms-transform: rotate(180deg) !important;
-    transform: rotate(180deg) !important;
+    transform: rotate(360deg) !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -2244,11 +2244,7 @@ footer .copy-right {
 }
 
 .nav-show,
-.nav-show > a:before,
-.nav-show > i {
-    transform: rotate(360deg) !important;
-    transition: all .3s;
-}
+
 
 .m-nav-show,
 .m-nav-item > a:hover {
