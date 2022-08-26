@@ -2248,8 +2248,8 @@ footer .copy-right {
 
 .m-nav-show,
 .m-nav-item > a:hover {
-    color: #FFF;
-    background: rgba(255, 255, 255, .8);
+    color: #e91e63;
+    background: rgba(132, 13, 121, 0.75);
 }
 
 .m-nav-item:hover ul {
