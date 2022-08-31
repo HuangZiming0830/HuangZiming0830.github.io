@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-08-25T02:41:02.411Z</updated>
+  <updated>2022-08-31T13:43:51.812Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -21,12 +21,27 @@
     <link href="Https://huangziming0830.github.io/2022/08/25/c-basic/"/>
     <id>Https://huangziming0830.github.io/2022/08/25/c-basic/</id>
     <published>2022-08-25T02:40:58.000Z</published>
-    <updated>2022-08-25T02:41:02.411Z</updated>
+    <updated>2022-08-31T13:43:51.812Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h1 id=&quot;C&quot;&gt;&lt;a href=&quot;#C&quot; class=&quot;headerlink&quot; title=&quot;C++&quot;&gt;&lt;/a&gt;C++&lt;/h1&gt;&lt;p&gt;##&lt;br&gt;definition = declaration + initialisation&lt;/p&gt;
+&lt;pre
+        
+      
+    
     </summary>
     
+      <category term="Teconology" scheme="Https://huangziming0830.github.io/categories/Teconology/"/>
+    
+    
+      <category term="C++" scheme="Https://huangziming0830.github.io/tags/C/"/>
+    
+      <category term="Basic" scheme="Https://huangziming0830.github.io/tags/Basic/"/>
     
   </entry>
   
@@ -35,7 +50,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/23/css-basic/"/>
     <id>Https://huangziming0830.github.io/2022/08/23/css-basic/</id>
     <published>2022-08-23T11:06:49.000Z</published>
-    <updated>2022-08-24T08:17:41.338Z</updated>
+    <updated>2022-08-29T11:12:18.786Z</updated>
     
     <summary type="html">
     
@@ -63,7 +78,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/23/scientific-work/"/>
     <id>Https://huangziming0830.github.io/2022/08/23/scientific-work/</id>
     <published>2022-08-23T07:11:52.000Z</published>
-    <updated>2022-08-24T08:17:37.884Z</updated>
+    <updated>2022-08-31T08:48:18.105Z</updated>
     
     <summary type="html">
     
@@ -115,32 +130,6 @@
   </entry>
   
   <entry>
-    <title>GAN_articles</title>
-    <link href="Https://huangziming0830.github.io/2022/08/18/gan-articles/"/>
-    <id>Https://huangziming0830.github.io/2022/08/18/gan-articles/</id>
-    <published>2022-08-18T01:17:46.000Z</published>
-    <updated>2022-08-19T11:27:51.571Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
-    
-    
-      <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Pose_Estimation</title>
     <link href="Https://huangziming0830.github.io/2022/08/18/pose-estimation/"/>
     <id>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</id>
@@ -165,6 +154,32 @@
     
     
       <category term="Pose_Estimation" scheme="Https://huangziming0830.github.io/tags/Pose-Estimation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GAN_articles</title>
+    <link href="Https://huangziming0830.github.io/2022/08/18/gan-articles/"/>
+    <id>Https://huangziming0830.github.io/2022/08/18/gan-articles/</id>
+    <published>2022-08-18T01:17:46.000Z</published>
+    <updated>2022-08-19T11:27:51.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
+    
+    
+      <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
     
   </entry>
   

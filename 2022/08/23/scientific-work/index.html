@@ -514,7 +514,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -673,7 +673,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    43
+                    192
                 </div>
                 
 
@@ -700,6 +700,36 @@ $(document).ready(function(){
 <li>While training model without style_transfer, the final model seems to be hard to handle images without much texture features.</li>
 <li>the low SNR image &amp;&amp; obstacles like stars or keypoint_like &amp;&amp; small object</li>
 <li>exists problems like symmetric point mismatches</li>
+</ol>
+<h2 id="22-08-25"><a href="#22-08-25" class="headerlink" title="22/08/25"></a>22/08/25</h2><h3 id="Note-1"><a href="#Note-1" class="headerlink" title="Note:"></a>Note:</h3><ol>
+<li>some keypoints unchecked, some keypoints miracly checked but with relative low response value</li>
+<li>for wrong situations:<ul>
+<li>seems like inplane features are learned while the intro-plane features are not seperate properly.</li>
+<li>dark situation</li>
+</ul>
+</li>
+<li>for true situations:<ul>
+<li>with EPNP algorithm, the other wrong keypoints can be filtered for most cases. (happens with strong keypoint features)</li>
+</ul>
+</li>
+</ol>
+<h3 id="Current-dilemma"><a href="#Current-dilemma" class="headerlink" title="Current dilemma:"></a>Current dilemma:</h3><ol>
+<li>training stage final touch around 0.7, hard to improve;</li>
+<li>testing stage has difficult in handling textureless &amp; dark background situation</li>
+</ol>
+<h3 id="Currnet-summary"><a href="#Currnet-summary" class="headerlink" title="Currnet summary:"></a>Currnet summary:</h3><ol>
+<li>training without style_transfer seems to be helpful for inplane keypoint relations.<br> By introducing the texture feature, the model will give out more proposals than before.</li>
+</ol>
+<h3 id="Current-try"><a href="#Current-try" class="headerlink" title="Current try:"></a>Current try:</h3><ol>
+<li>improve keypoint punish factor to 2.</li>
+</ol>
+<h2 id="22-08-30"><a href="#22-08-30" class="headerlink" title="22/08/30"></a>22/08/30</h2><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ol>
+<li>method need breakthrough. Try to extend the model length for better knowledge learning and expressing.</li>
+<li>other context mixer methods. CCM | PSA</li>
+</ol>
+<h2 id="22-08-31"><a href="#22-08-31" class="headerlink" title="22/08/31"></a>22/08/31</h2><h3 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h3><ol>
+<li>model need basic train before applying DA;</li>
+<li></li>
 </ol>
 
             </div>
@@ -923,7 +953,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="CSS_basic">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CSS_basic">
                         
                         <span class="card-title">CSS_basic</span>
                     </div>
@@ -992,7 +1022,7 @@ select all
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="selenium">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="selenium">
                         
                         <span class="card-title">selenium</span>
                     </div>
@@ -1208,11 +1238,10 @@ select all
 
 
                 <!--Hammy-->
-                <iframe width="500" height="300" frameborder="0" src="https://hammyhome.com?hh=('names!%255B'apMc4Mwb1MhcMw2aMh3Mh'%255D~props!%255B('bp!'noneMbJC0C0C0Mx!-O05KO52~z!-13G0S5~JE1DABBMbhTG-1.15~yTHBFBFBFQADADADQR7FLMwl!O8951413966187282~nhTG1KO25HRLL*RRLQU-O5S45HUO75S5HIL'G0KO9~JN*LLI*N*NMo!'c1P2Pf%252CsnPh%252Cbe')%255D)*%252C%2523G)%252C('x!H~rzT~JILRJc!'%2523K~y!-L00M'~NEC76IO0.P%252CcQ*IL*RFFSK1.T!0ULI'G%2501UTSRQPONMLKJIHG*_"></iframe>
-
+                <iframe width="500" height="300" frameborder="0" style="position:absolute; right:200px" src="https://hammyhome.com?hh=('names!%255B'apLwbWcWc6irLpWpWr2Lw2bLcWrWh4iWcWhcLh2LhLh'%255D~props!%255B('bp!'noneiSC0C0C0Lx!d2.42~z!-22*-3.15J4MBFBFBFXADADADXK7FNLwl!q396987159574855gv1YQ0*dqGF0CCKih!0*dOGtK_V-V2J2Z-Pdq5MjNUQ0*1J1ZPv1YMtNU5MC1B575HA39347Lnf!0g-vqQ'RRRRWbSKFBAF_3J2.75MKNNHtNXNjUMAF5719HNC7N_d2Ifu%252Cbe%252Cru_d-0.9IcRc2kf%252Csnkh%252Cbe')%255D)*)%252C('x!G~SH%252C%2523IGTHNNjHTHTLo!'J~y!KFFL'~MZ0GN00O2YP0.79GE1DABBHC2B475_QGtKih!R1%252CSc!'%2523TEC76jU_-vOV1JOG82K82_W1LXHjNHY.5Z~rz!_'*d0Jg~nh!2*iLbjNKk%252Ccq0YtKKvOJ%2501vtqkjigd_ZYXWVUTSRQPONMLKJIHG*_"></iframe>
 
                 <!--Visitor_map-->
-                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5dymrcb2rpu&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
+                <script type="text/javascript" style="margin-left:200px" src="//rf.revolvermaps.com/0/0/6.js?i=5dymrcb2rpu&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
 
                 <footer class="page-footer bg-color">
     <div class="container row center-align">
@@ -1221,7 +1250,7 @@ select all
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">3.9k</span>
+            <span class="white-color">4.1k</span>
             
 
             <br>

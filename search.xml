@@ -8,9 +8,23 @@
       <link href="/2022/08/25/c-basic/"/>
       <url>/2022/08/25/c-basic/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1><p>##<br>definition = declaration + initialisation</p><pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>using namespace std:int main(){    char a123 = 'a':    cout << a123 << endl;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Basic-knowledge"><a href="#Basic-knowledge" class="headerlink" title="Basic_knowledge"></a>Basic_knowledge</h3><ol><li><p><strong>Static Variables</strong> are similarly declared as <strong>Instance Variables</strong>, but using the <em>static keyword</em> within a class outside any method constructor or block</p><ul><li>Changes maded in an <strong>instance variable</strong> using one object will <strong>not reflected</strong> in other objects, while in an <strong>instance variable</strong> things are different.</li><li><strong>Instance variables</strong> can be accessed by <strong>object references</strong>, while <strong>static variables</strong> via <strong>class name</strong></li><li>Each object have its <strong>own copy</strong> of <strong>instance variable</strong> whereas we can only have <strong>one copy</strong> of a <strong>static variable</strong> per class.</li></ul></li><li><p>Loops:</p><ul><li>for</li><li>while</li><li>do while<pre class="line-numbers language-C++"><code class="language-C++">      do      {          //statement      } while (test_expression);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>If-else: the variables created in C/C++ will be local to that block only.</p><pre class="line-numbers language-C++"><code class="language-C++"> #include <iostream> using namespace std; void printNumbers() {     int n = 1; label:     cout << n << " ";     n++;     if (n <= 10)         goto label; } int main() {     printNumbers();     return 0; }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>Redirect IO: istream ostream iostream<br><code>freopen (&quot;text_file.txt&quot;, &quot;w&quot;, stdout)</code></p><pre class="line-numbers language-C++"><code class="language-C++">#include <fstream>#include <iostream>#include <string><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ol><p>using namespace std;</p><p>int main()<br>{<br>    fstream file;<br>    file.open(“cout.txt”, ios::out);<br>    string line;</p><pre><code>// backup streambuffersstreambuf* stream_buffer_cout = cout.rdbuf();streambuf* stream_buffer_cin = cin.rdbuf();// get streambuffer of filestreambuf* stream_buffer_file = file.rdbuf();// redirect cout to filecout.rdbuf(stream_buffer_file);cout &lt;&lt; &quot;This line written to file&quot; &lt;&lt; endl;// redirect cout back to screencout.rdbuf(stream_buffer_cout);cout &lt;&lt; &quot;This line is written to screen&quot; &lt;&lt; endl;file.close();return 0;</code></pre><pre><code>Also the above can be condensed as follows:```C++auto cont_buf = cout.rdbuf(file.rdbuf())// sets couts streambuffer and returns the oldstreambuffer back to cont_buf</code></pre><ul><li>Standard IO format<pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>using namespace std;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li></ul><p>int main()<br>{<br>    int age;</p><pre><code>cout &lt;&lt; &quot;Enter your age:&quot;;cin &gt;&gt; age;cout &lt;&lt; &quot;\n Your age is: &quot; &lt;&lt; age;return 0;</code></pre><p>}</p><pre><code>*cerr* is un-buffered standard error stream which doesn&#39;t get stored in file.*clog* is different from *cerr* as it stores the erroe in the buffer.+ Clear input buffer```C#include&lt;stdio.h&gt;int main(){    char str[80], ch;    // scan input from user    scanf(&quot;%s&quot;, str);    // flushes the standard input &amp; clears the input buffer    while ((getchar()) != &#39;\n&#39;);    // scan character from user    ch = getchar();    printf(&quot;%s\n&quot;, str);    printf(&quot;%c&quot;, ch);    return 0;}</code></pre><pre class="line-numbers language-C++"><code class="language-C++">#include<iostream>#include<ios>#include<limits>using namespace std;int main(){    int a;    char str[80];    cin >> a;    // type 1    cin.ignore(numeric_limits<streamsize>::max(), '\n');    // type 2: discards the input buffer and initial white spaces of string    cin >> ws    cin.getline(str, 80);    cout << a << endl;    cout << str << endl;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>Operators<table><thead><tr><th align="left">operator</th><th align="left">function</th></tr></thead><tbody><tr><td align="left">&amp;</td><td align="left">bitwise AND</td></tr></tbody></table></li></ul><pre class="line-numbers language-C++"><code class="language-C++">#include <bits/stdc++.h>using namespace stdconst int ALPHABET_SIZE = 26;// trie nodestruct TrieNode{    struct TrieNode *children[ALPHABET_SIZE];    bool isEndOfWord;};// returns new trie nodestruct TrieNode *getNode(void){    struct TrieNode *pNode = new TrieNode;    pNode->isEndOfWord = false;    for(int i=0; i<ALPHABET_SIZE; i++)        pNode->children[i] = Null;    return pNode;}// search && insertvoid insert(struct TrieNode *root, string key){    struct TrieNode *pCrawl = root;    for(int i=0;i<key.length();i++)    {        int index = key[i] - 'a';        if (!pCrawl->children[index])            pCrawl->children[index] = getNode();        pCrawl = pCrawl->children[index];    }    // mark last node as leaf    pCrawl->isEndOfWord = true;}// generate resultbool search(struct TrieNode *root, string key){    struct TrieNode *pCrawl = root;    for(int i=0;i<key.length();i++)    {        int index = key[i] - 'a';        if(!pCrawl->children[index])            return false;        pCrawl = pCrawl->children[index];    }    return (pCrawl->isEndOfWord);}// driverint main(){    // input keys    string keys[] = {"the", "a", "there", "answer", "any", "by", "bye", "their"};    int n = sizeof(keys)/sizeof(keys[0]);    struct TrieNode *root = getNode();    // construct trie    for(int i=0;i<n;i++)        insert(root, keys[i]);    // search    search(root, "the")? cout << "Yes\n" : cout << "No\n";    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>Binary Indexed Tree<pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>using namespace std;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li></ul><p>int getSum(int BITree[], int index)<br>{<br>    int sum = 0;<br>    index = index + 1;<br>    while (index&gt;0)<br>    {<br>        sum += BITree[index];<br>        index -= index &amp; (-index);<br>    }<br>    return sum;<br>}</p><p>void updateBIT(int BITree[], int n, int index, int val){<br>    index = index + 1;<br>    while (index&lt;=n)<br>    {<br>        BITree[index] += val;<br>        index += index &amp; (-index);<br>    }<br>}</p><p>int <em>constructBITree(int arr[], int n)<br>{<br>    int </em>BITree = new int[n+1];<br>    for (int i=1;i&lt;=n;i++)<br>        BITree[i] = 0;<br>    for (int i=0;i&lt;n;i++)<br>        updateBIT(BITree, n, i, arr[i]);</p><pre><code>return BITree;</code></pre><p>}</p><p>int main()<br>{<br>    int freq[] = {2, 1, 1, 3, 2, 3, 4, 5, 6, 7, 8, 9};<br>    int n = sizeof(freq)/sizeof(freq[0]);<br>    int *BITree = constructBITree(freq, n);<br>    cout &lt;&lt; “Sum of elements in arr[0..5] is “ &lt;&lt; getSum(BITree, 5);<br>    freq[3] += 6;<br>    updateBIT(BITree, n, 3, 6);<br>    cout &lt;&lt; “Sum of elements in arr[0..5] is “ &lt;&lt; getSum(BITree, 5);<br>    return 0;<br>}<br>```</p><ul><li>Segment tree<pre class="line-numbers language-C++"><code class="language-C++">#include <bits/stdc++.h>using namespace std;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li></ul><p>int minVal(int x, int y)<br>{<br>    return (x &lt; y)? x: y;<br>}</p><p>int getMid(int s, int e)<br>{<br>    return s + (e - s) / 2;<br>}</p><p>int RMQUtil(int *st, int ss, int se, int qs, int q)<br>{<br>    if (qs &lt;= ss &amp;&amp; qe &gt;= se)<br>        return st[index];</p><pre><code>if (se &lt; qs || ss &gt; qe)    return InT_MAX;int mid = getMid(ss, se);return minVal(RMQUtil(st, ss, mid, qs, qe, 2 * index + 1), RMQUtil(st, mid+1, se, qs, qe, 2 * index + 2));</code></pre><p>}</p><p>int RMQ(int *st, int n, int qs, int qe)<br>{<br>    if (qs &lt; 0 || qe &gt; n-1 || qs &gt; qe)<br>    {<br>        cout &lt;&lt; “Invalid Input”;<br>        return -1;<br>    }<br>    return RMQUtil(st, 0, n-1, qs, qe, 0);<br>}</p><p>int constructSTUtil(int arr[], int ss, int se, int <em>st, int si)<br>{<br>    if (ss == se)<br>    {<br>        st[si] = arr[ss];<br>        return arr[ss];<br>    }<br>    int mid = getMid(ss, se);<br>    st[si] = minVal(constructSTUtil(arr, ss, mid, st, si </em> 2 + 1), constructSTUtil(arr, mid + 1, se, st, si * 2 + 2));<br>    return st[si];<br>}</p><p>inr <em>constructST(int arr[], int n)<br>{<br>    int x = (int)(ceil(log2(n)));<br>    int max_size = 2 </em> (int)pow(2, x) -1;<br>    int *st = new int[max_size];<br>    constructSTUtil(arr, 0, n-1, st, 0);<br>    return st;<br>}</p><p>int main()<br>{<br>    int arr[] = {1, 3, 2, 7, 9, 11};<br>    int n = sizeof(arr)/sizeof(arr[0]);<br>    int *st = constructST(arr, n);<br>    int qs = 1;<br>    int qe = 5;<br>    cout &lt;&lt; “Minimum of values in range [“ &lt;&lt; qs &lt;&lt; “, “ &lt;&lt; qe &lt;&lt; “] “ &lt;&lt; “is =” &lt;&lt; RMQ(st, n, qs, qe) &lt;&lt; endl;</p><pre><code>return 0;</code></pre><p>}</p>]]></content>
       
       
+      <categories>
+          
+          <category> Teconology </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> Basic </tag>
+            
+        </tags>
       
     </entry>
     
@@ -48,7 +62,7 @@
       <link href="/2022/08/23/scientific-work/"/>
       <url>/2022/08/23/scientific-work/</url>
       
-        <content type="html"><![CDATA[<h2 id="22-08-23"><a href="#22-08-23" class="headerlink" title="22/08/23"></a>22/08/23</h2><h3 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h3><ol><li>While training model without style_transfer, the final model seems to be hard to handle images without much texture features.</li><li>the low SNR image &amp;&amp; obstacles like stars or keypoint_like &amp;&amp; small object</li><li>exists problems like symmetric point mismatches</li></ol>]]></content>
+        <content type="html"><![CDATA[<h2 id="22-08-23"><a href="#22-08-23" class="headerlink" title="22/08/23"></a>22/08/23</h2><h3 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h3><ol><li>While training model without style_transfer, the final model seems to be hard to handle images without much texture features.</li><li>the low SNR image &amp;&amp; obstacles like stars or keypoint_like &amp;&amp; small object</li><li>exists problems like symmetric point mismatches</li></ol><h2 id="22-08-25"><a href="#22-08-25" class="headerlink" title="22/08/25"></a>22/08/25</h2><h3 id="Note-1"><a href="#Note-1" class="headerlink" title="Note:"></a>Note:</h3><ol><li>some keypoints unchecked, some keypoints miracly checked but with relative low response value</li><li>for wrong situations:<ul><li>seems like inplane features are learned while the intro-plane features are not seperate properly.</li><li>dark situation</li></ul></li><li>for true situations:<ul><li>with EPNP algorithm, the other wrong keypoints can be filtered for most cases. (happens with strong keypoint features)</li></ul></li></ol><h3 id="Current-dilemma"><a href="#Current-dilemma" class="headerlink" title="Current dilemma:"></a>Current dilemma:</h3><ol><li>training stage final touch around 0.7, hard to improve;</li><li>testing stage has difficult in handling textureless &amp; dark background situation</li></ol><h3 id="Currnet-summary"><a href="#Currnet-summary" class="headerlink" title="Currnet summary:"></a>Currnet summary:</h3><ol><li>training without style_transfer seems to be helpful for inplane keypoint relations.<br> By introducing the texture feature, the model will give out more proposals than before.</li></ol><h3 id="Current-try"><a href="#Current-try" class="headerlink" title="Current try:"></a>Current try:</h3><ol><li>improve keypoint punish factor to 2.</li></ol><h2 id="22-08-30"><a href="#22-08-30" class="headerlink" title="22/08/30"></a>22/08/30</h2><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><ol><li>method need breakthrough. Try to extend the model length for better knowledge learning and expressing.</li><li>other context mixer methods. CCM | PSA</li></ol><h2 id="22-08-31"><a href="#22-08-31" class="headerlink" title="22/08/31"></a>22/08/31</h2><h3 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h3><ol><li>model need basic train before applying DA;</li><li></li></ol>]]></content>
       
       
       <categories>
@@ -98,31 +112,6 @@
     
     
     <entry>
-      <title>GAN_articles</title>
-      <link href="/2022/08/18/gan-articles/"/>
-      <url>/2022/08/18/gan-articles/</url>
-      
-        <content type="html"><![CDATA[<h2 id="GAN-Articles"><a href="#GAN-Articles" class="headerlink" title="GAN_Articles"></a>GAN_Articles</h2><h3 id="ON-Convergence-and-stability-of-GANs-2017"><a href="#ON-Convergence-and-stability-of-GANs-2017" class="headerlink" title="ON Convergence and stability of GANs(2017)"></a>ON Convergence and stability of GANs(2017)</h3><p><strong><em>Deep Regret Analytic Generative Adversarial Networks</em></strong></p><ol><li>regret minimization is the more appropriate way to think about GAN training dynamics</li><li>previous view off mode collapse and instability is that it results from <strong>attempting to minimize a strong divergence</strong> during training, authors argued to be not ture</li><li>mode collapse situations are often accompanied by sharp gradients of the discriminator function around some real data points</li><li>view alternating gradient updates procedures as regret minimization</li><li>prove the asymptotic convergence of GAN training in the non-parametric limit without requirements of discriminator to be optimal at each step</li><li>AGD can converge to a potentially bad local equilibrium in non-convex games and hypothesize this to be responsible for mode collapse</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Study </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> technology books </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Pose_Estimation</title>
       <link href="/2022/08/18/pose-estimation/"/>
       <url>/2022/08/18/pose-estimation/</url>
@@ -140,6 +129,31 @@
         <tags>
             
             <tag> Pose_Estimation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GAN_articles</title>
+      <link href="/2022/08/18/gan-articles/"/>
+      <url>/2022/08/18/gan-articles/</url>
+      
+        <content type="html"><![CDATA[<h2 id="GAN-Articles"><a href="#GAN-Articles" class="headerlink" title="GAN_Articles"></a>GAN_Articles</h2><h3 id="ON-Convergence-and-stability-of-GANs-2017"><a href="#ON-Convergence-and-stability-of-GANs-2017" class="headerlink" title="ON Convergence and stability of GANs(2017)"></a>ON Convergence and stability of GANs(2017)</h3><p><strong><em>Deep Regret Analytic Generative Adversarial Networks</em></strong></p><ol><li>regret minimization is the more appropriate way to think about GAN training dynamics</li><li>previous view off mode collapse and instability is that it results from <strong>attempting to minimize a strong divergence</strong> during training, authors argued to be not ture</li><li>mode collapse situations are often accompanied by sharp gradients of the discriminator function around some real data points</li><li>view alternating gradient updates procedures as regret minimization</li><li>prove the asymptotic convergence of GAN training in the non-parametric limit without requirements of discriminator to be optimal at each step</li><li>AGD can converge to a potentially bad local equilibrium in non-convex games and hypothesize this to be responsible for mode collapse</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> technology books </tag>
             
         </tags>
       
