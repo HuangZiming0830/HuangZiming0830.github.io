@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-08-31T13:43:51.812Z</updated>
+  <updated>2022-09-13T09:41:48.725Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Multiprocessing</title>
+    <link href="Https://huangziming0830.github.io/2022/09/13/multiprocessing/"/>
+    <id>Https://huangziming0830.github.io/2022/09/13/multiprocessing/</id>
+    <published>2022-09-13T09:12:47.000Z</published>
+    <updated>2022-09-13T09:41:48.725Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;DistributedDataParallel&quot;&gt;&lt;a href=&quot;#DistributedDataParallel&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>C++_Basic</title>
     <link href="Https://huangziming0830.github.io/2022/08/25/c-basic/"/>
     <id>Https://huangziming0830.github.io/2022/08/25/c-basic/</id>
     <published>2022-08-25T02:40:58.000Z</published>
-    <updated>2022-08-31T13:43:51.812Z</updated>
+    <updated>2022-09-13T02:48:48.654Z</updated>
     
     <summary type="html">
     

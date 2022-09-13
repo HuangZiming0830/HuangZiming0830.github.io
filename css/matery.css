@@ -2176,7 +2176,7 @@ footer .copy-right {
     -moz-transform: rotate(180deg) !important;
     -o-transform: rotate(180deg) !important;
     -ms-transform: rotate(180deg) !important;
-    transform: rotate(360deg) !important;
+    transform: rotate(180deg) !important;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;

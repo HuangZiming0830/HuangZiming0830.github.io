@@ -519,7 +519,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -678,7 +678,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    14
                 </div>
                 
 
@@ -832,7 +832,8 @@ int main()
     return 0;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
-<li>Operators<table>
+<li><p>Operators</p>
+<table>
 <thead>
 <tr>
 <th align="left">operator</th>
@@ -845,9 +846,78 @@ int main()
 </tr>
 </tbody></table>
 </li>
+<li><p>Dynamic memory: remain until being deallocated by program</p>
+<pre class="line-numbers language-C"><code class="language-C">malloc()
+calloc()
+free()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-C++"><code class="language-C++">int *p = new(nothrow) int;
+if (!p)
+  cout << "allocation of memory failed\n";
+delete p;
+// release block memory pointed by point-variable
+delete[] p;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>Arrays</p>
+<pre class="line-numbers language-C++"><code class="language-C++">// array declaration by specifying the size
+int arr1[10];
+int n = 10;
+int arr2[n];
+// array declaration by initializing elements
+int arr[] = {10, 20, 30, 40};
+// array declaration by specifying the size and initializing elements
+int arr[6] = {10, 20, 30, 40};
+// dynamic allocation
+int** x = new int*[3];
+for (int i=0;i<3;i++)
+{
+  x[i] = new int[4];
+  for (int j=0;j<4;j++)
+  {
+      cin >> x[i][j];
+  }
+}
+// use template and reference to find size of any type array
+template <typename T, size_t, n>
+void findSize(T (&arr)[n])
+{
+  cout << sizeof(T) * n << endl;
+}
+int main()
+{
+  int a[10];
+  cout << sizeof(a) << " ";
+  findSize(a);
+  return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>String</p>
+</li>
 </ul>
-<pre class="line-numbers language-C++"><code class="language-C++">#include <bits/stdc++.h>
-using namespace std
+<p><em>push_back(str)</em>: input a character at the end of the string<br><em>pop_back(str)</em>: delete the last character from the string</p>
+<pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string str = "helloword";
+    std::string::iterator it;
+    std::string::reverse_iterator it1;
+
+    cout<< "The string using forward iterators is : ";
+    for (it=str.begin();it!=str.end();it++)
+        cout<< *it;
+    cout << endl;
+
+    cout<< "The reverse string using reverse iterators is ":" ";
+    for (it1=str.rbegin();it1!=str.rend();it1++)
+        cout <<*it1;
+    cout<<endl;
+
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Search-amp-Insert"><a href="#Search-amp-Insert" class="headerlink" title="Search &amp; Insert"></a>Search &amp; Insert</h3><pre class="line-numbers language-C++"><code class="language-C++">#include <bits/stdc++.h>
+using namespace std;
 
 const int ALPHABET_SIZE = 26;
 // trie node
@@ -911,26 +981,56 @@ int main()
 
     return 0;
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>Binary Indexed Tree<pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>
+<h3 id="Binary-Indexed-Tree"><a href="#Binary-Indexed-Tree" class="headerlink" title="Binary Indexed Tree"></a>Binary Indexed Tree</h3><pre class="line-numbers language-C++"><code class="language-C++">#include <iostream>
 using namespace std;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</li>
-</ul>
-<p>int getSum(int BITree[], int index)<br>{<br>    int sum = 0;<br>    index = index + 1;<br>    while (index&gt;0)<br>    {<br>        sum += BITree[index];<br>        index -= index &amp; (-index);<br>    }<br>    return sum;<br>}</p>
-<p>void updateBIT(int BITree[], int n, int index, int val){<br>    index = index + 1;<br>    while (index&lt;=n)<br>    {<br>        BITree[index] += val;<br>        index += index &amp; (-index);<br>    }<br>}</p>
-<p>int <em>constructBITree(int arr[], int n)<br>{<br>    int </em>BITree = new int[n+1];<br>    for (int i=1;i&lt;=n;i++)<br>        BITree[i] = 0;<br>    for (int i=0;i&lt;n;i++)<br>        updateBIT(BITree, n, i, arr[i]);</p>
-<pre><code>return BITree;</code></pre><p>}</p>
-<p>int main()<br>{<br>    int freq[] = {2, 1, 1, 3, 2, 3, 4, 5, 6, 7, 8, 9};<br>    int n = sizeof(freq)/sizeof(freq[0]);<br>    int *BITree = constructBITree(freq, n);<br>    cout &lt;&lt; “Sum of elements in arr[0..5] is “ &lt;&lt; getSum(BITree, 5);<br>    freq[3] += 6;<br>    updateBIT(BITree, n, 3, 6);<br>    cout &lt;&lt; “Sum of elements in arr[0..5] is “ &lt;&lt; getSum(BITree, 5);<br>    return 0;<br>}<br>```</p>
-<ul>
-<li>Segment tree<pre class="line-numbers language-C++"><code class="language-C++">#include <bits/stdc++.h>
-using namespace std;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-</li>
-</ul>
+
+int getSum(int BITree[], int index)
+{
+    int sum = 0;
+    index = index + 1;
+    while (index>0)
+    {
+        sum += BITree[index];
+        index -= index & (-index);
+    }
+    return sum;
+}
+
+void updateBIT(int BITree[], int n, int index, int val){
+    index = index + 1;
+    while (index<=n)
+    {
+        BITree[index] += val;
+        index += index & (-index);
+    }
+}
+
+int *constructBITree(int arr[], int n)
+{
+    int *BITree = new int[n+1];
+    for (int i=1;i<=n;i++)
+        BITree[i] = 0;
+    for (int i=0;i<n;i++)
+        updateBIT(BITree, n, i, arr[i]);
+
+    return BITree;
+}
+
+int main()
+{
+    int freq[] = {2, 1, 1, 3, 2, 3, 4, 5, 6, 7, 8, 9};
+    int n = sizeof(freq)/sizeof(freq[0]);
+    int *BITree = constructBITree(freq, n);
+    cout << "Sum of elements in arr[0..5] is " << getSum(BITree, 5);
+    freq[3] += 6;
+    updateBIT(BITree, n, 3, 6);
+    cout << "Sum of elements in arr[0..5] is " << getSum(BITree, 5);
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Segment-tree"><a href="#Segment-tree" class="headerlink" title="Segment tree"></a>Segment tree</h3><p>```C++</p>
+<p>#include &lt;bits/stdc++.h&gt;<br>using namespace std;</p>
 <p>int minVal(int x, int y)<br>{<br>    return (x &lt; y)? x: y;<br>}</p>
-<p>int getMid(int s, int e)<br>{<br>    return s + (e - s) / 2;<br>}</p>
-<p>int RMQUtil(int *st, int ss, int se, int qs, int q)<br>{<br>    if (qs &lt;= ss &amp;&amp; qe &gt;= se)<br>        return st[index];</p>
+<p>int getMid(int s, int e)<br>{<br>    return s + (e - s) / 2;<br>}<br>// st: pointer to segment tree;<br>// index: index of current node;<br>// ss &amp; se: index of segment represented by current node;<br>// qs &amp; qe: index of query range;<br>int RMQUtil(int *st, int ss, int se, int qs, int qe, int index)<br>{<br>    if (qs &lt;= ss &amp;&amp; qe &gt;= se)<br>        return st[index];</p>
 <pre><code>if (se &lt; qs || ss &gt; qe)
     return InT_MAX;
 
@@ -1155,60 +1255,37 @@ return minVal(RMQUtil(st, ss, mid, qs, qe, 2 * index + 1), RMQUtil(st, mid+1, se
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/08/25/c-basic/">
+                <a href="/2022/09/13/multiprocessing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="C++_Basic">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Multiprocessing">
                         
-                        <span class="card-title">C++_Basic</span>
+                        <span class="card-title">Multiprocessing</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            C++##definition = declaration + initialisation
-#include 
-using namespace std:
-int main()
-{
-    char a123 = 'a':
-    cout
+                            DistributedDataParallel    import torch
+    import torch.distributed as dist
+    import torch.multiprocessing as mp
+
+   
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-25
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-09-13
+                        </span>
                         <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Teconology/" class="post-category" target="_blank">
-                                    Teconology
-                                </a>
-                            
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C/" target="_blank">
-                        <span class="chip bg-color">C++</span>
-                    </a>
-                    
-                    <a href="/tags/Basic/" target="_blank">
-                        <span class="chip bg-color">Basic</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1224,7 +1301,7 @@ int main()
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CSS_basic">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="CSS_basic">
                         
                         <span class="card-title">CSS_basic</span>
                     </div>
@@ -1459,7 +1536,7 @@ select all
                 <iframe width="500" height="300" frameborder="0" style="position:absolute; right:200px" src="https://hammyhome.com?hh=('names!%255B'apLwbWcWc6irLpWpWr2Lw2bLcWrWh4iWcWhcLh2LhLh'%255D~props!%255B('bp!'noneiSC0C0C0Lx!d2.42~z!-22*-3.15J4MBFBFBFXADADADXK7FNLwl!q396987159574855gv1YQ0*dqGF0CCKih!0*dOGtK_V-V2J2Z-Pdq5MjNUQ0*1J1ZPv1YMtNU5MC1B575HA39347Lnf!0g-vqQ'RRRRWbSKFBAF_3J2.75MKNNHtNXNjUMAF5719HNC7N_d2Ifu%252Cbe%252Cru_d-0.9IcRc2kf%252Csnkh%252Cbe')%255D)*)%252C('x!G~SH%252C%2523IGTHNNjHTHTLo!'J~y!KFFL'~MZ0GN00O2YP0.79GE1DABBHC2B475_QGtKih!R1%252CSc!'%2523TEC76jU_-vOV1JOG82K82_W1LXHjNHY.5Z~rz!_'*d0Jg~nh!2*iLbjNKk%252Ccq0YtKKvOJ%2501vtqkjigd_ZYXWVUTSRQPONMLKJIHG*_"></iframe>
 
                 <!--Visitor_map-->
-                <script type="text/javascript" style="margin-left:200px" src="//rf.revolvermaps.com/0/0/6.js?i=5dymrcb2rpu&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
+                <script type="text/javascript" style="margin-left:350px" src="//rf.revolvermaps.com/0/0/6.js?i=5dymrcb2rpu&amp;m=6&amp;c=ff0000&amp;cr1=ffffff&amp;f=times_new_roman&amp;l=0" async="async"></script>
 
                 <footer class="page-footer bg-color">
     <div class="container row center-align">
@@ -1468,7 +1545,7 @@ select all
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">4.1k</span>
+            <span class="white-color">4.2k</span>
             
 
             <br>
