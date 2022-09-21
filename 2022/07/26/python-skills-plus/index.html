@@ -16,8 +16,7 @@ zip
   a1, a2 = zip(*zip(a,b))
   list(a1)
 
-Keywords
- ">
+  from zip">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -522,7 +521,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -681,14 +680,14 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    463
+                    505
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
                 
@@ -710,16 +709,27 @@ $(document).ready(function(){
   zipped <span class="token operator">=</span> zip<span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
   list<span class="token punctuation">(</span>zipped<span class="token punctuation">)</span>
   a1<span class="token punctuation">,</span> a2 <span class="token operator">=</span> zip<span class="token punctuation">(</span><span class="token operator">*</span>zip<span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
-  list<span class="token punctuation">(</span>a1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-<li><p>Keywords</p>
-<pre class="line-numbers language-python"><code class="language-python">  <span class="token keyword">try</span><span class="token punctuation">:</span>
-  <span class="token keyword">except</span> ZeroDivisionError<span class="token punctuation">:</span>
-  <span class="token keyword">finally</span><span class="token punctuation">:</span>
+  list<span class="token punctuation">(</span>a1<span class="token punctuation">)</span>
 
-  <span class="token keyword">global</span> variable
-  non<span class="token operator">-</span>local variable<span class="token punctuation">:</span> rather than <span class="token keyword">global</span><span class="token punctuation">,</span> declares a variable to point to variable of outside enclosing function<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token keyword">from</span> zipfile <span class="token keyword">import</span> ZipFile
+  <span class="token keyword">import</span> os
+  <span class="token keyword">from</span> os<span class="token punctuation">.</span>path <span class="token keyword">import</span> basename
+  <span class="token keyword">with</span> ZipFile<span class="token punctuation">(</span><span class="token string">'sampleDir.zip'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> zipObj<span class="token punctuation">:</span>
+      <span class="token keyword">for</span> folderName<span class="token punctuation">,</span> subfolders<span class="token punctuation">,</span> filenames <span class="token keyword">in</span> os<span class="token punctuation">.</span>walk<span class="token punctuation">(</span>dirName<span class="token punctuation">)</span><span class="token punctuation">:</span>
+          <span class="token keyword">for</span> filename <span class="token keyword">in</span> filenames<span class="token punctuation">:</span>
+              filePath <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>folderName<span class="token punctuation">,</span> filename<span class="token punctuation">)</span>
+              zipObj<span class="token punctuation">.</span>write<span class="token punctuation">(</span>filePath<span class="token punctuation">,</span> basename<span class="token punctuation">(</span>filePath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
+</ul>
+<pre><code>- Keywords
+```python
+    try:
+    except ZeroDivisionError:
+    finally:
+
+    global variable
+    non-local variable: rather than global, declares a variable to point to variable of outside enclosing function</code></pre><ul>
 <li><p>print</p>
 <pre class="line-numbers language-python"><code class="language-python">  <span class="token comment" spellcheck="true"># without extraline</span>
   l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
@@ -1051,7 +1061,7 @@ list are *mutable* while tuple is immutable
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="DL_Model_Training">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="DL_Model_Training">
                         
                         <span class="card-title">DL_Model_Training</span>
                     </div>
@@ -1104,9 +1114,9 @@ list are *mutable* while tuple is immutable
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="space_titanic">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Kaggle_Competitons">
                         
-                        <span class="card-title">space_titanic</span>
+                        <span class="card-title">Kaggle_Competitons</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1140,6 +1150,10 @@ list are *mutable* while tuple is immutable
                     
                     <a href="/tags/Feature-Extraction/" target="_blank">
                         <span class="chip bg-color">Feature Extraction</span>
+                    </a>
+                    
+                    <a href="/tags/Kaggle/" target="_blank">
+                        <span class="chip bg-color">Kaggle</span>
                     </a>
                     
                 </div>
@@ -1332,7 +1346,7 @@ list are *mutable* while tuple is immutable
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">4.2k</span>
+            <span class="white-color">5.6k</span>
             
 
             <br>

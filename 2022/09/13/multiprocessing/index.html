@@ -517,7 +517,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -633,11 +633,28 @@ $(document).ready(function(){
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/Python/" target="_blank">
+                            <span class="chip bg-color">Python</span>
+                        </a>
+                        
+                        <a href="/tags/MultiProcessing/" target="_blank">
+                            <span class="chip bg-color">MultiProcessing</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/Technology/" class="post-category" target="_blank">
+                            Technology
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -659,7 +676,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    186
+                    204
                 </div>
                 
 
@@ -735,12 +752,12 @@ $(document).ready(function(){
         model.train()
         for i, (images, target) in enumerate(train_loader):
             images = images.cuda(local_rank, non_blocking=True)
-
+            # when func is not the main_process(rank!=0,-1), context_manegementor will barrier processor util all processors reach barrier
             torch.distributed.barrier()
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ol>
-<li><a href="https://github.com/tczhangchi/pytorch-distributed/blob" target="_blank" rel="noopener">reference</a></li>
+<li><a href="https://github.com/tczhangchi/pytorch-distributed/" target="_blank" rel="noopener">reference</a></li>
 </ol>
 
             </div>
@@ -956,40 +973,55 @@ $(document).ready(function(){
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/13/multiprocessing/">
+                <a href="/2022/09/13/optimal-algorithms/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Multiprocessing">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="optimal_algorithms">
                         
-                        <span class="card-title">Multiprocessing</span>
+                        <span class="card-title">optimal_algorithms</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DistributedDataParallel    import torch
-    import torch.distributed as dist
-    import torch.multiprocessing as mp
+                            PSO(Particle Swarm Optimization)
+Features:
 
-   
+search global solution by iteration as anneal simulation
+
+
+PSO Standard form
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-09-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-09-13
+                        </span>
                         <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Technology/" class="post-category" target="_blank">
+                                    Technology
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Algorithm/" target="_blank">
+                        <span class="chip bg-color">Algorithm</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1004,7 +1036,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="C++_Basic">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="C++_Basic">
                         
                         <span class="card-title">C++_Basic</span>
                     </div>
@@ -1238,7 +1270,7 @@ int main()
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">4.2k</span>
+            <span class="white-color">5.6k</span>
             
 
             <br>

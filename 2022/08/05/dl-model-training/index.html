@@ -8,10 +8,9 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="PytorchModelload modelload_state_dict == net.state_dictkey值
+    <meta name="description" content="PytorchModelload modelload_state_dict= net.state_dict
     net.load_state_dict(checkpoint[&#39;net&#39;], strict=False)
-
-  ">
+    model">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -516,7 +515,7 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -586,7 +585,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    105
+                    104
                 </div>
                 
 
@@ -609,14 +608,13 @@ $(document).ready(function(){
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h1><h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><h3 id="load-model"><a href="#load-model" class="headerlink" title="load model"></a>load model</h3><p><strong><code>load_state_dict == net.state_dict</code>key值</strong></p>
+                <h1 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h1><h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><h3 id="load-model"><a href="#load-model" class="headerlink" title="load model"></a>load model</h3><p><strong><code>load_state_dict= net.state_dict</code></strong></p>
 <pre class="line-numbers language-python"><code class="language-python">    net<span class="token punctuation">.</span>load_state_dict<span class="token punctuation">(</span>checkpoint<span class="token punctuation">[</span><span class="token string">'net'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> strict<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
-
     model_dict <span class="token operator">=</span> net<span class="token punctuation">.</span>state_dict<span class="token punctuation">(</span><span class="token punctuation">)</span>
     pretrained_dict <span class="token operator">=</span> <span class="token punctuation">{</span>k<span class="token punctuation">:</span> v <span class="token keyword">for</span> k<span class="token punctuation">,</span>v <span class="token keyword">in</span> checkpoint<span class="token punctuation">[</span><span class="token string">'net'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">if</span> k <span class="token keyword">in</span> model_dict<span class="token punctuation">}</span>
     model_dict<span class="token punctuation">.</span>update<span class="token punctuation">(</span>pretrained_dict<span class="token punctuation">)</span>
     net<span class="token punctuation">.</span>load_state_dict<span class="token punctuation">(</span>model_dict<span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="freeze-model"><a href="#freeze-model" class="headerlink" title="freeze model"></a>freeze model</h3><pre class="line-numbers language-python"><code class="language-python">    net<span class="token punctuation">.</span>fc2<span class="token punctuation">.</span>weight<span class="token punctuation">.</span>requires_grad <span class="token operator">=</span> <span class="token boolean">False</span>
     net<span class="token punctuation">.</span>fc2<span class="token punctuation">.</span>bias<span class="token punctuation">.</span>requires_grad <span class="token operator">=</span> <span class="token boolean">False</span>
     optimizer <span class="token operator">=</span> optim<span class="token punctuation">.</span>Aadm<span class="token punctuation">(</span>filter<span class="token punctuation">(</span><span class="token keyword">lambda</span> p<span class="token punctuation">:</span> p<span class="token punctuation">.</span>requires_grad<span class="token punctuation">,</span> net<span class="token punctuation">.</span>parameters<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> lr <span class="token operator">=</span> <span class="token number">0.1</span><span class="token punctuation">)</span>
@@ -847,7 +845,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Tutorial for online training">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Tutorial for online training">
                         
                         <span class="card-title">Tutorial for online training</span>
                     </div>
@@ -902,7 +900,7 @@ upload dataset and scripts by oss oss login
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Python_Skills_Plus">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Python_Skills_Plus">
                         
                         <span class="card-title">Python_Skills_Plus</span>
                     </div>
@@ -1037,7 +1035,7 @@ upload dataset and scripts by oss oss login
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">4.2k</span>
+            <span class="white-color">5.6k</span>
             
 
             <br>

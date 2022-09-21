@@ -4,15 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="space_titanic, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
+    <meta name="keywords" content="Kaggle_Competitons, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
-Feature extractionKaggle-Spaceship Titanic
-Data Statistics
+Feature extractionClassic methods## PCA
+from sklearn.decomposition import PCA
+from matplotlib import pypylot as plt
 
-passengerId: unique ID. Format gggg_pp. gggg indicates pass">
+es">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@ passengerId: unique ID. Format gggg_pp. gggg indicates pass">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>space_titanic | Adam&#39;s Blog</title>
+    <title>Kaggle_Competitons | Adam&#39;s Blog</title>
     <link rel="icon" type="image/jpeg" href="/medias/logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -517,13 +518,13 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        space_titanic
+                        Kaggle_Competitons
                     </div>
                 </div>
             </div>
@@ -551,6 +552,10 @@ $(document).ready(function(){
                         
                         <a href="/tags/Feature-Extraction/" target="_blank">
                             <span class="chip bg-color">Feature Extraction</span>
+                        </a>
+                        
+                        <a href="/tags/Kaggle/" target="_blank">
+                            <span class="chip bg-color">Kaggle</span>
                         </a>
                         
                     </div>
@@ -587,14 +592,14 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    317
+                    478
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -611,7 +616,46 @@ $(document).ready(function(){
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h1 id="Feature-extraction"><a href="#Feature-extraction" class="headerlink" title="Feature extraction"></a>Feature extraction</h1><h2 id="Kaggle-Spaceship-Titanic"><a href="#Kaggle-Spaceship-Titanic" class="headerlink" title="Kaggle-Spaceship Titanic"></a>Kaggle-Spaceship Titanic</h2><ol>
+<h1 id="Feature-extraction"><a href="#Feature-extraction" class="headerlink" title="Feature extraction"></a>Feature extraction</h1><h2 id="Classic-methods"><a href="#Classic-methods" class="headerlink" title="Classic methods"></a>Classic methods</h2><pre class="line-numbers language-Python"><code class="language-Python">## PCA
+from sklearn.decomposition import PCA
+from matplotlib import pypylot as plt
+
+estimator = PCA(n_components=2)
+X_pca = estimator.fit_transform(X_digits)
+
+def plot_pca_scatter():
+    colors = ['black', 'blue', 'purple', 'yellow', 'white']
+    for i in xrange(len(colors)):
+        px = X_pca[:,0][y_digits==i]
+        py = x_pca[:, 1][y_digits==i]
+        plt.scatter(px, py, c=colors[i])
+    plt.legend(digits.target_names)
+    plt.xlabel('First Principal Component')
+    plt.ylabel('Second Principal Component')
+    plt.show()
+plot_pca_scatter()
+
+## Feature_Selection
+from sklearn.cross_validation import cross_val_score
+from sklearn import feature_selection
+percentiles = range(1,100,2)
+results = []
+for i in percentiles:
+    fs = feature_selection.SelectPercentile(feature_selection.chi2, percentile=i)
+    X_train_fs = fs.fit_transform(X_train, y_train)
+    scores = cross_val_score(dt, X_train_fs, t_train, cv=5)
+    results = np.append(results, scores.mean())
+print(results)
+
+
+## Grid_Search
+from sklearn.pipeline import Pipeline
+
+clf = Pipeline([('vect', TfidfVectorizer()), ('svc',SVC())])
+parameters = {'svc_gamma': np.logspace(-1,2,4), 'svc_C': np.logspace(-1,1,3)}
+gs = GridSearchCV(clf, parameters, verbose=2, refit=True, cv=3)
+print(gs.best_params_, gs.best_score_, gs.score(X_test, y_test))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Kaggle-Spaceship-Titanic"><a href="#Kaggle-Spaceship-Titanic" class="headerlink" title="Kaggle-Spaceship Titanic"></a>Kaggle-Spaceship Titanic</h2><ol>
 <li><p>Data Statistics</p>
 <ul>
 <li>passengerId: unique ID. Format gggg_pp. gggg indicates passengers travel with same group</li>
@@ -844,7 +888,7 @@ $(document).ready(function(){
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《space_titanic》
+                    《Kaggle_Competitons》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/06/30/space-titanic/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -908,7 +952,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Python_Skills_Plus">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Python_Skills_Plus">
                         
                         <span class="card-title">Python_Skills_Plus</span>
                     </div>
@@ -961,7 +1005,7 @@ $(document).ready(function(){
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="pytorch_base">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="pytorch_base">
                         
                         <span class="card-title">pytorch_base</span>
                     </div>
@@ -1101,7 +1145,7 @@ broadcast 自动补齐，维度
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">4.2k</span>
+            <span class="white-color">5.6k</span>
             
 
             <br>

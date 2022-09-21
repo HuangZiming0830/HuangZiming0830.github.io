@@ -2,16 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>Https://huangziming0830.github.io/2022/09/13/multiprocessing/</loc>
+    <loc>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</loc>
     
-    <lastmod>2022-09-13T09:41:48.725Z</lastmod>
+    <lastmod>2022-09-21T07:54:09.219Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/06/30/space-titanic/</loc>
+    
+    <lastmod>2022-09-20T03:36:21.661Z</lastmod>
     
   </url>
   
   <url>
     <loc>Https://huangziming0830.github.io/2022/08/25/c-basic/</loc>
     
-    <lastmod>2022-09-13T02:48:48.654Z</lastmod>
+    <lastmod>2022-09-19T08:53:25.970Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</loc>
+    
+    <lastmod>2022-09-19T08:49:49.790Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/09/17/hdfs/</loc>
+    
+    <lastmod>2022-09-17T09:17:25.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/09/13/optimal-algorithms/</loc>
+    
+    <lastmod>2022-09-16T03:50:21.069Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/09/13/multiprocessing/</loc>
+    
+    <lastmod>2022-09-15T07:27:47.586Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>Https://huangziming0830.github.io/2022/09/14/cv-knowledge/</loc>
+    
+    <lastmod>2022-09-14T08:52:22.387Z</lastmod>
     
   </url>
   
@@ -30,23 +72,9 @@
   </url>
   
   <url>
-    <loc>Https://huangziming0830.github.io/2022/06/30/space-titanic/</loc>
-    
-    <lastmod>2022-08-25T02:19:58.611Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/</loc>
     
     <lastmod>2022-08-24T09:17:10.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</loc>
-    
-    <lastmod>2022-08-23T13:29:19.623Z</lastmod>
     
   </url>
   
@@ -68,13 +96,6 @@
     <loc>Https://huangziming0830.github.io/books/index.html</loc>
     
     <lastmod>2022-08-20T02:35:24.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</loc>
-    
-    <lastmod>2022-08-19T11:31:06.868Z</lastmod>
     
   </url>
   
@@ -135,14 +156,14 @@
   </url>
   
   <url>
-    <loc>Https://huangziming0830.github.io/categories/index.html</loc>
+    <loc>Https://huangziming0830.github.io/archives/index.html</loc>
     
     <lastmod>2021-06-03T07:33:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>Https://huangziming0830.github.io/archives/index.html</loc>
+    <loc>Https://huangziming0830.github.io/categories/index.html</loc>
     
     <lastmod>2021-06-03T07:33:16.000Z</lastmod>
     

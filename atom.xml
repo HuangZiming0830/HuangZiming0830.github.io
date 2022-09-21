@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-09-13T09:41:48.725Z</updated>
+  <updated>2022-09-17T09:17:25.310Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -17,11 +17,94 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HDFS</title>
+    <link href="Https://huangziming0830.github.io/2022/09/17/hdfs/"/>
+    <id>Https://huangziming0830.github.io/2022/09/17/hdfs/</id>
+    <published>2022-09-17T01:38:40.000Z</published>
+    <updated>2022-09-17T09:17:25.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;HDFS&quot;&gt;&lt;a href=&quot;#HDFS&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
+    
+    
+      <category term="Linux" scheme="Https://huangziming0830.github.io/tags/Linux/"/>
+    
+      <category term="Hadoop" scheme="Https://huangziming0830.github.io/tags/Hadoop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CV_Knowledge</title>
+    <link href="Https://huangziming0830.github.io/2022/09/14/cv-knowledge/"/>
+    <id>Https://huangziming0830.github.io/2022/09/14/cv-knowledge/</id>
+    <published>2022-09-14T02:44:45.000Z</published>
+    <updated>2022-09-14T08:52:22.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;VAE&quot;&gt;&lt;a href=&quot;#VAE&quot; class=&quot;headerlink&quot; title=&quot;VAE&quot;&gt;&lt;/a&gt;&lt;font color=&quot;blue&quot;&gt;&lt;strong&gt;VAE&lt;/strong&gt;&lt;/font&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;INPUT: sample
+        
+      
+    
+    </summary>
+    
+      <category term="STUDY" scheme="Https://huangziming0830.github.io/categories/STUDY/"/>
+    
+    
+      <category term="CV" scheme="Https://huangziming0830.github.io/tags/CV/"/>
+    
+      <category term="BASIC_KNOWLEDGE" scheme="Https://huangziming0830.github.io/tags/BASIC-KNOWLEDGE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>optimal_algorithms</title>
+    <link href="Https://huangziming0830.github.io/2022/09/13/optimal-algorithms/"/>
+    <id>Https://huangziming0830.github.io/2022/09/13/optimal-algorithms/</id>
+    <published>2022-09-13T12:42:34.000Z</published>
+    <updated>2022-09-16T03:50:21.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PSO-Particle-Swarm-Optimization&quot;&gt;&lt;a href=&quot;#PSO-Particle-Swarm-Optimization&quot; class=&quot;headerlink&quot; title=&quot;PSO(Particle Swarm
+        
+      
+    
+    </summary>
+    
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
+    
+    
+      <category term="Algorithm" scheme="Https://huangziming0830.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Multiprocessing</title>
     <link href="Https://huangziming0830.github.io/2022/09/13/multiprocessing/"/>
     <id>Https://huangziming0830.github.io/2022/09/13/multiprocessing/</id>
     <published>2022-09-13T09:12:47.000Z</published>
-    <updated>2022-09-13T09:41:48.725Z</updated>
+    <updated>2022-09-15T07:27:47.586Z</updated>
     
     <summary type="html">
     
@@ -35,6 +118,12 @@
     
     </summary>
     
+      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
+    
+    
+      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
+    
+      <category term="MultiProcessing" scheme="Https://huangziming0830.github.io/tags/MultiProcessing/"/>
     
   </entry>
   
@@ -43,7 +132,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/25/c-basic/"/>
     <id>Https://huangziming0830.github.io/2022/08/25/c-basic/</id>
     <published>2022-08-25T02:40:58.000Z</published>
-    <updated>2022-09-13T02:48:48.654Z</updated>
+    <updated>2022-09-19T08:53:25.970Z</updated>
     
     <summary type="html">
     
@@ -238,7 +327,7 @@
     <link href="Https://huangziming0830.github.io/2022/08/05/dl-model-training/"/>
     <id>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</id>
     <published>2022-08-05T08:48:56.000Z</published>
-    <updated>2022-08-19T11:31:06.868Z</updated>
+    <updated>2022-09-19T08:49:49.790Z</updated>
     
     <summary type="html">
     
@@ -266,7 +355,7 @@
     <link href="Https://huangziming0830.github.io/2022/07/26/python-skills-plus/"/>
     <id>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</id>
     <published>2022-07-26T08:48:56.000Z</published>
-    <updated>2022-08-23T13:29:19.623Z</updated>
+    <updated>2022-09-21T07:54:09.219Z</updated>
     
     <summary type="html">
     
@@ -290,11 +379,11 @@
   </entry>
   
   <entry>
-    <title>space_titanic</title>
+    <title>Kaggle_Competitons</title>
     <link href="Https://huangziming0830.github.io/2022/06/30/space-titanic/"/>
     <id>Https://huangziming0830.github.io/2022/06/30/space-titanic/</id>
     <published>2022-06-30T08:48:56.000Z</published>
-    <updated>2022-08-25T02:19:58.611Z</updated>
+    <updated>2022-09-20T03:36:21.661Z</updated>
     
     <summary type="html">
     
@@ -315,6 +404,8 @@
       <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
       <category term="Feature Extraction" scheme="Https://huangziming0830.github.io/tags/Feature-Extraction/"/>
+    
+      <category term="Kaggle" scheme="Https://huangziming0830.github.io/tags/Kaggle/"/>
     
   </entry>
   
