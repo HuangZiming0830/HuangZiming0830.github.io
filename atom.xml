@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-09-17T09:17:25.310Z</updated>
+  <updated>2022-09-28T14:16:45.284Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -15,6 +15,116 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ML_Competition</title>
+    <link href="Https://huangziming0830.github.io/2022/09/28/ml-competition/"/>
+    <id>Https://huangziming0830.github.io/2022/09/28/ml-competition/</id>
+    <published>2022-09-28T01:55:56.000Z</published>
+    <updated>2022-09-28T14:16:45.284Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;数据探索&quot;&gt;&lt;a href=&quot;#数据探索&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Book" scheme="Https://huangziming0830.github.io/categories/Book/"/>
+    
+    
+      <category term="ML" scheme="Https://huangziming0830.github.io/tags/ML/"/>
+    
+      <category term="Competetion" scheme="Https://huangziming0830.github.io/tags/Competetion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Video_Enhance</title>
+    <link href="Https://huangziming0830.github.io/2022/09/26/video-enhance/"/>
+    <id>Https://huangziming0830.github.io/2022/09/26/video-enhance/</id>
+    <published>2022-09-26T03:00:45.000Z</published>
+    <updated>2022-09-28T01:56:09.652Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Video-Enhance&quot;&gt;&lt;a href=&quot;#Video-Enhance&quot; class=&quot;headerlink&quot; title=&quot;Video Enhance&quot;&gt;&lt;/a&gt;Video Enhance&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Faster
+        
+      
+    
+    </summary>
+    
+      <category term="Book" scheme="Https://huangziming0830.github.io/categories/Book/"/>
+    
+    
+      <category term="Basic" scheme="Https://huangziming0830.github.io/tags/Basic/"/>
+    
+      <category term="Competetion" scheme="Https://huangziming0830.github.io/tags/Competetion/"/>
+    
+      <category term="Video_Enhance" scheme="Https://huangziming0830.github.io/tags/Video-Enhance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Knowledge_Graph</title>
+    <link href="Https://huangziming0830.github.io/2022/09/22/knowledge-graph/"/>
+    <id>Https://huangziming0830.github.io/2022/09/22/knowledge-graph/</id>
+    <published>2022-09-22T02:21:56.000Z</published>
+    <updated>2022-09-26T03:00:54.112Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;KnowLedge-Graph&quot;&gt;&lt;a href=&quot;#KnowLedge-Graph&quot; class=&quot;headerlink&quot; title=&quot;KnowLedge_Graph&quot;&gt;&lt;/a&gt;KnowLedge_Graph&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Main
+        
+      
+    
+    </summary>
+    
+      <category term="Book" scheme="Https://huangziming0830.github.io/categories/Book/"/>
+    
+    
+      <category term="Basic" scheme="Https://huangziming0830.github.io/tags/Basic/"/>
+    
+      <category term="Knowledge_graph" scheme="Https://huangziming0830.github.io/tags/Knowledge-graph/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bayes_basic</title>
+    <link href="Https://huangziming0830.github.io/2022/09/21/bayes-basic/"/>
+    <id>Https://huangziming0830.github.io/2022/09/21/bayes-basic/</id>
+    <published>2022-09-21T13:32:39.000Z</published>
+    <updated>2022-09-22T02:11:50.757Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;参数化建模学习：概念和方向&quot;&gt;&lt;a href=&quot;#参数化建模学习：概念和方向&quot; class=&quot;headerlink&quot; title=&quot;参数化建模学习：概念和方向&quot;&gt;&lt;/a&gt;参数化建模学习：概念和方向&lt;/h2&gt;&lt;h3 id=&quot;Note&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>HDFS</title>
@@ -241,6 +351,32 @@
   </entry>
   
   <entry>
+    <title>GAN_articles</title>
+    <link href="Https://huangziming0830.github.io/2022/08/18/gan-articles/"/>
+    <id>Https://huangziming0830.github.io/2022/08/18/gan-articles/</id>
+    <published>2022-08-18T01:17:46.000Z</published>
+    <updated>2022-08-19T11:27:51.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
+    
+    
+      <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Pose_Estimation</title>
     <link href="Https://huangziming0830.github.io/2022/08/18/pose-estimation/"/>
     <id>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</id>
@@ -265,32 +401,6 @@
     
     
       <category term="Pose_Estimation" scheme="Https://huangziming0830.github.io/tags/Pose-Estimation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GAN_articles</title>
-    <link href="Https://huangziming0830.github.io/2022/08/18/gan-articles/"/>
-    <id>Https://huangziming0830.github.io/2022/08/18/gan-articles/</id>
-    <published>2022-08-18T01:17:46.000Z</published>
-    <updated>2022-08-19T11:27:51.571Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;GAN-Articles&quot;&gt;&lt;a href=&quot;#GAN-Articles&quot; class=&quot;headerlink&quot; title=&quot;GAN_Articles&quot;&gt;&lt;/a&gt;GAN_Articles&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
-    
-    
-      <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
     
   </entry>
   

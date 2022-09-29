@@ -4,6 +4,102 @@
   
     
     <entry>
+      <title>ML_Competition</title>
+      <link href="/2022/09/28/ml-competition/"/>
+      <url>/2022/09/28/ml-competition/</url>
+      
+        <content type="html"><![CDATA[<h2 id="数据探索"><a href="#数据探索" class="headerlink" title="数据探索"></a>数据探索</h2><ol><li><p>数据集基本情况：数据大小，字段类型；</p></li><li><p>重复值、缺失值、异常值：去除重复值，缺失值是否严重或有特殊含义，如何发现异常值；</p></li><li><p>特征之间是否冗余：特征之间相似性分析；</p></li><li><p>是否存在时间信息：当存在时间信息时，需要进行相关性、趋势性、周期性和异常点的分析，还有可能涉及潜在的数据穿越问题；</p></li><li><p>标签分布：</p><p> 分类问题：类别分布不均衡；</p><p> 回归问题：存在异常值，整体分布情况，是否需要进行目标转换</p></li><li><p>训练集和测试集的分布： 是否有很多只在测试集中存在的特殊字段</p></li><li><p>单变量/多变量分布：熟悉特征的分布情况以及标签和特征之间的关系</p></li></ol><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre class="line-numbers language-Python"><code class="language-Python">train['SalePrice'].describe()plt.figure(figsize=(9,8))sns.distplot(train['SalePrice'], color='g', bins=100, hist_kws={'alpha':0.4})## 相似性矩阵corrmat = train.corr()f, ax= plt.subplots(figsize=(20,9))sns.heatmap(corrmat, vmax=0.8, square=True)## 多变量分析plt.style.use('seaborn-white')type_cluster = train.group_by(['Neighborhood', 'OverallQual']).size()type_cluster.unstack().plot(kind='bar', stacked=True, colormap='Pubu', figsize=(13,11), grid=False)plt.xlable('OverallQual', fontsize=16)plt.show()## 特征关联性分析def feature_select_pearson(train, features):    featureSelect = features[:]    corr = []    for feat in featureSelect:        corr.append(abs(train[['feat', 'target']].fillna(0).corr().values[0][1]))    se = pd.Series(corr, index=featureSelect).sort_values(ascending=False)    feature_select = se[:300].index.tolist()    return train[feature_select]## 特征重要性分析 params = {'max_depth':10,'subsample':1,'verbose_eval':True,'seed':12,'objective':'binary:logistic'}xgtrain = xgb.DMatrix(x, label=y)bst = xgb.train(params, xgtrain, num_boost_round=10)## weight 指代被选为分裂特征的次数；gain 指代特征在所有树中作为分裂节点信息增益之和再除以该特征出现的频次；cover 指代特征被分到该节点的二阶导数之和importance = bst.get_score(fmap='', importance_type='weight')<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h2><ul><li>缺失值处理：<ol><li>类别特征：众数或者新类别；</li><li>数值特征：平均数、中位数、众数、最大最小值；</li><li>有序数据(时间序列)：填充相邻值next|previous</li></ol></li><li>异常值处理：<ol><li>删除含有异常值记录；</li><li>将异常值视为缺失值；</li></ol></li></ul><h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><ul><li><p>损失函数：</p><p>  Lasso &amp;&amp; Ridge: 对传统L1/L2正则增加惩罚项</p></li><li><p>树模型：</p><ol><li><p>随机森林(Bagging)：</p><p> 基于非线性树的模型，通过集成学习的思想将多个决策树集成在一起投票得到最终结果</p><p> 并行特性，适合分布式训练，且不易过拟合</p><p> 有放回随机抽样训练决策树，随机选取属性做节点分裂属性(信息增益、信息增益比、基尼指数)，直至不能再分裂(节点的所有样本均属于同一类)</p><pre class="line-numbers language-Python"><code class="language-Python"> from sklearn.ensemble import RandomForestClassifier rf = RandomForestClassifier(max_fefatures='auto', oob_score=True, random_state=1, n_jobs=1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li><p>梯度提升树(Boosting):</p><p> 串行学习一系列基学习器，每次生成一棵树，学习目标是上棵树的残差</p><p> 估计方差增加，对数据中的噪声敏感(可通过子采样减弱)，非并行操作计算成本显著</p></li><li><p>XGBoost:</p><p> 采用稀疏感知算法。利用稀疏矩阵节省内存(不需要密集矩阵)和计算时间(特殊方式处理零值)；</p><p> 加权分位数略图近似树学习节省分支切割探索时间(广度优先搜索BFS)；</p><p> 利用核外计算的优化算法解决磁盘读取数据时间过长问题(独立线程专门读取并行运行数据加载和计算)；</p><p> 有效处理缺失值，训练时对缺失值自动学习切分方向</p><pre class="line-numbers language-Python"><code class="language-Python"> import xgboost as xgb params = {'eta':0.01, 'max_depth':11, 'objective':'reg:linear', 'eval_metric': 'rmse'} dtrain = xgb.DMatrix(data=X_train, label=y_train) dtest = xgb.DMatrix(data=X_valid, label=y_valid) watchlist=[(train_data, 'train'), (valid_data, 'valid')] model= xgb.train(param,train_data, num_boost_round=20000, evals=watchlist, early_stopping_rounds=200, verbose=500) y_pred = model.predict(xgb.DMatrix(X_test), ntree_limit= model.best_ntree_limit)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>LightGBM:</p><p> 基于分布式，可以快速处理大量数据，在非常复杂的树中捕获训练数据的底层模式；</p><p> 专注于按叶子节点进行划分以便获得更好的拟合(深度优先搜索DFS);</p><pre class="line-numbers language-Python"><code class="language-Python"> import lightgbm as lgb params = {'num_leaves':54, 'objective':'regression', 'max_depth':18, 'learning_rate':0.01, 'boosting':'gbdt', 'metric':'rmse', 'lambda_l1':0.1} model = lgb.LGBMRegressor(**params, n_estimators=20000, nthread=4, n_jons=-1) model.fit(X_train, y_train, eval_set=[(X_train, y_train), (X_valid, y_valid)], eval_metric='rmse',verbose=1000, early_stopping_rounds=200) y_pred = model.predict(X_test, num_iteration=model.best_iteration_)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>CatBoost:</p><p> 支持类别特征，无需预处理类别特征，采用独热编码和均值编码混合的策略处理类别特征；</p><p> 提出全新梯度提升机制(Ordered Boosting)，减少过拟合风险，提升准确性；</p><p> 支持GPU训练(设置task_type=’GPU’)；</p><p> 训练中使用组合类别特征，利用特征之间的联系极大丰富了特征维度</p><pre class="line-numbers language-Python"><code class="language-Python"> from catboost import CatBoostRegressor params = {'learning_rate':0.02, 'depth':13, 'bootstrap_type':'Bernoulli', 'od_type':'Iter', 'od_wait': 50, 'random_seed': 11} model = CatBoostRegressor(iterations=20000, eval_metrix='RMSE', **params) model.fit(X_train, y_train, eval_set=(X_valid, y_valid), cat_features=[], use_best_model=True, verbose=False) y_pred = model.fit(X_test)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>模型对比：</p><ol><li>XGBoost 使用Level-wise按层生长，可以同时分裂同一层叶子，从而进行多线程优化，不容易过拟合。但很多叶子节点的分裂增益较低会影响性能；LightGBM使用Leaf-wise分裂方式，每次都从当前叶子中选择增益最大的结点进行分裂。但会生成非常深的决策树导致过拟合；CatBoost使用oblivious-tree，节点镜像生长。这种树结构起到了正则化的作用不容易过拟合；</li><li>XGBoost和LightGBM都是有偏梯度估计，梯度估计和建立模型使用的数据是相同的，这样会导致数据泄漏产生过拟合；CatBoost通过利用所有的数据集(除第i条)构建模型$M_i$，并利用1到i-1条数据建造修正树累加到原有模型上；</li><li>XGBoost不能处理类别特征，需要搜互动根据数据实际情况进行独热编码、count编码和目标编码；LightGBM直接支持类别特征，不需要独热展开；CatBoost在处理类别特征时可以选择不进行多余的编码方式；</li><li></li></ol></li></ol></li></ul><h2 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h2><ol><li><p>减少内存占用：</p><p> 类别型变量可采用(有顺序关系)自然数编码(无顺序关系)独热编码，数值型变量采用归一化*100/1000取整</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Book </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ML </tag>
+            
+            <tag> Competetion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Video_Enhance</title>
+      <link href="/2022/09/26/video-enhance/"/>
+      <url>/2022/09/26/video-enhance/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Video-Enhance"><a href="#Video-Enhance" class="headerlink" title="Video Enhance"></a>Video Enhance</h1><ul><li><p>Faster Super-Resolution CNN:</p><p>  使用反卷积代替插值的预处理实现上采样，大大减少模型计算量；</p><p>  使用ResNet bottleneck 架构提高模型精度；</p><p>  使用更小的卷积和更多的卷积层来替代大的卷积核</p></li><li><p>Efficient Sub-Pixel CNN:</p><p>  只在模型末端使用亚像素卷积(将特征图通道数中连续的c个通道作为一个整体进行像素重排列，最终得到多通道的上采样图)的方式上采样，在低分辨率空间中保留更多的纹理区域，同时在视频超分中做到实时；</p></li></ul><h2 id="GAN"><a href="#GAN" class="headerlink" title="GAN:"></a>GAN:</h2><ul><li><p>CGAN:</p><p>  在生成网络的输入上将类别标签和噪声信号组成起来作为输入；</p><p>  在判别网络中将类别标签和图像数据拼接后作为输入；</p></li></ul><h2 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h2><ol><li>1*1 卷积核增加非线性</li><li>Dropout防止过拟合</li><li>K_Means 聚类后去Anchor比例</li><li>梯度消失(Gradient Vanishment): 传统神经网络采用Sigmoid作为激活函数，当层数较高时，Sigmoid函数在反向传播中的梯度值随着多次相乘逐渐减小，经过多层传递后会呈现指数级减小，发生梯度消失现象<br>。ReLU函数可以解决此现象</li></ol><h2 id="Object-Detection"><a href="#Object-Detection" class="headerlink" title="Object_Detection:"></a>Object_Detection:</h2><ul><li><p>Region CNN:</p><p>  首次将手动提取特征的方法更换为卷积神经网络，将经典目标检测算法中通过滑动窗口对所有可能区域的判断更换为提取一系列可能是物体的候选区域，并在候选区域上提取特征进行判断</p><p>  候选框大量重复，计算速度很慢，大量特征冗余，目标分类和定位回归的特征存储需要占用大量的内存</p></li><li><p>Selective Search:</p><p>  假设：物体存在的区域之间有相似性或连续性</p><p>  首先使用分割手段将图像分割成小区域并计算每两个相邻区域的相似度，合并可能性最高的两个区域(颜色直方图相近、梯度直方图相近、合并后总面积最小、在其边界框所占比例大优先合并)，依据生成顺序对每个图像块添加权重</p></li><li><p>Bounding Box Regression:</p><p>  对每一类目标使用一个线性回归器进行精修，候选框和真实边界框近似为线性关系。</p><p>  候选区域$P^i=(P_x^i, P_y^i, P_w^i, P_h^i)$，真实边界框$G=(G_x, G_y, G_w, g_h)$，线性变换的参数为$d_x(P), d_y(P), d_w(P), d_h(P)$<br>  $$\hat G_x=P_wd_x(P) + P_x$$<br>  $$\hat G_y=P_hd_y(P) + P_y$$<br>  $$\hat G_w=P_wexp(d_w(P))$$<br>  $$\hat G_h=P_hexp(d_h(P))$$<br>  假设任意一个线性变换的参数是特征$\phi(P)$的一个线性映射<br>  $$d_<em>(P)=w_</em>^T\phi(P)$$<br>  损失函数使用带L2范数的最小均方误差，$t_<em>^i$是优化问题的目标<br>  $$w_</em>=\argmin_{\hat w_<em>}\sum_i^N(t_</em>^i-\hat w_<em>^T\phi_5(P^i))^2+\lambda \hat w_</em>^2$$<br>  $$t_x=(G_x- P_x)/P_w$$<br>  $$t_y=(G_y- P_y)/P_h$$<br>  $$t_w=log(G_w/P_w)$$<br>  $$t_h=log(G_h/P_h)$$</p></li><li><p>Fast R-CNN:</p><p>  候选特征不需要重复计算；</p><p>  Region of Interest pooling 生成固定尺寸特征，代替R-CNN中的区域图像缩放；</p><p>  利用深度神经网络的全连接神经网络，设计分类和回归同步的多任务损失，同步完成整个算法的目标分类和定位回归任务</p></li><li><p>Faster R-CNN:</p><p>  设计以全卷积网络为基础的Region Proposal Network并与目标检测的卷积神经网络共享，将目标检测的四个基本步骤统一为一个端到端的神经网络，大大提高速度</p></li><li><p>Mask R-CNN:</p><p>  使用RoI Align代替RPN，双线性内插值解决区域不匹配问题</p><p>  在每一个RoI上的小全连接神经层加入一个应用，实现在像素级别上预测分割mask</p></li><li><p>Cascade R-CNN:</p><p>  在基于不同IOU阈值确定的正负样本上，通过训练R-CNN系列来检测网络级联。级联的结构是为了通过调整边界框给下一阶段找到一个IOU更好的正样本来训练</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Book </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Basic </tag>
+            
+            <tag> Competetion </tag>
+            
+            <tag> Video_Enhance </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Knowledge_Graph</title>
+      <link href="/2022/09/22/knowledge-graph/"/>
+      <url>/2022/09/22/knowledge-graph/</url>
+      
+        <content type="html"><![CDATA[<h1 id="KnowLedge-Graph"><a href="#KnowLedge-Graph" class="headerlink" title="KnowLedge_Graph"></a>KnowLedge_Graph</h1><ul><li><p>Main works:</p><ol><li><p>Named Entity Recognition:</p><p> 负责三元组(SPO)中主客体的边界与类别的识别工作</p></li><li><p>Relation Extraction:</p><p> 负责三元组中主客体之间关系类别的分类工作</p></li><li><p>Knowledge Fusion:</p><p> 对来自给定的多个不同知识图谱的三元组进行对齐</p><ul><li>无监督实体对齐: 通过对实体属性提取特征，并根据特征相似度进行聚类来实现对齐。<em>编辑距离、Jaccard系数、余弦相似度</em>衡量实体相似度</li><li>有监督实体对齐: 通过PairWise方法对来自不同知识图谱的实体进行两两配对，并利用人工标注标签来构建训练集</li></ul></li><li><p>Referential Resolution:</p><ul><li>Mention Pair: 与有监督实体对齐方法类似。通过实体识别得到句子中所有Mention词，再使用PairWise方法对Mention词两两配对，最终训练出二分类分类器表示Mention词是否指代同一事物。进行预测时需要通过共指传递性进行补全<br>$$Loss=-\sum_{ij}y_{ij}logP(m_i,m_j)$$<br>正例$y_{ij}=1$,负例$y_{ij}=-1$</li><li>Mention Ranking:通过对某个Mention词只预测一个相关Mention的方式来减少错误传递，提高预测准确率<br>$$Loss=-\sum_i\sum_jy_{ij}logP(m_i,m_j)$$<br>正例$y_{ij}=1$,负例$y_{ij}=0$</li></ul></li></ol></li></ul><h2 id="知识推理：知识图谱的补全和质量校验"><a href="#知识推理：知识图谱的补全和质量校验" class="headerlink" title="知识推理：知识图谱的补全和质量校验"></a>知识推理：知识图谱的补全和质量校验</h2><ol><li><p>基于符号逻辑的推理</p><p> 符号逻辑推理主要是基于描述逻辑的本体推理。描述逻辑是一种基于对象的知识形式化表达，具有很强的表达能力与可判定性。包含概念与关系、Tbox公理集、Abox断言集、推理机制</p></li><li><p>基于表示学习的推理<br> 通过将学习的对象自动地由机器表示为隐式特征来获取更强的表达能力。</p><ul><li><p>Translating Embedding:</p><p>  将实体与关系映射为同样维度的向量，通过随机替换头尾实体得到负样本。只能处理一对一的关系<br>  $$Loss = \sum max(0, \gamma+d_{pos}(h+r,t)- d_{neg}(h’+r’, t’))$$</p></li><li><p>Random Walk:</p><p>  尝试对图中节点进行表示学习的方法: 给定图中节点，从其邻居中随机采样作为下一个访问节点，直到序列长度符合预设条件</p></li><li><p>Graph Neural Network:</p><p>  针对图结构的表示学习方法，主要通过图卷积对目标周围邻居节点所携带的信息进行聚合<br>  $$x_i^k=\gamma^k(x_i^{k-1}, AGG(\phi^k(x_i^{k-1}, x_j^{k-1}, e_{ij})))$$<br>  其中AGG为聚合方法(SUM|MEAN),$\gamma$和$\phi$是两个需要学习的层</p></li></ul></li></ol><h2 id="神经语言模型"><a href="#神经语言模型" class="headerlink" title="神经语言模型"></a>神经语言模型</h2><ul><li><p>Skip-Gram模型: 通过中心词预测上下文窗口的词。</p><p>  计算中心词和上下文窗口词的损失，反向传播回对应的词向量，从而进行词向量的学习与更新</p></li><li><p>CBOW模型: 通过上下文的全部词预测中心词</p></li></ul><h2 id="自然语言处理深度学习基本结构"><a href="#自然语言处理深度学习基本结构" class="headerlink" title="自然语言处理深度学习基本结构"></a>自然语言处理深度学习基本结构</h2><ul><li><p>CNN1D: </p><p>  首先训练出每个单词的词向量，然后将处理为单词索引的句子作为输入，在经过Embedding层转换为对应的特征张量(bs, len, dim),提供给卷积CNN1D层，最后CNN1D层通过在句子长度方向上滑动卷积核来计算特征张量(bs, len, 1)。使用k种卷积核并对其分别进行最大池化再拼接得到池化张量，最终通过MLP和softmax层得到类别概率。</p></li><li><p>Recurrent Neural Network:</p><p>  循环神经网络对序列的每一个位置进行同样的循环单元计算，每一个循环单元除了要接受该位置的信息，还要接受上一个循环单元的输出作为输入，保持了长距离的上下文信息。<em>在训练过程中由于反向传播算法，梯度会在不同的时刻以乘法的形式进行积累，最终导致梯度爆炸或消失的问题</em></p></li><li><p>Long Short Term Memory:</p><p>  在RNN基础上增加Cell state来直接传递相邻时刻之间的信息，缓解了梯度消失的问题。同时引入采用Sigmoid激活的门控机制(遗忘门、输入门与输出门)，来分别控制上一时刻的细胞状态、输入信息及输出信息的进一步传递，从而实现信息的长短期记忆</p></li><li><p>Gated Recurrent Unit:</p><p>  对LSTM进行简化，将细胞状态和隐藏状态合并，经遗忘门和输入门合二为一，降低计算复杂度。由于门控单元使信息经过多次Sigmoid激活，减小了梯度爆炸的可能性，实际操作中可采用梯度裁剪进一步避免梯度爆炸。</p></li><li><p>Attention Mechannical:</p><p>  将编码器的全部隐藏状态与当前时刻输入解码器的词向量做矩阵乘法，并进行Softmax归一化得到注意力权重，再与编码器的全部隐藏状态相乘的得到上下文向量。将该向量与输入的词向量进行拼接传入解码器中进行训练</p></li><li><p>Hidden Markov Model:</p><ul><li>观测独立性假设：任意时刻的观测只依赖于该时刻的状态；</li><li>一阶马尔可夫假设：任意时刻的状态只依赖于前一时刻的状态；<br>生成式有向图模型，由Viterbi算法解码求解概率模型。但受一阶马尔可夫假设限制，表达能力有限<br>$$P(X,Y)=P(y_0)\prod_{t=1}^nP(y_t|y_{t-1})P(x_t|y_t)$$<br>Viterbi: 对于给定的观测序列，寻找概率最大的隐藏状态序列，即在有向无环图中寻找一条最大路径<br>$$D_{t,j}=max(D_{t,j}, D_{t-1,k} + \theta_{kj})$$</li></ul></li><li><p>Maximum ENtropy Markov Models:</p><p>  判别式有向图模型，由于归一化参数是在累乘内部，局部归一化，每次状态转移都会倾向于选择拥有更少转移的状态,产生标注偏置问题。<br>  $$P(Y|X)=\prod_t P(y_t|y_{t-1}, x_t)$$<br>  $$P(y_t|y_{t-1}, x_t)=\frac{1}{Z}e^{\sum\lambda f(x,y)}$$</p></li><li><p>Conditional Random Filed:</p><p>  判别式无向图模型，全局归一化函数<br>  $$P(Y|X)=\frac{1}{Z}\prod_c\phi_c(y_c|x)$$<br>  $$\phi_c(y_c|x)=e^{\sum_k\lambda_kf_k(y_t,y_{t-1},x_t) + \mu_ks_k(y_t,x_t)}$$<br>  $$Z = \sum_y\prod_c\phi_c(y_c|x)$$</p></li><li><p>Bidirectional LSTM:</p><p>  利用前向循环网络和反向循环网络得到的输出按一定方式叠加，可以在任意时刻获得前后时刻的信息，自动构建输入数据特征与双向表达，比单向循环网络有更强的表达能力，但是预测的前后两个特征是相互独立的，出现如连续的<strong>Begin标签</strong>，可通过替换softmax为CRF,充分学习到标注之间信息。</p></li></ul><h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo:"></a>Demo:</h2><pre class="line-numbers language-Python"><code class="language-Python">import jieba# 词性特征word_flags = []for text in texts:    for word, flag in jieba.posseg.cut(text):        word_flags += [flag] * len(word)# 词边界特征word_flags = []word_bounds = ['I' for s in texts for x in s]for text in texts:    for word, flag in jieba.posseg.cut(text):        if len(word)==1:            start = len(word_flags)            word_bounds[start] = 'S'            word_flags.append(flag)        else:            start = len(word_flags)            word_bounds[start] = 'B'            word_flags += [flag] * len(word)            end = len(word_flags) - 1            word_bounds[end] = 'E'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Relation-Extraction"><a href="#Relation-Extraction" class="headerlink" title="Relation Extraction:"></a>Relation Extraction:</h2><ul><li><p>基于依存句法的抽取：</p><p>  依存句法分析描述了单词之间的丰富的修饰关系，借助于修饰关系可以制定一些通用的规则，避免对每个关系逐一构建规则模板。</p></li><li><p>Multiple Instance Learning:</p><p>  多示例学习的基本单位为Bag,一个Bag中有多个Instance。</p><p>  Piecewise Convolutional Neural Network + Attention Implementation: 对Bag中的每个句子x,使用基本的PCNN模型计算得到(3k,1)的池化张量。由于包中共享一组实体对，首先计算实体对特征张量(dim,1)，然后将池化张量与实体对特征张量分别输入Attention层，通过注意力机制计算上下文权重，并利用该权重与包中所有句子的池化张量来计算包特征，再经过MLP层与Softmax层，最终输出包类别概率。</p></li></ul><h2 id="Feature-Project"><a href="#Feature-Project" class="headerlink" title="Feature Project:"></a>Feature Project:</h2><pre class="line-numbers language-Python"><code class="language-Python"># Instance distanceouter_len = max(e1['end'] - e2['end'])-  min(e1['start'], e2['start'])inner_len = max(e1['start'], e2['start']) - min(e1['end'], e2['end'])# Instance speechtext = []flags = []for w, flag in jieba.posseg.cut(sent):    text.append(w)    flags.append(flag)# Instance position hintseg = np.zeros(len(text))seg[e1b:e1e] += 0.1seg[e2b:e2e] -= 0.1# Instance relative positiondef cal_pos(begin, end, l):    if begin<0:        begin += 1        end += 1    median = (begin + end) /2    return np.arange(l) - mediane1pos = cal_pos(e1b, e1e, len(text))e2pos = cal_pos(e2b,e2e, len(text))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="NOTES"><a href="#NOTES" class="headerlink" title="NOTES:"></a>NOTES:</h2><ol><li>信息标注格式化解析<pre class="line-numbers language-Python"><code class="language-Python">label_r = label[label[0].str.startswith('R')]label_r.columns = ['id', 'relation']label_r['catagory'] = [r.split()[0] for r in label_r['relation'].tolist()]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li>多线程并行处理<pre class="line-numbers language-Python"><code class="language-Python">def process_text(idx, target_dir='train', split_method=None): # process *.txt文件和对应的*.ann文件import multiprocessing as mpnum_worker = mp.cpu_count()pool = mp.Pool(num_worker)results = []# 获取文件idids = set([x.split('.')[0] for x in os.listdir('../data/train/')])for idx in ids: result = pool.apply_async(process_text, args=(idx, 'train', split_method)) reuslts.append(result)pool.close()pool.join()[r.get() for r in tqdm(results)]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li>远程监督<pre class="line-numbers language-Python"><code class="language-Python"># 关系列表relation = set([ 'Test_Disease', 'Symptom_Disease'])# 遍历全部关系datasets = []for r in tqdm(relation): c1, c2= r.split('_') e1_data = label_T[label_T['category']==c1] e2_data = label_T[label_T['category']==c2] # 实例两两组成三元组 for i, e1 in e1_data.iterrows():     for j, e2 in e2_data.iterrows():         begin = min(e1['start'], e2['start'])         end = max(e1['end'], e2['end'])         # 负样本筛选         if end - begin > max_len:             continue         sentence = clean(texts[begin:end])         datasets.append([e1['id'], e2['id'],e1['category'] + '_' + e2['category'], -1, sentence])label_R = set((r['arg1'], r['arg2']) for r in label_R)for i in range(len(datasets)): if tuple(datasets[i][:2]) in label_R:     datasets[i][3] = 1 else:     datasets[i][3] = 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li>句子窗口：<pre class="line-numbers language-Python"><code class="language-Python">if end - begin <=100: window = 50elif end - begin <= 140: window = 30else: window = 0num_pad = max_len - (end-begin)left_w = min(num_pad //2 , window)right_w = min(num_pad - left_w, window)begin = max(0, begin - left_w)end = min(len(text), end + right_w)sentence = clean(text[begin:end])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Book </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Basic </tag>
+            
+            <tag> Knowledge_graph </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bayes_basic</title>
+      <link href="/2022/09/21/bayes-basic/"/>
+      <url>/2022/09/21/bayes-basic/</url>
+      
+        <content type="html"><![CDATA[<h2 id="参数化建模学习：概念和方向"><a href="#参数化建模学习：概念和方向" class="headerlink" title="参数化建模学习：概念和方向"></a>参数化建模学习：概念和方向</h2><h3 id="Note"><a href="#Note" class="headerlink" title="Note:"></a>Note:</h3><ol><li>一个无约束的最小化问题总是会导致损失函数小于或等于有约束的对应情形；</li><li>通过在最小方差无偏(Minimum Variance Unbiased)估计量中引入偏差缩小范数，可以获得比MVU更好的结果；</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HDFS</title>
       <link href="/2022/09/17/hdfs/"/>
       <url>/2022/09/17/hdfs/</url>
@@ -218,31 +314,6 @@
     
     
     <entry>
-      <title>Pose_Estimation</title>
-      <link href="/2022/08/18/pose-estimation/"/>
-      <url>/2022/08/18/pose-estimation/</url>
-      
-        <content type="html"><![CDATA[<p><strong>0818</strong></p><ol><li><p>strengthen the difference between keypoints<br> The problem why sometimes the model’s output mismatched is due to the weak feature learned for each keypoints.</p><p> And it comes to the dillima. We seem to enhance the feature difference by adding the texture which is indeed the thing we try to avoid by style transfer</p></li><li><p>strange observation<br> The Grammar correction in chrome limit the utterance comment to be one character input:D</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> Study </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Pose_Estimation </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>GAN_articles</title>
       <link href="/2022/08/18/gan-articles/"/>
       <url>/2022/08/18/gan-articles/</url>
@@ -260,6 +331,31 @@
         <tags>
             
             <tag> technology books </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pose_Estimation</title>
+      <link href="/2022/08/18/pose-estimation/"/>
+      <url>/2022/08/18/pose-estimation/</url>
+      
+        <content type="html"><![CDATA[<p><strong>0818</strong></p><ol><li><p>strengthen the difference between keypoints<br> The problem why sometimes the model’s output mismatched is due to the weak feature learned for each keypoints.</p><p> And it comes to the dillima. We seem to enhance the feature difference by adding the texture which is indeed the thing we try to avoid by style transfer</p></li><li><p>strange observation<br> The Grammar correction in chrome limit the utterance comment to be one character input:D</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Pose_Estimation </tag>
             
         </tags>
       
