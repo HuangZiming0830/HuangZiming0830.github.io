@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2022-09-28T14:16:45.284Z</updated>
+  <updated>2023-03-27T10:02:20.795Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ElementTree</title>
+    <link href="Https://huangziming0830.github.io/2023/03/27/elementtree/"/>
+    <id>Https://huangziming0830.github.io/2023/03/27/elementtree/</id>
+    <published>2023-03-27T09:58:55.000Z</published>
+    <updated>2023-03-27T10:02:20.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;xml文件解析&quot;&gt;&lt;a href=&quot;#xml文件解析&quot; class=&quot;headerlink&quot; title=&quot;xml文件解析&quot;&gt;&lt;/a&gt;xml文件解析&lt;/h1&gt;&lt;h2 id=&quot;xml-etree-ElementTree&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="Https://huangziming0830.github.io/categories/python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="Https://huangziming0830.github.io/2023/02/14/bagu/"/>
+    <id>Https://huangziming0830.github.io/2023/02/14/bagu/</id>
+    <published>2023-02-14T12:18:52.126Z</published>
+    <updated>2023-02-14T12:18:58.400Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;机器学习八股文&quot;&gt;&lt;a href=&quot;#机器学习八股文&quot; class=&quot;headerlink&quot; title=&quot;机器学习八股文&quot;&gt;&lt;/a&gt;机器学习八股文&lt;/h1&gt;&lt;h2 id=&quot;Machine-Leaning&quot;&gt;&lt;a href=&quot;#Machine-Leaning&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ML_Competition</title>
@@ -38,9 +84,9 @@
       <category term="Book" scheme="Https://huangziming0830.github.io/categories/Book/"/>
     
     
-      <category term="ML" scheme="Https://huangziming0830.github.io/tags/ML/"/>
-    
       <category term="Competetion" scheme="Https://huangziming0830.github.io/tags/Competetion/"/>
+    
+      <category term="ML" scheme="Https://huangziming0830.github.io/tags/ML/"/>
     
   </entry>
   
@@ -190,7 +236,7 @@
     <link href="Https://huangziming0830.github.io/2022/09/13/optimal-algorithms/"/>
     <id>Https://huangziming0830.github.io/2022/09/13/optimal-algorithms/</id>
     <published>2022-09-13T12:42:34.000Z</published>
-    <updated>2022-09-16T03:50:21.069Z</updated>
+    <updated>2022-11-22T11:41:04.158Z</updated>
     
     <summary type="html">
     
@@ -518,62 +564,6 @@
       <category term="Feature Extraction" scheme="Https://huangziming0830.github.io/tags/Feature-Extraction/"/>
     
       <category term="Kaggle" scheme="Https://huangziming0830.github.io/tags/Kaggle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytorch_base</title>
-    <link href="Https://huangziming0830.github.io/2022/05/26/pytorch-base/"/>
-    <id>Https://huangziming0830.github.io/2022/05/26/pytorch-base/</id>
-    <published>2022-05-26T06:17:53.000Z</published>
-    <updated>2022-08-19T11:29:07.989Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;natural-languare-processing&quot;&gt;&lt;a href=&quot;#natural-languare-processing&quot; class=&quot;headerlink&quot; title=&quot;natural languare
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="NLP" scheme="Https://huangziming0830.github.io/tags/NLP/"/>
-    
-      <category term="Pytorch" scheme="Https://huangziming0830.github.io/tags/Pytorch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python_Skills</title>
-    <link href="Https://huangziming0830.github.io/2022/04/01/python-skills/"/>
-    <id>Https://huangziming0830.github.io/2022/04/01/python-skills/</id>
-    <published>2022-04-01T06:57:35.000Z</published>
-    <updated>2022-08-22T02:34:38.837Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h1&gt;&lt;h2 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
-    
-      <category term="Functions" scheme="Https://huangziming0830.github.io/tags/Functions/"/>
     
   </entry>
   
