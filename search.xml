@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Tmux</title>
+      <link href="/2023/03/27/tmux/"/>
+      <url>/2023/03/27/tmux/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Tmux"><a href="#Tmux" class="headerlink" title="Tmux"></a>Tmux</h1><h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><pre class="line-numbers language-linux"><code class="language-linux">    tmux new -s <session_name>    # 分离session,即使终端窗口关闭也可在后台继续运行进程    tmux detach    # 接入session    tmux attach -t <session_name>    tmux ls    tmux switch -t <session_name>    tmux kill-session -t <session_name>    tmux rename-session -t <old_name> <new_name><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h2><pre class="line-numbers language-linux"><code class="language-linux">    tmux new-window    tmux new-window -n <window_name>    tmux select-window -t <window_number>/<window_name>    tmux rename-window <new_name><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Pane"><a href="#Pane" class="headerlink" title="Pane"></a>Pane</h2><p>对于一个session进行不同的操作，将窗口分割成多个区域分别进行</p><pre class="line-numbers language-linux"><code class="language-linux">    tmux split-window -h    # 切换光标    tmux select-pane -U/D/L/R    # 切换窗格    tmux swap-pane -U/-D<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ElementTree</title>
       <link href="/2023/03/27/elementtree/"/>
       <url>/2023/03/27/elementtree/</url>

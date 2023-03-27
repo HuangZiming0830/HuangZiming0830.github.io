@@ -4,13 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="selenium, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
+    <meta name="keywords" content="Tmux, Python Matlab R SQL Machine_Learning Deep_Learning NLP Image_Processing STM32 ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="Selenium spiderPreparation    pip install selenium
-
-    # download the browser driver ![chrome](https://chromedriver.sto">
+    <meta name="description" content="TmuxSession    tmux new -s 
+    # 分离session,即使终端窗口关闭也可在后台继续运行进程
+    tmux detach
+    # 接入session
+    tmux attach -t 
+    ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>selenium | Adam&#39;s Blog</title>
+    <title>Tmux | Adam&#39;s Blog</title>
     <link rel="icon" type="image/jpeg" href="/medias/logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -515,13 +518,13 @@ $(document).ready(function(){
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        selenium
+                        Tmux
                     </div>
                 </div>
             </div>
@@ -631,15 +634,7 @@ $(document).ready(function(){
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        
-                        <a href="/tags/Python/" target="_blank">
-                            <span class="chip bg-color">Python</span>
-                        </a>
-                        
-                        <a href="/tags/Scrapy/" target="_blank">
-                            <span class="chip bg-color">Scrapy</span>
-                        </a>
-                        
+                        <span class="chip bg-color">无标签</span>
                     </div>
                     
                 </div>
@@ -648,8 +643,8 @@ $(document).ready(function(){
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Technology/" class="post-category" target="_blank">
-                            Technology
+                        <a href="/categories/Linux/" class="post-category" target="_blank">
+                            Linux
                         </a>
                         
                     </div>
@@ -660,7 +655,7 @@ $(document).ready(function(){
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-18
+                    2023-03-27
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -674,7 +669,7 @@ $(document).ready(function(){
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    301
+                    112
                 </div>
                 
 
@@ -697,91 +692,25 @@ $(document).ready(function(){
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Selenium-spider"><a href="#Selenium-spider" class="headerlink" title="Selenium spider"></a>Selenium spider</h1><h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><pre class="line-numbers language-python"><code class="language-python">    pip install selenium
-
-    <span class="token comment" spellcheck="true"># download the browser driver ![chrome](https://chromedriver.storage.googleapis.com/index.html?path=104.0.5112.79/)</span>
-
-    <span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-    driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Element-hunter"><a href="#Element-hunter" class="headerlink" title="Element hunter"></a>Element hunter</h2><pre class="line-numbers language-python"><code class="language-python">    find_element_by_id<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_name<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_class_name<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_tag_name<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    fing_element_by_link_text<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_partial_link_text<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_xpath<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    find_element_by_css_selector<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Browser-operation"><a href="#Browser-operation" class="headerlink" title="Browser operation"></a>Browser operation</h2><pre class="line-numbers language-python"><code class="language-python">    driver<span class="token punctuation">.</span>set_window_size<span class="token punctuation">(</span><span class="token number">480</span><span class="token punctuation">,</span> <span class="token number">800</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>back<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>forward<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>refresh<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-python"><code class="language-python">    driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># clear the text</span>
-    driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">"selenium"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># simulate the input</span>
-    driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"su"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># click the element</span>
-
-    search_text <span class="token operator">=</span> driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">'kw'</span><span class="token punctuation">)</span>
-    search_text<span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">'selenium'</span><span class="token punctuation">)</span>
-    search_text<span class="token punctuation">.</span>submit<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Mouse-operation"><a href="#Mouse-operation" class="headerlink" title="Mouse operation"></a>Mouse operation</h2><ul>
-<li>perform(): execute the actions stored in ActionChains</li>
-<li>context_click(): right click</li>
-<li>double_click(): double clicks</li>
-<li>drag_and_drop(): drag element</li>
-<li>move_to_element(): suspend above element</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">    <span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-    <span class="token keyword">from</span> selenium<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>common<span class="token punctuation">.</span>action_chains <span class="token keyword">import</span> ActionChains
-
-    driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://www.baidu.cn'</span><span class="token punctuation">)</span>
-
-    above <span class="token operator">=</span> driver<span class="token punctuation">.</span>find_element_by_partial_link_text<span class="token punctuation">(</span><span class="token string">"设置"</span><span class="token punctuation">)</span>
-    ActionChains<span class="token punctuation">(</span>driver<span class="token punctuation">)</span><span class="token punctuation">.</span>move_to_element<span class="token punctuation">(</span>above<span class="token punctuation">)</span><span class="token punctuation">.</span>perform<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Keyboard-operation"><a href="#Keyboard-operation" class="headerlink" title="Keyboard operation"></a>Keyboard operation</h2><ul>
-<li></li>
-<li>send_keys()： <em>Keys.BACK_SPACE</em> <em>Keys.CONTROL, ‘a’</em> <em>Keys.F1</em></li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python">    driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">"selenium"</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span>Keys<span class="token punctuation">.</span>BACK_SPACE<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-python"><code class="language-python">    title <span class="token operator">=</span> driver<span class="token punctuation">.</span>title
-    now_url <span class="token operator">=</span> driver<span class="token punctuation">.</span>current_url
-    user <span class="token operator">=</span> driver<span class="token punctuation">.</span>find_element_by_class_name<span class="token punctuation">(</span><span class="token string">'nums'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text
-
-    <span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
-    <span class="token keyword">from</span> selenium<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>common<span class="token punctuation">.</span>by <span class="token keyword">import</span> By
-    <span class="token keyword">from</span> selenium<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>support<span class="token punctuation">.</span>ui <span class="token keyword">import</span> WebDriverWait
-    <span class="token keyword">from</span> selenium<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>support <span class="token keyword">import</span> expected_conditions <span class="token keyword">as</span> EC
-
-    driver<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"https://www.baidu.com"</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># WebDriverWait(driver, timeout, poll_frequency=0.5, ignored_exceptions=None)</span>
-    element <span class="token operator">=</span> WebDriverWait<span class="token punctuation">(</span>driver<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">.</span>until<span class="token punctuation">(</span>EC<span class="token punctuation">.</span>presence_of_element_located<span class="token punctuation">(</span><span class="token punctuation">(</span>By<span class="token punctuation">.</span>ID<span class="token punctuation">,</span> <span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    element<span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">"selenium"</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-    driver<span class="token punctuation">.</span>implicitly_wait<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
-    drivet<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"http://somedomain/url_that_delays_loading"</span><span class="token punctuation">)</span>
-    myDynamicElement <span class="token operator">=</span> driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"myDynamicElement"</span><span class="token punctuation">)</span>
-
-    <span class="token comment" spellcheck="true"># switch between windows</span>
-    xf <span class="token operator">=</span> driver<span class="token punctuation">.</span>find_element_by_xpath<span class="token punctuation">(</span><span class="token string">'//*[@id="x-URS-iframe"'</span><span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true"># choose from select box</span>
-    <span class="token keyword">from</span> selenium<span class="token punctuation">.</span>webdriver<span class="token punctuation">.</span>support<span class="token punctuation">.</span>select <span class="token keyword">import</span> Select
-    Select<span class="token punctuation">(</span>xf<span class="token punctuation">)</span><span class="token punctuation">.</span>select_by_value<span class="token punctuation">(</span><span class="token string">'50'</span><span class="token punctuation">)</span>
-
-    driver<span class="token punctuation">.</span>switch_to_frame<span class="token punctuation">(</span>xf<span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>switch_to_default_content<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Alert-frame"><a href="#Alert-frame" class="headerlink" title="Alert frame"></a>Alert frame</h2><p><code>alert = driver.switch_to_alert()</code></p>
-<ul>
-<li>attribute: text | accept | dismiss | send_keys()</li>
-</ul>
-<h2 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><pre class="line-numbers language-python"><code class="language-python">    driver<span class="token punctuation">.</span>find_element_by_name<span class="token punctuation">(</span><span class="token string">"file"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">'D:\\upload_file.txt'</span><span class="token punctuation">)</span>
-    driver<span class="token punctuation">.</span>get_screenshot_as_file<span class="token punctuation">(</span><span class="token string">"D:\\baidu_img.jpg"</span><span class="token punctuation">)</span>
-
-    js <span class="token operator">=</span> <span class="token string">"window.scrollTo(100, 450);"</span>
-    driver<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span>js<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="Tmux"><a href="#Tmux" class="headerlink" title="Tmux"></a>Tmux</h1><h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><pre class="line-numbers language-linux"><code class="language-linux">    tmux new -s <session_name>
+    # 分离session,即使终端窗口关闭也可在后台继续运行进程
+    tmux detach
+    # 接入session
+    tmux attach -t <session_name>
+    tmux ls
+    tmux switch -t <session_name>
+    tmux kill-session -t <session_name>
+    tmux rename-session -t <old_name> <new_name><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h2><pre class="line-numbers language-linux"><code class="language-linux">    tmux new-window
+    tmux new-window -n <window_name>
+    tmux select-window -t <window_number>/<window_name>
+    tmux rename-window <new_name><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Pane"><a href="#Pane" class="headerlink" title="Pane"></a>Pane</h2><p>对于一个session进行不同的操作，将窗口分割成多个区域分别进行</p>
+<pre class="line-numbers language-linux"><code class="language-linux">    tmux split-window -h
+    # 切换光标
+    tmux select-pane -U/D/L/R
+    # 切换窗格
+    tmux swap-pane -U/-D<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -940,9 +869,9 @@ $(document).ready(function(){
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《selenium》
+                    《Tmux》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/08/18/selenium/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2023/03/27/tmux/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Adam
             </a> 采用
@@ -996,53 +925,48 @@ $(document).ready(function(){
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/23/scientific-work/">
+                <a href="/2023/03/27/tmux/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="scientific work">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Tmux">
                         
-                        <span class="card-title">scientific work</span>
+                        <span class="card-title">Tmux</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Daily scientific work log
+                            TmuxSession    tmux new -s 
+    # 分离session,即使终端窗口关闭也可在后台继续运行进程
+    tmux detach
+    # 接入session
+    tmux attach -t 
+    
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-03-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Study/" class="post-category" target="_blank">
-                                    Study
+                            <a href="/categories/Linux/" class="post-category" target="_blank">
+                                    Linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Log/" target="_blank">
-                        <span class="chip bg-color">Log</span>
-                    </a>
-                    
-                    <a href="/tags/Graduate-work/" target="_blank">
-                        <span class="chip bg-color">Graduate_work</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1053,44 +977,39 @@ $(document).ready(function(){
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/18/gan-articles/">
+                <a href="/2023/03/27/elementtree/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="GAN_articles">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="ElementTree">
                         
-                        <span class="card-title">GAN_articles</span>
+                        <span class="card-title">ElementTree</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Recent thinking of PE.
+                            xml文件解析xml.etree.ElementTree    tree = ET.parse(file)
+    root = tree.getroot()
+    size = root.find('size')
+    height 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-18
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-03-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Study/" class="post-category" target="_blank">
-                                    Study
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/technology-books/" target="_blank">
-                        <span class="chip bg-color">technology books</span>
-                    </a>
-                    
                 </div>
                 
             </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2023-03-27T10:02:20.795Z</updated>
+  <updated>2023-03-27T12:02:14.489Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tmux</title>
+    <link href="Https://huangziming0830.github.io/2023/03/27/tmux/"/>
+    <id>Https://huangziming0830.github.io/2023/03/27/tmux/</id>
+    <published>2023-03-27T11:53:04.000Z</published>
+    <updated>2023-03-27T12:02:14.489Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Tmux&quot;&gt;&lt;a href=&quot;#Tmux&quot; class=&quot;headerlink&quot; title=&quot;Tmux&quot;&gt;&lt;/a&gt;Tmux&lt;/h1&gt;&lt;h2 id=&quot;Session&quot;&gt;&lt;a href=&quot;#Session&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux" scheme="Https://huangziming0830.github.io/categories/Linux/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ElementTree</title>
@@ -533,37 +557,6 @@
       <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
     
       <category term="Functions" scheme="Https://huangziming0830.github.io/tags/Functions/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kaggle_Competitons</title>
-    <link href="Https://huangziming0830.github.io/2022/06/30/space-titanic/"/>
-    <id>Https://huangziming0830.github.io/2022/06/30/space-titanic/</id>
-    <published>2022-06-30T08:48:56.000Z</published>
-    <updated>2022-09-20T03:36:21.661Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;h1 id=&quot;Feature-extraction&quot;&gt;&lt;a href=&quot;#Feature-extraction&quot; class=&quot;headerlink&quot; title=&quot;Feature extraction&quot;&gt;&lt;/a&gt;Feature extraction&lt;/h1&gt;&lt;h2
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
-    
-      <category term="Feature Extraction" scheme="Https://huangziming0830.github.io/tags/Feature-Extraction/"/>
-    
-      <category term="Kaggle" scheme="Https://huangziming0830.github.io/tags/Kaggle/"/>
     
   </entry>
   
