@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="Https://huangziming0830.github.io/"/>
-  <updated>2023-03-27T12:02:14.489Z</updated>
+  <updated>2023-11-22T09:23:07.251Z</updated>
   <id>Https://huangziming0830.github.io/</id>
   
   <author>
@@ -15,6 +15,107 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Computer Network</title>
+    <link href="Https://huangziming0830.github.io/2023/11/22/computer-network/"/>
+    <id>Https://huangziming0830.github.io/2023/11/22/computer-network/</id>
+    <published>2023-11-22T09:20:42.000Z</published>
+    <updated>2023-11-22T09:23:07.251Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;电路交换、报文交换、分组交换&lt;/li&gt;
+&lt;/ul&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="Books" scheme="Https://huangziming0830.github.io/categories/Books/"/>
+    
+    
+      <category term="technology" scheme="Https://huangziming0830.github.io/tags/technology/"/>
+    
+      <category term="network" scheme="Https://huangziming0830.github.io/tags/network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Computor Operator</title>
+    <link href="Https://huangziming0830.github.io/2023/11/22/computor-operator/"/>
+    <id>Https://huangziming0830.github.io/2023/11/22/computor-operator/</id>
+    <published>2023-11-22T01:03:24.000Z</published>
+    <updated>2023-11-22T11:53:06.709Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;深入理解计算机系统&quot;&gt;&lt;a href=&quot;#深入理解计算机系统&quot; class=&quot;headerlink&quot; title=&quot;深入理解计算机系统&quot;&gt;&lt;/a&gt;深入理解计算机系统&lt;/h1&gt;&lt;h2 id=&quot;Chapter-One&quot;&gt;&lt;a href=&quot;#Chapter-One&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Books" scheme="Https://huangziming0830.github.io/categories/Books/"/>
+    
+    
+      <category term="technology" scheme="Https://huangziming0830.github.io/tags/technology/"/>
+    
+      <category term="Operator" scheme="Https://huangziming0830.github.io/tags/Operator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>毛选</title>
+    <link href="Https://huangziming0830.github.io/2023/11/20/mao-xuan/"/>
+    <id>Https://huangziming0830.github.io/2023/11/20/mao-xuan/</id>
+    <published>2023-11-20T02:01:22.000Z</published>
+    <updated>2023-11-22T11:53:08.056Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;中国社会各阶级的分析&quot;&gt;&lt;a href=&quot;#中国社会各阶级的分析&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Books" scheme="Https://huangziming0830.github.io/categories/Books/"/>
+    
+    
+      <category term="Party" scheme="Https://huangziming0830.github.io/tags/Party/"/>
+    
+      <category term="Mao" scheme="Https://huangziming0830.github.io/tags/Mao/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nerf: 3D content generation</title>
+    <link href="Https://huangziming0830.github.io/2023/11/18/nerf-3d-content-generation/"/>
+    <id>Https://huangziming0830.github.io/2023/11/18/nerf-3d-content-generation/</id>
+    <published>2023-11-18T02:50:30.000Z</published>
+    <updated>2023-11-18T02:50:30.920Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Tmux</title>
@@ -69,7 +170,7 @@
     <link href="Https://huangziming0830.github.io/2023/02/14/bagu/"/>
     <id>Https://huangziming0830.github.io/2023/02/14/bagu/</id>
     <published>2023-02-14T12:18:52.126Z</published>
-    <updated>2023-02-14T12:18:58.400Z</updated>
+    <updated>2023-11-21T01:51:47.863Z</updated>
     
     <summary type="html">
     
@@ -445,118 +546,6 @@
     
     
       <category term="technology books" scheme="Https://huangziming0830.github.io/tags/technology-books/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pose_Estimation</title>
-    <link href="Https://huangziming0830.github.io/2022/08/18/pose-estimation/"/>
-    <id>Https://huangziming0830.github.io/2022/08/18/pose-estimation/</id>
-    <published>2022-08-18T01:17:46.000Z</published>
-    <updated>2022-08-19T11:26:52.045Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;0818&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;strengthen the difference between keypoints&lt;br&gt; The problem why sometimes the model’s output
-        
-      
-    
-    </summary>
-    
-      <category term="Study" scheme="Https://huangziming0830.github.io/categories/Study/"/>
-    
-    
-      <category term="Pose_Estimation" scheme="Https://huangziming0830.github.io/tags/Pose-Estimation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tutorial for online training</title>
-    <link href="Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/"/>
-    <id>Https://huangziming0830.github.io/2022/08/06/tutorial-for-online-training/</id>
-    <published>2022-08-06T06:57:35.000Z</published>
-    <updated>2022-08-24T09:17:10.596Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;GPU-Online-Training-Tutorial&quot;&gt;&lt;a href=&quot;#GPU-Online-Training-Tutorial&quot; class=&quot;headerlink&quot; title=&quot;GPU Online Training
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="GPU Training" scheme="Https://huangziming0830.github.io/tags/GPU-Training/"/>
-    
-      <category term="DL" scheme="Https://huangziming0830.github.io/tags/DL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DL_Model_Training</title>
-    <link href="Https://huangziming0830.github.io/2022/08/05/dl-model-training/"/>
-    <id>Https://huangziming0830.github.io/2022/08/05/dl-model-training/</id>
-    <published>2022-08-05T08:48:56.000Z</published>
-    <updated>2022-09-19T08:49:49.790Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Pytorch&quot;&gt;&lt;a href=&quot;#Pytorch&quot; class=&quot;headerlink&quot; title=&quot;Pytorch&quot;&gt;&lt;/a&gt;Pytorch&lt;/h1&gt;&lt;h2 id=&quot;Model&quot;&gt;&lt;a href=&quot;#Model&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="Model Training" scheme="Https://huangziming0830.github.io/tags/Model-Training/"/>
-    
-      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python_Skills_Plus</title>
-    <link href="Https://huangziming0830.github.io/2022/07/26/python-skills-plus/"/>
-    <id>Https://huangziming0830.github.io/2022/07/26/python-skills-plus/</id>
-    <published>2022-07-26T08:48:56.000Z</published>
-    <updated>2022-09-21T07:54:09.219Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Python&quot;&gt;&lt;a href=&quot;#Python&quot; class=&quot;headerlink&quot; title=&quot;Python&quot;&gt;&lt;/a&gt;Python&lt;/h1&gt;&lt;h2 id=&quot;Tips&quot;&gt;&lt;a href=&quot;#Tips&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Technology" scheme="Https://huangziming0830.github.io/categories/Technology/"/>
-    
-    
-      <category term="Python" scheme="Https://huangziming0830.github.io/tags/Python/"/>
-    
-      <category term="Functions" scheme="Https://huangziming0830.github.io/tags/Functions/"/>
     
   </entry>
   
